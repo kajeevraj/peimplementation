@@ -17,7 +17,6 @@
   --radius: 12px;
   --radius-pill: 999px;
   --max-width: 960px;
-  --space: 1.25rem;
   font-size: 17px;
 }
 
@@ -73,7 +72,7 @@ nav.section-nav {
 
 .tabs {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 0.5rem;
   padding: 0.75rem 1.25rem;
 }
@@ -248,35 +247,60 @@ details .details-body {
   font-style: italic;
 }
 
-/* ---------- diagram ---------- */
-
-.diagram-intro {
-  max-width: 62ch;
+.inline-tab-link {
+  font: inherit;
+  color: var(--accent-dark);
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: underline;
+  cursor: pointer;
 }
+
+.inline-tab-link:hover,
+.inline-tab-link:focus-visible {
+  color: var(--accent);
+}
+
+.inline-tab-link:focus-visible {
+  outline: 2px solid var(--accent-orange);
+  outline-offset: 2px;
+}
+
+/* ---------- diagram ---------- */
 
 .diagram-wrap {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1rem;
+  padding: 1.5rem;
   margin: 1rem 0;
 }
 
 .diagram-legend {
   display: flex;
-  gap: 1.5rem;
+  align-items: center;
+  gap: 1.25rem;
   flex-wrap: wrap;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
+  font-weight: 500;
   color: var(--text-muted);
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.diagram-legend span {
+  display: inline-flex;
+  align-items: center;
 }
 
 .legend-swatch {
   display: inline-block;
-  width: 1rem;
-  height: 1rem;
-  margin-right: 0.35rem;
-  vertical-align: -2px;
+  width: 0.9rem;
+  height: 0.9rem;
+  margin-right: 0.4rem;
   border: 2px solid var(--accent-dark);
   border-radius: 3px;
 }
@@ -287,17 +311,40 @@ details .details-body {
   border-color: var(--accent);
 }
 
+.legend-swatch.case {
+  position: relative;
+  background: #fff;
+}
+
+.legend-swatch.case::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-orange);
+  border: 1.5px solid var(--bg-card);
+}
+
 svg.diagram { width: 100%; height: auto; }
 
 .diagram-wide { display: block; }
 .diagram-narrow { display: none; }
 
-.node { cursor: pointer; }
+.node {
+  cursor: pointer;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.15s ease;
+}
 
 .node .shape {
   fill: #fff;
   stroke: var(--accent-dark);
-  stroke-width: 2;
+  stroke-width: 1.5;
+  transition: fill 0.15s ease, stroke 0.15s ease, filter 0.15s ease;
 }
 
 .node.agreement .shape {
@@ -308,17 +355,27 @@ svg.diagram { width: 100%; height: auto; }
 .node .label {
   fill: var(--text);
   font-size: 15px;
+  font-weight: 500;
   font-family: inherit;
   text-anchor: middle;
+  transition: fill 0.15s ease;
 }
 
 .node.agreement .label { fill: var(--accent-dark); }
 
-.node:hover .shape { stroke-width: 3; }
+.node:hover {
+  transform: translateY(-2px);
+}
+
+.node:hover .shape {
+  stroke-width: 2.5;
+  filter: drop-shadow(0 3px 6px rgba(11, 73, 98, 0.2));
+}
 
 .node.selected .shape {
   fill: var(--accent-dark);
   stroke: var(--accent-dark);
+  filter: drop-shadow(0 3px 6px rgba(11, 73, 98, 0.28));
 }
 
 .node.selected .label { fill: #fff; }
@@ -326,8 +383,18 @@ svg.diagram { width: 100%; height: auto; }
 .node:focus { outline: none; }
 
 .node:focus-visible .shape {
-  outline: 3px solid var(--accent-orange);
+  outline: 3px solid var(--accent-dark);
   outline-offset: 2px;
+}
+
+/* Small corner marker on nodes with documented case studies, instead of
+   recoloring the node itself, so the base palette stays consistent. */
+.case-dot {
+  fill: var(--accent-orange);
+  stroke: var(--bg-card);
+  stroke-width: 2;
+  pointer-events: none;
+  transition: stroke 0.15s ease;
 }
 
 .connector {
@@ -340,13 +407,91 @@ svg.diagram { width: 100%; height: auto; }
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1rem 1.25rem;
-  margin-top: 1rem;
+  padding: 1.25rem 1.5rem;
+  margin-top: 1.25rem;
 }
 
 .diagram-panel h3 { margin-top: 0; }
 
 .panel-placeholder { color: var(--text-muted); margin: 0; }
+
+.stack-note {
+  background: var(--accent-tint);
+  border-left: 3px solid var(--accent);
+  padding: 0.6rem 0.9rem;
+  border-radius: 0 4px 4px 0;
+  margin: 0.6rem 0;
+  font-size: 0.95rem;
+}
+
+.example-doc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.3rem 0 0;
+}
+
+.example-doc-list li { margin: 0.3rem 0; }
+
+.example-doc-empty {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.case-study-group { margin-top: 0.4rem; }
+
+.case-study-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  text-align: left;
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--accent-dark);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.6rem 0.9rem;
+  margin: 0.4rem 0;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.case-study-toggle::before {
+  content: "+";
+  color: var(--accent);
+  font-weight: 700;
+  flex: none;
+  width: 1em;
+}
+
+.case-study-toggle[aria-expanded="true"]::before { content: "\2212"; }
+
+.case-study-toggle:hover {
+  border-color: var(--accent);
+  background: var(--accent-tint);
+}
+
+.case-study-toggle:focus-visible {
+  outline: 2px solid var(--accent-orange);
+  outline-offset: 2px;
+}
+
+.case-study-body {
+  border-left: 3px solid var(--accent);
+  padding: 0.6rem 0.9rem;
+  margin: 0 0 0.5rem 0.4rem;
+  font-size: 0.95rem;
+}
+
+.case-study-body[hidden] { display: none; }
+
+.case-study-stat {
+  font-weight: 700;
+  color: var(--accent-dark);
+  margin: 0 0 0.4rem;
+}
 
 /* ---------- resources ---------- */
 
@@ -396,16 +541,6 @@ footer {
   color: var(--accent-dark);
 }
 
-/* ---------- utility ---------- */
-
-.visually-hidden {
-  position: absolute;
-  width: 1px; height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
-}
-
 /* ---------- responsive ---------- */
 
 @media (max-width: 640px) {
@@ -416,5 +551,5 @@ footer {
   .diagram-wide { display: none; }
   .diagram-narrow { display: block; }
   details .details-body { padding-left: 1.5rem; }
-  .tabs { grid-template-columns: repeat(2, 1fr); }
+  .tabs { grid-template-columns: repeat(3, 1fr); }
 }
