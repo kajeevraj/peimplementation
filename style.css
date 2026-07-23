@@ -1,0 +1,420 @@
+/* ============================================================
+   HIV program data sharing guide: stylesheet
+   Organized top to bottom: variables, base, layout, type,
+   disclosure (details/summary), diagram, tables/lists, footer.
+   ============================================================ */
+
+:root {
+  --accent: #09839f;
+  --accent-dark: #0b4962;
+  --accent-tint: #dee8e8;
+  --accent-orange: #eb6b02;
+  --text: #404040;
+  --text-muted: #666666;
+  --border: #dee8e8;
+  --bg: #f8f9fa;
+  --bg-card: #ffffff;
+  --radius: 12px;
+  --radius-pill: 999px;
+  --max-width: 960px;
+  --space: 1.25rem;
+  font-size: 17px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.55;
+}
+
+a { color: var(--accent-dark); }
+a:hover, a:focus { color: var(--accent); }
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* ---------- header & nav ---------- */
+
+header.site-header {
+  background: var(--accent-dark);
+  color: #fff;
+  padding: 2.5rem 0 2rem;
+}
+
+header.site-header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+header.site-header p {
+  margin: 0;
+  color: #b7cdd6;
+  max-width: 60ch;
+}
+
+nav.section-nav {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+}
+
+button.tab {
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 500;
+  background: var(--accent-tint);
+  border: none;
+  border-radius: var(--radius-pill);
+  color: var(--accent-dark);
+  padding: 0.6rem 0.75rem;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.4rem;
+  line-height: 1.25;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+button.tab:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+button.tab:focus-visible {
+  outline: 2px solid var(--accent-orange);
+  outline-offset: 2px;
+}
+
+button.tab[aria-selected="true"] {
+  color: #fff;
+  background: var(--accent-dark);
+  font-weight: 600;
+}
+
+/* ---------- sections ---------- */
+
+main { padding-bottom: 2rem; }
+
+section {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+section:last-of-type { border-bottom: none; }
+
+section h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem;
+  color: var(--accent-dark);
+}
+
+section h2:focus-visible {
+  outline: 3px solid var(--accent-orange);
+  outline-offset: 4px;
+}
+
+.section-number {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.section-number::before {
+  content: "";
+  display: inline-block;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--accent-orange);
+  flex: none;
+}
+
+.summary-text {
+  font-size: 1.08rem;
+  max-width: 62ch;
+}
+
+h3 { font-size: 1.15rem; margin: 1.75rem 0 0.5rem; }
+h4 { font-size: 0.95rem; margin: 0.9rem 0 0.25rem; color: var(--accent-dark); }
+
+p { margin: 0.6rem 0; }
+
+ul, ol { padding-left: 1.3rem; }
+li { margin: 0.35rem 0; }
+
+.callout-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.callout-list li {
+  background: var(--accent-tint);
+  border-left: 3px solid var(--accent);
+  padding: 0.6rem 0.9rem;
+  border-radius: 0 4px 4px 0;
+  margin: 0.5rem 0;
+}
+
+/* ---------- disclosure (details/summary) ---------- */
+
+details {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  margin: 0.75rem 0;
+  padding: 0;
+}
+
+details > summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 0.85rem 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+details > summary::-webkit-details-marker { display: none; }
+
+details > summary::before {
+  content: "+";
+  color: var(--accent);
+  font-weight: 700;
+  flex: none;
+  width: 1em;
+}
+
+details[open] > summary::before { content: "\2212"; }
+
+details > summary:hover,
+details > summary:focus-visible {
+  color: var(--accent-dark);
+}
+
+details .details-body {
+  padding: 0 1rem 1rem 2.4rem;
+  border-top: 1px solid var(--border);
+  margin-top: -1px;
+  padding-top: 0.75rem;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: var(--accent-tint);
+  color: var(--accent-dark);
+  border-radius: 3px;
+  padding: 0.1rem 0.4rem;
+  margin-right: 0.4rem;
+}
+
+.source-line {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* ---------- diagram ---------- */
+
+.diagram-intro {
+  max-width: 62ch;
+}
+
+.diagram-wrap {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.diagram-legend {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.legend-swatch {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.35rem;
+  vertical-align: -2px;
+  border: 2px solid var(--accent-dark);
+  border-radius: 3px;
+}
+
+.legend-swatch.pill {
+  border-radius: 999px;
+  background: var(--accent-tint);
+  border-color: var(--accent);
+}
+
+svg.diagram { width: 100%; height: auto; }
+
+.diagram-wide { display: block; }
+.diagram-narrow { display: none; }
+
+.node { cursor: pointer; }
+
+.node .shape {
+  fill: #fff;
+  stroke: var(--accent-dark);
+  stroke-width: 2;
+}
+
+.node.agreement .shape {
+  fill: var(--accent-tint);
+  stroke: var(--accent);
+}
+
+.node .label {
+  fill: var(--text);
+  font-size: 15px;
+  font-family: inherit;
+  text-anchor: middle;
+}
+
+.node.agreement .label { fill: var(--accent-dark); }
+
+.node:hover .shape { stroke-width: 3; }
+
+.node.selected .shape {
+  fill: var(--accent-dark);
+  stroke: var(--accent-dark);
+}
+
+.node.selected .label { fill: #fff; }
+
+.node:focus { outline: none; }
+
+.node:focus-visible .shape {
+  outline: 3px solid var(--accent-orange);
+  outline-offset: 2px;
+}
+
+.connector {
+  stroke: var(--text-muted);
+  stroke-width: 1.5;
+  fill: none;
+}
+
+.diagram-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  margin-top: 1rem;
+}
+
+.diagram-panel h3 { margin-top: 0; }
+
+.panel-placeholder { color: var(--text-muted); margin: 0; }
+
+/* ---------- resources ---------- */
+
+.resource-group ul { list-style: none; padding: 0; margin: 0; }
+.resource-group li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.resource-group li:last-child { border-bottom: none; }
+.checked-date { display: block; font-size: 0.82rem; color: var(--text-muted); }
+
+/* ---------- footer ---------- */
+
+footer {
+  padding: 1.5rem 0 3rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--border);
+}
+
+.resources-link {
+  margin-top: 1rem;
+}
+
+.resources-link a {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent-dark);
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-pill);
+  text-decoration: none;
+}
+
+.resources-link a:hover,
+.resources-link a:focus {
+  background: var(--accent);
+  color: #fff;
+}
+
+.back-link {
+  font-size: 0.9rem;
+}
+
+.back-link a {
+  color: var(--accent-dark);
+}
+
+/* ---------- utility ---------- */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 640px) {
+  :root { font-size: 16px; }
+  header.site-header { padding: 2rem 0 1.5rem; }
+  header.site-header h1 { font-size: 1.4rem; }
+  section { padding: 1.75rem 0; }
+  .diagram-wide { display: none; }
+  .diagram-narrow { display: block; }
+  details .details-body { padding-left: 1.5rem; }
+  .tabs { grid-template-columns: repeat(2, 1fr); }
+}
