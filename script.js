@@ -67,7 +67,7 @@ var DIAGRAM_DATA = {
     whatCovers: "Which categories of organization may receive the data, what may be shared and for what purpose, how long it lasts, and how to revoke it. A form naming only one program is the most common reason sharing stalls later.",
     stackNote: "NASTAD suggests jurisdictions consider adding language permitting the health department to tell a testing provider whether a person who tested positive there was subsequently linked to care. Whether this is allowed depends on state and local regulation, but it is a precise example of how consent language written at the start determines what is possible later.",
     examples: [
-      { text: "A combined client consent form (being sourced separately)" }
+      { text: "A combined client consent form (none public)" }
     ],
     caseStudies: [
       {
@@ -89,7 +89,7 @@ var DIAGRAM_DATA = {
     whoSigns: "The health department and each funded provider.",
     whatCovers: "Who may access records, required security practices, and what happens to data if funding ends.",
     examples: [
-      { text: "A subrecipient agreement with data clauses (being sourced separately)" }
+      { text: "A subrecipient agreement with data clauses (none public)" }
     ],
     caseStudies: [
       {
@@ -111,7 +111,7 @@ var DIAGRAM_DATA = {
     whoSigns: "The health department and the outside provider.",
     whatCovers: "Which clients and which fields are in scope, tied to the client consent already on file.",
     examples: [
-      { text: "A use agreement (being sourced separately)" }
+      { text: "A use agreement (none public)" }
     ]
   },
   "vendor-contract": {
