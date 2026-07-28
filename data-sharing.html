@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Sharing — Joint Eligibility Playbook</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <h1>Joint eligibility playbook</h1>
+    <p>A best-practices resource for Ryan White HIV/AIDS Program leaders, built one approved topic at a time.</p>
+  </div>
+</header>
+
+<nav class="site-nav" aria-label="Playbook topics">
+  <ul class="nav-list container">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="joint-eligibility.html">Joint Eligibility <span class="nav-tag">Hold</span></a></li>
+    <li><a href="data-sharing.html" aria-current="page">Data Sharing</a></li>
+    <li><a href="electronic-sources.html">Electronic Sources <span class="nav-tag">Hold</span></a></li>
+    <li><a href="resources.html">Resources <span class="nav-tag">Hold</span></a></li>
+    <li><a href="about.html">About <span class="nav-tag">Hold</span></a></li>
+  </ul>
+</nav>
+
+<main class="container">
+  <div class="page-head">
+    <span class="status-badge status-active">Active</span>
+    <h2>Data Sharing</h2>
+    <p class="summary-text">Agreement types, who to include, what programs and data systems are in scope, and how to address barriers. Built only from items tagged APPROVED or APPROVED, VERBATIM; everything else below is shown as a pending state.</p>
+  </div>
+
+  <h3>2.0 Intro</h3>
+  <div class="empty-state">
+    <span class="empty-state-tag tag-input">Needs Kabir input</span>
+    <p class="empty-state-note">Short introduction: what data sharing is, why it matters, how it sits under Joint Eligibility. Not yet written.</p>
+  </div>
+
+  <h3>2.1 Scope</h3>
+  <div class="empty-state">
+    <span class="empty-state-tag tag-input">Needs Kabir input</span>
+    <p class="empty-state-note">Which programs and agencies are in scope, which data systems are used, and what agreements must be created or updated. Not yet written.</p>
+  </div>
+
+  <h3>2.2 The agreements</h3>
+
+  <div class="diagram-wrap">
+    <div class="diagram-legend">
+      <span><span class="legend-swatch"></span>Party</span>
+      <span><span class="legend-swatch pill"></span>Agreement</span>
+      <span><span class="legend-swatch case"></span>Has approved case studies</span>
+    </div>
+
+    <!-- Wide diagram: horizontal branches -->
+    <svg class="diagram diagram-wide" viewBox="0 0 960 370" role="group" aria-label="Diagram of data sharing relationships and agreements, wide layout">
+      <title>Data sharing relationships: client, health department, and four kinds of partner, connected by five kinds of agreement</title>
+      <line class="connector" x1="480" y1="54" x2="480" y2="84"></line>
+      <line class="connector" x1="480" y1="124" x2="480" y2="154"></line>
+      <line class="connector" x1="480" y1="198" x2="480" y2="218"></line>
+      <line class="connector" x1="120" y1="218" x2="840" y2="218"></line>
+      <line class="connector" x1="120" y1="218" x2="120" y2="238"></line>
+      <line class="connector" x1="360" y1="218" x2="360" y2="238"></line>
+      <line class="connector" x1="600" y1="218" x2="600" y2="238"></line>
+      <line class="connector" x1="840" y1="218" x2="840" y2="238"></line>
+      <line class="connector" x1="120" y1="278" x2="120" y2="306"></line>
+      <line class="connector" x1="360" y1="278" x2="360" y2="306"></line>
+      <line class="connector" x1="600" y1="278" x2="600" y2="306"></line>
+      <line class="connector" x1="840" y1="278" x2="840" y2="306"></line>
+
+      <g class="node party" tabindex="0" role="button" aria-pressed="false" aria-label="Client" data-key="client">
+        <rect class="shape" x="400" y="10" width="160" height="44" rx="6"></rect>
+        <text class="label" x="480" y="37">Client</text>
+      </g>
+
+      <g class="node agreement" tabindex="0" role="button" aria-pressed="false" aria-label="Client consent form" data-key="consent">
+        <rect class="shape" x="380" y="84" width="200" height="40" rx="20"></rect>
+        <text class="label" x="480" y="100"><tspan x="480" dy="0">Client consent</tspan><tspan x="480" dy="18">form</tspan></text>
+      </g>
+
+      <g class="node party" tabindex="0" role="button" aria-pressed="false" aria-label="Health department" data-key="health-department">
+        <rect class="shape" x="380" y="154" width="200" height="44" rx="6"></rect>
+        <text class="label" x="480" y="181">Health department</text>
+      </g>
+
+      <g class="node agreement" tabindex="0" role="button" aria-pressed="false" aria-label="Subrecipient agreement" data-key="subrecipient">
+        <rect class="shape" x="20" y="238" width="200" height="40" rx="20"></rect>
+        <text class="label" x="120" y="254"><tspan x="120" dy="0">Subrecipient</tspan><tspan x="120" dy="18">agreement</tspan></text>
+      </g>
+
+      <g class="node agreement" tabindex="0" role="button" aria-pressed="false" aria-label="Use agreement" data-key="use-agreement">
+        <rect class="shape" x="260" y="238" width="200" height="40" rx="20"></rect>
+        <text class="label" x="360" y="263">Use agreement</text>
+      </g>
+
+      <g class="node agreement" tabindex="0" role="button" aria-pressed="false" aria-label="Contract, including business associate agreement provisions" data-key="vendor-contract">
+        <rect class="shape" x="500" y="238" width="200" height="40" rx="20"></rect>
+        <text class="label" x="600" y="254"><tspan x="600" dy="0">Contract,</tspan><tspan x="600" dy="18">including BAA</tspan></text>
+      </g>
+
+      <g class="node agreement" tabindex="0" role="button" aria-pressed="false" aria-label="Data sharing agreement" data-key="data-sharing">
+        <rect class="shape" x="740" y="238" width="200" height="40" rx="20"></rect>
+        <text class="label" x="840" y="254"><tspan x="840" dy="0">Data sharing</tspan><tspan x="840" dy="18">agreement</tspan></text>
+      </g>
+
+      <g class="node party" tabindex="0" role="button" aria-pressed="false" aria-label="Funded providers" data-key="funded-providers">
+        <rect class="shape" x="40" y="306" width="160" height="44" rx="6"></rect>
+        <text class="label" x="120" y="324"><tspan x="120" dy="0">Funded</tspan><tspan x="120" dy="18">providers</tspan></text>
+      </g>
+
+      <g class="node party" tabindex="0" role="button" aria-pressed="false" aria-label="Unfunded providers" data-key="unfunded-providers">
+        <rect class="shape" x="280" y="306" width="160" height="44" rx="6"></rect>
+        <text class="label" x="360" y="324"><tspan x="360" dy="0">Unfunded</tspan><tspan x="360" dy="18">providers</tspan></text>
+      </g>
+
+      <g class="node party" tabindex="0" role="button" aria-pressed="false" aria-label="Vendors" data-key="vendors">
+        <rect class="shape" x="520" y="306" width="160" height="44" rx="6"></rect>
+        <text class="label" x="600" y="333">Vendors</text>
+      </g>
+
+      <g class="node party" tabindex="0" role="button" aria-pressed="false" aria-label="Other agencies" data-key="other-agencies">
+        <rect class="shape" x="760" y="306" width="160" height="44" rx="6"></rect>
+        <text class="label" x="840" y="324"><tspan x="840" dy="0">Other</tspan><tspan x="840" dy="18">agencies</tspan></text>
+      </g>
+    </svg>
+
+    <!-- Narrow diagram: stacked branches -->
+    <svg class="diagram diagram-narrow" viewBox="0 0 300 780" role="group" aria-label="Diagram of data sharing relationships and agreements, stacked layout">
+      <title>Data sharing relationships: client, health department, and four kinds of partner, connected by five kinds of agreement</title>
+      <line class="connector" x1="150" y1="54" x2="150" y2="84"></line>
+      <line class="connector" x1="150" y1="124" x2="150" y2="154"></line>
+      <line class="connector" x1="150" y1="198" x2="150" y2="228"></line>
+      <line class="connector" x1="150" y1="268" x2="150" y2="296"></line>
+      <line class="connector" x1="150" y1="340" x2="150" y2="368"></line>
+      <line class="connector" x1="150" y1="408" x2="150" y2="436"></line>
+      <line class="connector" x1="150" y1="480" x2="150" y2="508"></line>
+      <line class="connector" x1="150" y1="548" x2="150" y2="576"></line>
+      <line class="connector" x1="150" y1="620" x2="150" y2="648"></line>
+      <line class="connector" x1="150" y1="688" x2="150" y2="716"></line>
+
+      <g class="node party" tabindex="0" role="button" aria-pressed="false" aria-label="Client" data-key="client">
+        <rect class="shape" x="70" y="10" width="160" height="44" rx="6"></rect>
+        <text class="label" x="150" y="37">Client</text>
+      </g>
+
+      <g class="node agreement" tabindex="0" role="button" aria-pressed="false" aria-label="Client consent form" data-key="consent">
+        <rect class="shape" x="50" y="84" width="200" height="40" rx="20"></rect>
+        <text class="label" x="150" y="100"><tspan x="150" dy="0">Client consent</tspan><tspan x="150" dy="18">form</tspan></text>
+      </g>
+
+      <g class="node party" tabindex="0" role="button" aria-pressed="false" aria-label="Health department" data-key="health-department">
+        <rect class="shape" x="50" y="154" width="200" height="44" rx="6"></rect>
+        <text class="label" x="150" y="181">Health department</text>
+      </g>
+
+      <g class="node agreement" tabindex="0" role="button" aria-pressed="false" aria-label="Subrecipient agreement" data-key="subrecipient">
+        <rect class="shape" x="50" y="228" width="200" height="40" rx="20"></rect>
+        <text class="label" x="150" y="244"><tspan x="150" dy="0">Subrecipient</tspan><tspan x="150" dy="18">agreement</tspan></text>
+      </g>
+
+      <g class="node party" tabindex="0" role="button" aria-pressed="false" aria-label="Funded providers" data-key="funded-providers">
+        <rect class="shape" x="70" y="296" width="160" height="44" rx="6"></rect>
+        <text class="label" x="150" y="314"><tspan x="150" dy="0">Funded</tspan><tspan x="150" dy="18">providers</tspan></text>
+      </g>
+
+      <g class="node agreement" tabindex="0" role="button" aria-pressed="false" aria-label="Use agreement" data-key="use-agreement">
+        <rect class="shape" x="50" y="368" width="200" height="40" rx="20"></rect>
+        <text class="label" x="150" y="393">Use agreement</text>
+      </g>
+
+      <g class="node party" tabindex="0" role="button" aria-pressed="false" aria-label="Unfunded providers" data-key="unfunded-providers">
+        <rect class="shape" x="70" y="436" width="160" height="44" rx="6"></rect>
+        <text class="label" x="150" y="454"><tspan x="150" dy="0">Unfunded</tspan><tspan x="150" dy="18">providers</tspan></text>
+      </g>
+
+      <g class="node agreement" tabindex="0" role="button" aria-pressed="false" aria-label="Contract, including business associate agreement provisions" data-key="vendor-contract">
+        <rect class="shape" x="50" y="508" width="200" height="40" rx="20"></rect>
+        <text class="label" x="150" y="524"><tspan x="150" dy="0">Contract,</tspan><tspan x="150" dy="18">including BAA</tspan></text>
+      </g>
+
+      <g class="node party" tabindex="0" role="button" aria-pressed="false" aria-label="Vendors" data-key="vendors">
+        <rect class="shape" x="70" y="576" width="160" height="44" rx="6"></rect>
+        <text class="label" x="150" y="603">Vendors</text>
+      </g>
+
+      <g class="node agreement" tabindex="0" role="button" aria-pressed="false" aria-label="Data sharing agreement" data-key="data-sharing">
+        <rect class="shape" x="50" y="648" width="200" height="40" rx="20"></rect>
+        <text class="label" x="150" y="664"><tspan x="150" dy="0">Data sharing</tspan><tspan x="150" dy="18">agreement</tspan></text>
+      </g>
+
+      <g class="node party" tabindex="0" role="button" aria-pressed="false" aria-label="Other agencies" data-key="other-agencies">
+        <rect class="shape" x="70" y="716" width="160" height="44" rx="6"></rect>
+        <text class="label" x="150" y="734"><tspan x="150" dy="0">Other</tspan><tspan x="150" dy="18">agencies</tspan></text>
+      </g>
+    </svg>
+
+    <div class="diagram-panel" id="diagram-panel" aria-live="polite" data-active-key="">
+      <p class="panel-placeholder">Select a box or pill in either diagram above to see its status.</p>
+    </div>
+  </div>
+
+  <div class="empty-state">
+    <span class="empty-state-tag tag-input">Needs Kabir input</span>
+    <p class="empty-state-note">Named specifics Bob requested: vendor types (pharmacy benefit managers, insurance benefit managers, software vendors) and data-system types (Medicaid verification, surveillance and lab feeds, electronic health records). Which specifics appear, and where, is pending approval.</p>
+  </div>
+
+  <h3>2.3 Case studies — Data Sharing</h3>
+  <p class="summary-text">Only APPROVED case studies appear on the diagram with an outline. None are approved yet. Listed below are the candidates and what each is waiting on.</p>
+  <ul class="empty-state-list">
+    <li>
+      <span class="place">District of Columbia, Maryland, and Virginia</span>
+      <span class="empty-state-tag tag-draft">DRAFT, NEEDS REVIEW</span>
+      <span class="attached">Attached to: Data sharing agreement; Other agencies party</span>
+    </li>
+    <li>
+      <span class="place">North Carolina</span>
+      <span class="empty-state-tag tag-draft">DRAFT, NEEDS REVIEW</span>
+      <span class="attached">Attached to: Data sharing agreement; Client consent form; Subrecipient agreement (each piece reviewed separately)</span>
+    </li>
+    <li>
+      <span class="place">Louisiana</span>
+      <span class="empty-state-tag tag-draft">DRAFT, NEEDS REVIEW</span>
+      <span class="attached">Attached to: Data sharing agreement; Health department party</span>
+    </li>
+    <li>
+      <span class="place">Florida statewide pathway</span>
+      <span class="empty-state-tag tag-draft">DRAFT, NEEDS REVIEW</span>
+      <span class="attached">Attached to: Data sharing agreement</span>
+    </li>
+    <li>
+      <span class="place">Wisconsin</span>
+      <span class="empty-state-tag tag-draft">DRAFT, NEEDS REVIEW</span>
+      <span class="attached">Attached to: Data sharing agreement</span>
+    </li>
+    <li>
+      <span class="place">Washington</span>
+      <span class="empty-state-tag tag-draft">DRAFT, NEEDS REVIEW</span>
+      <span class="attached">Attached to: Contract, including BAA</span>
+    </li>
+    <li>
+      <span class="place">Miami-Dade County, Florida</span>
+      <span class="empty-state-tag tag-draft">DRAFT, NEEDS REVIEW</span>
+      <span class="attached">Attached to: Client consent form</span>
+    </li>
+    <li>
+      <span class="place">Broward County, Florida</span>
+      <span class="empty-state-tag tag-draft">DRAFT, NEEDS REVIEW</span>
+      <span class="attached">Attached to: Subrecipient agreement</span>
+    </li>
+    <li>
+      <span class="place">Illinois</span>
+      <span class="empty-state-tag tag-input">NEEDS KABIR INPUT</span>
+      <span class="attached">Attached to: Contract, including BAA. No material yet.</span>
+    </li>
+  </ul>
+
+  <h3>2.4 Barriers and how to address them</h3>
+  <div class="empty-state">
+    <span class="empty-state-tag tag-draft">DRAFT, NEEDS REVIEW</span>
+    <p class="empty-state-note">Candidate barriers, each waiting on approval or cut:</p>
+    <ul class="empty-state-list">
+      <li><span class="place">Joint eligibility is not joint certification</span></li>
+      <li><span class="place">Establishing and maintaining data sharing agreements is genuinely hard</span></li>
+      <li><span class="place">Identifying the right gatekeepers takes time</span></li>
+      <li><span class="place">Legal counsel cannot agree on a single release of information</span></li>
+      <li><span class="place">Privacy segregation has a real cost</span></li>
+      <li><span class="place">Most states share only limited data with Medicaid</span></li>
+      <li><span class="place">The law, and your own agency policies, can be the obstacle</span></li>
+      <li><span class="place">Trust, not legality, is often the real blocker</span></li>
+      <li><span class="place">Hard partners: clinical trials, Veterans Affairs, community organizations</span></li>
+    </ul>
+  </div>
+
+  <h3>2.5 What it makes possible</h3>
+  <div class="empty-state">
+    <span class="empty-state-tag tag-draft">DRAFT, NEEDS REVIEW</span>
+    <p class="empty-state-note">Candidate benefits, each waiting on approval or cut:</p>
+    <ul class="empty-state-list">
+      <li><span class="place">Meeting the payer of last resort requirement</span></li>
+      <li><span class="place">What HRSA's expert panel reported recipients experienced</span></li>
+      <li><span class="place">Cross-jurisdiction accuracy (DC/MD/VA)</span></li>
+      <li><span class="place">Coordinated care across many agencies (Broward)</span></li>
+      <li><span class="place">Finding people who have fallen out of care</span></li>
+      <li><span class="place">Better research and outcome measurement</span></li>
+    </ul>
+  </div>
+
+  <h3>2.6 Example agreement documents</h3>
+  <ul class="empty-state-list">
+    <li>
+      <span class="place">Client consent form</span>
+      <span class="empty-state-tag tag-input">NEEDS KABIR INPUT</span>
+      <span class="attached">Kabir providing.</span>
+    </li>
+    <li>
+      <span class="place">Subrecipient agreement</span>
+      <span class="empty-state-tag tag-input">NEEDS KABIR INPUT</span>
+      <span class="attached">Kabir providing.</span>
+    </li>
+    <li>
+      <span class="place">Use agreement</span>
+      <span class="empty-state-tag tag-input">NEEDS KABIR INPUT</span>
+      <span class="attached">Kabir providing.</span>
+    </li>
+    <li>
+      <span class="place">Contract, including BAA (business associate provisions)</span>
+      <span class="empty-state-tag tag-draft">DRAFT, NEEDS REVIEW</span>
+      <span class="attached">HHS public sample allowed once the panel is approved.</span>
+    </li>
+    <li>
+      <span class="place">Data sharing agreement</span>
+      <span class="empty-state-tag tag-draft">DRAFT, NEEDS REVIEW</span>
+      <span class="attached">NASTAD public templates allowed once the panel is approved.</span>
+    </li>
+  </ul>
+</main>
+
+<footer>
+  <div class="container">
+    <p>Source: pages/data sharing/02-data-sharing.md. Rules: 00-global.md.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

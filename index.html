@@ -3,637 +3,69 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HIV Program Data Sharing: A Guide for Ryan White Program Leaders</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<title>Joint Eligibility Playbook</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="site-header">
   <div class="container">
-    <h1>HIV program data sharing: a guide for Ryan White program leaders</h1>
-    <p>State and city Ryan White HIV/AIDS Program offices can share client data with the organizations involved in a person's care. This guide covers how it works, what agreements it takes, what gets in the way, what it makes possible, and real examples from states that have done it.</p>
+    <h1>Joint eligibility playbook</h1>
+    <p>A best-practices resource for Ryan White HIV/AIDS Program leaders, built one approved topic at a time.</p>
   </div>
 </header>
 
-<nav class="section-nav" aria-label="Page sections">
-  <div class="container tabs" role="tablist" aria-label="Page sections">
-    <button type="button" class="tab" role="tab" id="tab-what-it-is" aria-controls="what-it-is" aria-selected="true" tabindex="0" data-tab="what-it-is">What Is Data Sharing?</button>
-    <button type="button" class="tab" role="tab" id="tab-how-it-works" aria-controls="how-it-works" aria-selected="false" tabindex="-1" data-tab="how-it-works">How It Works</button>
-    <button type="button" class="tab" role="tab" id="tab-obstacles" aria-controls="obstacles" aria-selected="false" tabindex="-1" data-tab="obstacles">What Gets in the Way?</button>
-    <button type="button" class="tab" role="tab" id="tab-benefits" aria-controls="benefits" aria-selected="false" tabindex="-1" data-tab="benefits">What It Makes Possible</button>
-    <button type="button" class="tab" role="tab" id="tab-case-studies" aria-controls="case-studies" aria-selected="false" tabindex="-1" data-tab="case-studies">Case Studies</button>
-  </div>
+<nav class="site-nav" aria-label="Playbook topics">
+  <ul class="nav-list container">
+    <li><a href="index.html" aria-current="page">Home</a></li>
+    <li><a href="joint-eligibility.html">Joint Eligibility <span class="nav-tag">Hold</span></a></li>
+    <li><a href="data-sharing.html">Data Sharing</a></li>
+    <li><a href="electronic-sources.html">Electronic Sources <span class="nav-tag">Hold</span></a></li>
+    <li><a href="resources.html">Resources <span class="nav-tag">Hold</span></a></li>
+    <li><a href="about.html">About <span class="nav-tag">Hold</span></a></li>
+  </ul>
 </nav>
 
 <main class="container">
+  <div class="page-head">
+    <h2>Three topics, built one approval at a time</h2>
+    <p class="summary-text">This playbook covers joint eligibility, data sharing, and the use of electronic data sources. Each topic page is built only from content tagged APPROVED or APPROVED, VERBATIM. Everything else is shown as a labelled pending state until it is reviewed.</p>
+  </div>
+
+  <ul class="empty-state-list" style="max-width: 62ch;">
+    <li>
+      <span class="place">Joint Eligibility</span>
+      <span class="empty-state-tag tag-hold">Hold</span>
+      <span class="attached">Scaffold only. No content on the site yet.</span>
+    </li>
+    <li>
+      <span class="place">Data Sharing</span>
+      <span class="empty-state-tag tag-draft" style="background: var(--status-active-bg); color: var(--status-active-text);">Active</span>
+      <span class="attached">The diagram and its legend are built. Panel text and case studies are pending approval.</span>
+    </li>
+    <li>
+      <span class="place">Electronic Sources</span>
+      <span class="empty-state-tag tag-hold">Hold</span>
+      <span class="attached">Scaffold only. No content on the site yet.</span>
+    </li>
+    <li>
+      <span class="place">Resources</span>
+      <span class="empty-state-tag tag-hold">Hold</span>
+      <span class="attached">Shared across topics. Not yet written.</span>
+    </li>
+    <li>
+      <span class="place">About</span>
+      <span class="empty-state-tag tag-hold">Hold</span>
+      <span class="attached">How to use this playbook. Not yet written.</span>
+    </li>
+  </ul>
+</main>
+
+<footer>
+  <div class="container">
+    <p>Source rules: 00-global.md. Topic content: pages/.</p>
+  </div>
+</footer>
 
-  <!-- ============ SECTION 1 ============ -->
-  <section id="what-it-is" role="tabpanel" aria-labelledby="tab-what-it-is">
-    <span class="section-number">Section 1</span>
-    <h2 id="what-it-is-h">What Is Data Sharing?</h2>
-
-    <p class="summary-text">Data sharing means the organizations involved in one person's HIV care can securely work from the same client record, instead of each keeping its own separate copy.</p>
-
-    <div class="stack-note">
-      <p><strong>Data sharing is federal policy, not a vendor idea.</strong> A Health Resources and Services Administration (HRSA) Policy Clarification Notice, PCN 21-02, states that recipients and subrecipients are encouraged to develop data-sharing strategies with other recipients and relevant entities to reduce administrative burden across programs. The same notice eliminated the six-month recertification requirement in favor of recipient-set timeframes, affirmed that immigration status is irrelevant to eligibility, and confirmed that HRSA does not require documentation in person or notarized.</p>
-      <p class="source-line">Source: HRSA Policy Clarification Notice 21-02, Determining Client Eligibility and Payor of Last Resort.</p>
-    </div>
-
-    <p>HRSA expects every recipient and subrecipient to establish, implement, and monitor policies for determining client eligibility based on HIV status, income, and residency, including documentation requirements. Those processes often delay care, create barriers for clients, cause retention problems, and create inefficiencies for staff and providers. The illustration below shows what that can look like for one client.</p>
-
-    <h3 id="client-journey-h">The client journey</h3>
-    <p>Daniel is a fictional client, used here to illustrate what changes when systems share data.</p>
-
-    <h4>Without shared data</h4>
-    <ol>
-      <li>Daniel applies for medication assistance at Agency A. It requires an eligibility application with proof of diagnosis, income, and residency.</li>
-      <li>He applies for care services at the same agency. It requires a <strong>second</strong> eligibility application, with proof of diagnosis, income, and residency again.</li>
-      <li>He loses his job. Updated proof of income is required <strong>in two systems</strong>.</li>
-      <li>He applies for housing services at Agency C. It requires a <strong>third</strong> eligibility application, with proof of diagnosis, income, and residency once more.</li>
-      <li>He recertifies to continue receiving care. Recertification is required <strong>with all three systems</strong>.</li>
-    </ol>
-
-    <h4>With shared data</h4>
-    <ol>
-      <li>Daniel applies for medication assistance at Agency A. He completes <strong>one</strong> unified eligibility application with proof of diagnosis, income, and residency.</li>
-      <li>He applies for care services at Agency B. Agency B looks up eligibility already verified by Agency A, and his care starts sooner.</li>
-      <li>He loses his job. Updated proof of income is required <strong>in one system</strong>.</li>
-      <li>He applies for housing services at Agency C. Agency C looks up eligibility already verified through Agency A, and the application moves faster.</li>
-      <li>He recertifies. Recertification is required <strong>in one system</strong>.</li>
-    </ol>
-    <p>Three applications and three recertifications become one of each.</p>
-
-    <details>
-      <summary>Who is involved: the client, the health department, and four kinds of partner</summary>
-      <div class="details-body">
-        <ul>
-          <li><strong>The client.</strong> The person receiving care. The only one who can authorize their information to be shared.</li>
-          <li><strong>The health department.</strong> The state, county, or city agency that receives the federal grant. It holds the central client record and decides who gets access to what. Often called the recipient.</li>
-          <li><strong>Funded providers.</strong> Clinics and community agencies the program pays to deliver services. Also called subrecipients.</li>
-          <li><strong>Unfunded providers.</strong> Providers treating the same clients who receive no program funding.</li>
-          <li><strong>Vendors.</strong> Companies working for the health department, such as pharmacy benefit managers, insurance benefit managers, and software vendors.</li>
-          <li><strong>Peer agencies.</strong> Other government programs such as Medicaid, Ryan White Part A programs, and HIV surveillance.</li>
-        </ul>
-      </div>
-    </details>
-
-    <details>
-      <summary>Background: the Ryan White HIV/AIDS Program and payer of last resort</summary>
-      <div class="details-body">
-        <p>The Ryan White HIV/AIDS Program is the federal program that pays for medical care and support services for low-income people living with HIV who have no other way to pay. It is administered by HRSA. Money flows to state and local health departments, which contract with clinics and community agencies to deliver services.</p>
-        <p>Ryan White is required to be the payer of last resort. It can only pay after Medicaid, Medicare, private insurance, or any other coverage has been used. This makes checking for other coverage a legal requirement, not an optional efficiency. HRSA Policy Clarification Notice 21-02 sets out the eligibility and payer of last resort rules.</p>
-      </div>
-    </details>
-
-    <details>
-      <summary>Benefit by audience: state health department, Part A program, case managers, and clients</summary>
-      <div class="details-body">
-        <h4>For the state health department</h4>
-        <ul>
-          <li>It is the grant recipient and accountable for federal reporting. Sharing means the annual report is built from one dataset rather than assembled from many.</li>
-          <li>Payer of last resort compliance is a legal requirement, and confirming other coverage at scale is only practical through automated exchange.</li>
-          <li>Matching against surveillance data is what makes it possible to know who has fallen out of care.</li>
-          <li>A written agreement protects the program through staff turnover, because responsibilities become job-specific rather than person-specific.</li>
-        </ul>
-        <h4>For the Ryan White Part A program</h4>
-        <ul>
-          <li>Determinations get faster when income, coverage, and diagnosis can be verified electronically instead of on paper.</li>
-          <li>Clients moving between agencies do not start over.</li>
-          <li>The program learns which of its clients are not in care, from a match it could not perform alone, and gets linkage outcomes back for its own clients only.</li>
-          <li>Scoped returns mean participating does not mean surrendering client data to everyone else in the network.</li>
-        </ul>
-        <h4>For case managers</h4>
-        <p>Less time searching for information, more time engaging with clients.</p>
-        <h4>For clients</h4>
-        <ul>
-          <li>Less paperwork, fewer delays, more consistent and continuous care.</li>
-          <li>Not re-proving the same facts to every agency. Reducing administrative burden on clients is a stated federal objective, not a vendor claim.</li>
-          <li>Faster access to medication and services.</li>
-          <li>Care teams at different organizations see the same picture.</li>
-          <li>If they fall out of care, someone may notice and reach out.</li>
-          <li>Meaningful control: consent is specific, time-limited, and revocable, and access freezes rather than continuing when a release ends.</li>
-          <li>The information already moves between organizations by fax, mail, and phone. Sharing electronically replaces that with a documented, permission-scoped, auditable flow.</li>
-        </ul>
-        <p>HRSA's expert panel noted that when technology is adopted, clients as well as staff need training, and some clients may not have internet access or may prefer not to use it. A client section assuming everyone wants a portal would be wrong.</p>
-      </div>
-    </details>
-  </section>
-
-  <!-- ============ SECTION 2 ============ -->
-  <section id="how-it-works" role="tabpanel" aria-labelledby="tab-how-it-works" hidden>
-    <span class="section-number">Section 2</span>
-    <h2 id="how-it-works-h">How It Works</h2>
-
-    <p class="summary-text">A client signs a consent form, sometimes called a release of information, permitting their record to move beyond the organization that collected it. That consent flows to the health department, which holds the central record. The health department then shares data outward with its partners, and each type of partner requires a different kind of agreement.</p>
-
-    <div class="diagram-wrap">
-      <div class="diagram-legend">
-        <span><span class="legend-swatch"></span>Party</span>
-        <span><span class="legend-swatch pill"></span>Agreement</span>
-        <span><span class="legend-swatch case"></span>Has case studies</span>
-      </div>
-
-      <!-- Wide diagram: horizontal branches -->
-      <svg class="diagram diagram-wide" viewBox="0 0 960 370" role="group" aria-label="Diagram of data sharing relationships and agreements, wide layout">
-        <title>Data sharing relationships: client, health department, and four kinds of partner, connected by five kinds of agreement</title>
-        <line class="connector" x1="480" y1="54" x2="480" y2="84"></line>
-        <line class="connector" x1="480" y1="124" x2="480" y2="154"></line>
-        <line class="connector" x1="480" y1="198" x2="480" y2="218"></line>
-        <line class="connector" x1="120" y1="218" x2="840" y2="218"></line>
-        <line class="connector" x1="120" y1="218" x2="120" y2="238"></line>
-        <line class="connector" x1="360" y1="218" x2="360" y2="238"></line>
-        <line class="connector" x1="600" y1="218" x2="600" y2="238"></line>
-        <line class="connector" x1="840" y1="218" x2="840" y2="238"></line>
-        <line class="connector" x1="120" y1="278" x2="120" y2="306"></line>
-        <line class="connector" x1="360" y1="278" x2="360" y2="306"></line>
-        <line class="connector" x1="600" y1="278" x2="600" y2="306"></line>
-        <line class="connector" x1="840" y1="278" x2="840" y2="306"></line>
-
-        <g class="node party has-cases" tabindex="0" role="button" aria-pressed="false" aria-label="Client" data-key="client">
-          <rect class="shape" x="400" y="10" width="160" height="44" rx="6"></rect>
-          <text class="label" x="480" y="37">Client</text>
-          <circle class="case-dot" cx="554" cy="16" r="5"></circle>
-        </g>
-
-        <g class="node agreement has-cases" tabindex="0" role="button" aria-pressed="false" aria-label="Client consent form" data-key="consent">
-          <rect class="shape" x="380" y="84" width="200" height="40" rx="20"></rect>
-          <text class="label" x="480" y="100"><tspan x="480" dy="0">Client consent</tspan><tspan x="480" dy="18">form</tspan></text>
-          <circle class="case-dot" cx="571" cy="91" r="5"></circle>
-        </g>
-
-        <g class="node party has-cases" tabindex="0" role="button" aria-pressed="false" aria-label="Health department" data-key="health-department">
-          <rect class="shape" x="380" y="154" width="200" height="44" rx="6"></rect>
-          <text class="label" x="480" y="181">Health department</text>
-          <circle class="case-dot" cx="574" cy="160" r="5"></circle>
-        </g>
-
-        <g class="node agreement has-cases" tabindex="0" role="button" aria-pressed="false" aria-label="Subrecipient agreement" data-key="subrecipient">
-          <rect class="shape" x="20" y="238" width="200" height="40" rx="20"></rect>
-          <text class="label" x="120" y="254"><tspan x="120" dy="0">Subrecipient</tspan><tspan x="120" dy="18">agreement</tspan></text>
-          <circle class="case-dot" cx="211" cy="245" r="5"></circle>
-        </g>
-
-        <g class="node agreement" tabindex="0" role="button" aria-pressed="false" aria-label="Use agreement" data-key="use-agreement">
-          <rect class="shape" x="260" y="238" width="200" height="40" rx="20"></rect>
-          <text class="label" x="360" y="263">Use agreement</text>
-        </g>
-
-        <g class="node agreement has-cases" tabindex="0" role="button" aria-pressed="false" aria-label="Contract, including business associate agreement provisions" data-key="vendor-contract">
-          <rect class="shape" x="500" y="238" width="200" height="40" rx="20"></rect>
-          <text class="label" x="600" y="254"><tspan x="600" dy="0">Contract,</tspan><tspan x="600" dy="18">including BAA</tspan></text>
-          <circle class="case-dot" cx="691" cy="245" r="5"></circle>
-        </g>
-
-        <g class="node agreement has-cases" tabindex="0" role="button" aria-pressed="false" aria-label="Data sharing agreement" data-key="data-sharing">
-          <rect class="shape" x="740" y="238" width="200" height="40" rx="20"></rect>
-          <text class="label" x="840" y="254"><tspan x="840" dy="0">Data sharing</tspan><tspan x="840" dy="18">agreement</tspan></text>
-          <circle class="case-dot" cx="931" cy="245" r="5"></circle>
-        </g>
-
-        <g class="node party" tabindex="0" role="button" aria-pressed="false" aria-label="Funded providers" data-key="funded-providers">
-          <rect class="shape" x="40" y="306" width="160" height="44" rx="6"></rect>
-          <text class="label" x="120" y="324"><tspan x="120" dy="0">Funded</tspan><tspan x="120" dy="18">providers</tspan></text>
-        </g>
-
-        <g class="node party" tabindex="0" role="button" aria-pressed="false" aria-label="Unfunded providers" data-key="unfunded-providers">
-          <rect class="shape" x="280" y="306" width="160" height="44" rx="6"></rect>
-          <text class="label" x="360" y="324"><tspan x="360" dy="0">Unfunded</tspan><tspan x="360" dy="18">providers</tspan></text>
-        </g>
-
-        <g class="node party" tabindex="0" role="button" aria-pressed="false" aria-label="Vendors" data-key="vendors">
-          <rect class="shape" x="520" y="306" width="160" height="44" rx="6"></rect>
-          <text class="label" x="600" y="333">Vendors</text>
-        </g>
-
-        <g class="node party" tabindex="0" role="button" aria-pressed="false" aria-label="Other agencies" data-key="other-agencies">
-          <rect class="shape" x="760" y="306" width="160" height="44" rx="6"></rect>
-          <text class="label" x="840" y="324"><tspan x="840" dy="0">Other</tspan><tspan x="840" dy="18">agencies</tspan></text>
-        </g>
-      </svg>
-
-      <!-- Narrow diagram: stacked branches -->
-      <svg class="diagram diagram-narrow" viewBox="0 0 300 780" role="group" aria-label="Diagram of data sharing relationships and agreements, stacked layout">
-        <title>Data sharing relationships: client, health department, and four kinds of partner, connected by five kinds of agreement</title>
-        <line class="connector" x1="150" y1="54" x2="150" y2="84"></line>
-        <line class="connector" x1="150" y1="124" x2="150" y2="154"></line>
-        <line class="connector" x1="150" y1="198" x2="150" y2="228"></line>
-        <line class="connector" x1="150" y1="268" x2="150" y2="296"></line>
-        <line class="connector" x1="150" y1="340" x2="150" y2="368"></line>
-        <line class="connector" x1="150" y1="408" x2="150" y2="436"></line>
-        <line class="connector" x1="150" y1="480" x2="150" y2="508"></line>
-        <line class="connector" x1="150" y1="548" x2="150" y2="576"></line>
-        <line class="connector" x1="150" y1="620" x2="150" y2="648"></line>
-        <line class="connector" x1="150" y1="688" x2="150" y2="716"></line>
-
-        <g class="node party has-cases" tabindex="0" role="button" aria-pressed="false" aria-label="Client" data-key="client">
-          <rect class="shape" x="70" y="10" width="160" height="44" rx="6"></rect>
-          <text class="label" x="150" y="37">Client</text>
-          <circle class="case-dot" cx="224" cy="16" r="5"></circle>
-        </g>
-
-        <g class="node agreement has-cases" tabindex="0" role="button" aria-pressed="false" aria-label="Client consent form" data-key="consent">
-          <rect class="shape" x="50" y="84" width="200" height="40" rx="20"></rect>
-          <text class="label" x="150" y="100"><tspan x="150" dy="0">Client consent</tspan><tspan x="150" dy="18">form</tspan></text>
-          <circle class="case-dot" cx="241" cy="91" r="5"></circle>
-        </g>
-
-        <g class="node party has-cases" tabindex="0" role="button" aria-pressed="false" aria-label="Health department" data-key="health-department">
-          <rect class="shape" x="50" y="154" width="200" height="44" rx="6"></rect>
-          <text class="label" x="150" y="181">Health department</text>
-          <circle class="case-dot" cx="244" cy="160" r="5"></circle>
-        </g>
-
-        <g class="node agreement has-cases" tabindex="0" role="button" aria-pressed="false" aria-label="Subrecipient agreement" data-key="subrecipient">
-          <rect class="shape" x="50" y="228" width="200" height="40" rx="20"></rect>
-          <text class="label" x="150" y="244"><tspan x="150" dy="0">Subrecipient</tspan><tspan x="150" dy="18">agreement</tspan></text>
-          <circle class="case-dot" cx="241" cy="235" r="5"></circle>
-        </g>
-
-        <g class="node party" tabindex="0" role="button" aria-pressed="false" aria-label="Funded providers" data-key="funded-providers">
-          <rect class="shape" x="70" y="296" width="160" height="44" rx="6"></rect>
-          <text class="label" x="150" y="314"><tspan x="150" dy="0">Funded</tspan><tspan x="150" dy="18">providers</tspan></text>
-        </g>
-
-        <g class="node agreement" tabindex="0" role="button" aria-pressed="false" aria-label="Use agreement" data-key="use-agreement">
-          <rect class="shape" x="50" y="368" width="200" height="40" rx="20"></rect>
-          <text class="label" x="150" y="393">Use agreement</text>
-        </g>
-
-        <g class="node party" tabindex="0" role="button" aria-pressed="false" aria-label="Unfunded providers" data-key="unfunded-providers">
-          <rect class="shape" x="70" y="436" width="160" height="44" rx="6"></rect>
-          <text class="label" x="150" y="454"><tspan x="150" dy="0">Unfunded</tspan><tspan x="150" dy="18">providers</tspan></text>
-        </g>
-
-        <g class="node agreement has-cases" tabindex="0" role="button" aria-pressed="false" aria-label="Contract, including business associate agreement provisions" data-key="vendor-contract">
-          <rect class="shape" x="50" y="508" width="200" height="40" rx="20"></rect>
-          <text class="label" x="150" y="524"><tspan x="150" dy="0">Contract,</tspan><tspan x="150" dy="18">including BAA</tspan></text>
-          <circle class="case-dot" cx="241" cy="515" r="5"></circle>
-        </g>
-
-        <g class="node party" tabindex="0" role="button" aria-pressed="false" aria-label="Vendors" data-key="vendors">
-          <rect class="shape" x="70" y="576" width="160" height="44" rx="6"></rect>
-          <text class="label" x="150" y="603">Vendors</text>
-        </g>
-
-        <g class="node agreement has-cases" tabindex="0" role="button" aria-pressed="false" aria-label="Data sharing agreement" data-key="data-sharing">
-          <rect class="shape" x="50" y="648" width="200" height="40" rx="20"></rect>
-          <text class="label" x="150" y="664"><tspan x="150" dy="0">Data sharing</tspan><tspan x="150" dy="18">agreement</tspan></text>
-          <circle class="case-dot" cx="241" cy="655" r="5"></circle>
-        </g>
-
-        <g class="node party" tabindex="0" role="button" aria-pressed="false" aria-label="Other agencies" data-key="other-agencies">
-          <rect class="shape" x="70" y="716" width="160" height="44" rx="6"></rect>
-          <text class="label" x="150" y="734"><tspan x="150" dy="0">Other</tspan><tspan x="150" dy="18">agencies</tspan></text>
-        </g>
-      </svg>
-
-      <div class="diagram-panel" id="diagram-panel" aria-live="polite" data-active-key="">
-        <p class="panel-placeholder">Select a box or pill in either diagram above to see what it is, who signs it or acts on it, and what it covers.</p>
-      </div>
-    </div>
-
-    <details>
-      <summary>Data segregation is built in, in every version of this seen so far</summary>
-      <div class="details-body">
-        <p>This principle appears independently in four separate implementations, which is why it can be stated as a general principle rather than an example:</p>
-        <ul>
-          <li>In one county arrangement, services documented under programs outside Ryan White and housing funding cannot be seen by either of those grantees.</li>
-          <li>In one city implementation, duplicate client records merge only within a single agency, never across agencies in the network.</li>
-          <li>In the Florida Part A pathway, each program's export contains only its own clients. See the <button type="button" class="inline-tab-link" data-tab-target="case-studies" data-scroll-target="cs-florida">full case study</button> for the complete process.</li>
-          <li>In a North Carolina design, eligibility data is shared across Part A and Part B users, while Part A care data remains accessible only to Part A users.</li>
-        </ul>
-        <p><strong>Share what coordination requires. Segregate the rest.</strong></p>
-      </div>
-    </details>
-
-  </section>
-
-  <!-- ============ SECTION 3 ============ -->
-  <section id="obstacles" role="tabpanel" aria-labelledby="tab-obstacles" hidden>
-    <span class="section-number">Section 3</span>
-    <h2 id="obstacles-h">What Gets in the Way?</h2>
-
-    <p class="summary-text">These are documented obstacles other programs have run into. Some are still unresolved, and this page says so instead of glossing over them.</p>
-
-    <div class="stack-note">
-      <p><strong>The most important distinction on this page: joint eligibility is not joint certification.</strong> The objection that stops most programs: in a state's own human services programs, certification for one program does not carry over to another. Eligibility for food assistance does not set the certification period for medical assistance. Why should Ryan White differ?</p>
-      <p>The resolution: joint eligibility does not mean joint certification. What is shared is the <strong>timeframe for collecting eligibility data from the client</strong>, not the certification or enrollment decision. Two programs can agree on when to ask the client for documents while each retains its own approval authority. Almost every other objection on this page dissolves once this is clear.</p>
-    </div>
-
-    <details>
-      <summary>Other objections a program will raise</summary>
-      <div class="details-body">
-        <p>Any state considering this will raise some version of these. None is attributed to a specific jurisdiction; they are generalized.</p>
-        <h4>Retroactive risk across programs</h4>
-        <p>If a client is certified for care services, then applies months later for drug assistance and is denied on the same income or residency documentation, does that denial reach backward and invalidate the original certification, meaning the program cannot bill for care already delivered?</p>
-        <p>The answer: eligibility decisions are date stamped, and every service is checked against the eligibility record in effect on the service date. A denial for a reason that does not affect care eligibility does not disturb care eligibility.</p>
-        <h4>Who decides eligibility for a state-run program</h4>
-        <p>A state-managed drug assistance program should not have its eligibility determined by a non-state subrecipient agency. Resolution: subrecipients help collect the data but never make the certification or enrollment decision. Collection is delegated; determination is not.</p>
-        <h4>Audit exposure</h4>
-        <p>A state-managed program faces higher scrutiny, including 340B eligibility and state audits. Joining programs means an audit of one exposes the eligibility records of the other, and reviewers unfamiliar with the program may not understand why a client with other coverage was certified at all. Consistent, date-stamped, auditable records are a stronger audit position than reconstructing decisions from paper, but the fear is legitimate and should be named.</p>
-        <h4>Why applications stall</h4>
-        <p>Income documentation is the common cause of applications being held: pay stubs showing a marital status inconsistent with the application, income not matching what was reported to the insurance marketplace, household income not reported or not calculated correctly, and pay stubs that do not match the application.</p>
-      </div>
-    </details>
-
-    <details>
-      <summary>The uncomfortable one</summary>
-      <div class="details-body">
-        <p>In programs without shared data, the practical mechanism for obtaining required documentation is certification lapsing. The effective enforcement is the client being turned away at the pharmacy. Electronic verification removes the need to use medication access as leverage.</p>
-        <p>This is a general feature of paper-based programs, not a claim about any specific jurisdiction. It is a stronger argument for data sharing than any efficiency claim, and more honest.</p>
-      </div>
-    </details>
-
-    <details>
-      <summary>What HRSA's own expert panel found</summary>
-      <div class="details-body">
-        <p>HRSA's HIV/AIDS Bureau convened a Technical Expert Panel on Streamlining Eligibility in August 2023 and published a summary: twelve representatives from six state health departments on day one, plus the National Alliance of State and Territorial AIDS Directors (NASTAD), and more than twenty participants across Ryan White Parts A through D on day two.</p>
-        <p>Its finding on data: access to and effective use of data, especially through establishing and maintaining data-sharing agreements, remain challenging for multiple reasons. Recipients could benefit from help identifying other data sources containing key information for confirmation, such as residency and income verification.</p>
-        <p>On practice: some jurisdictions have successfully obtained data from other state agencies, such as Medicaid to verify income and the state's motor vehicle department to verify residency. Careful attention must be paid to privacy concerns, and both identifying the right gatekeepers who can provide access, and establishing agreements, can be time consuming.</p>
-        <p>Barriers the panel named:</p>
-        <ul>
-          <li>Documenting insurance status and income, whether obtained from clients or other sources.</li>
-          <li>Maintaining contact with, and updating residency for, clients who move frequently, especially across a state or metropolitan area boundary.</li>
-          <li>Concerns about having to reimburse the program for medication and care costs for clients who lose eligibility.</li>
-        </ul>
-        <p class="source-line">Source: HRSA HIV/AIDS Bureau, Technical Expert Panel Executive Summary: Streamlining Eligibility for the Ryan White HIV/AIDS Program, August 2023.</p>
-      </div>
-    </details>
-
-    <details>
-      <summary>The single most common blocker: legal counsel cannot agree on one release of information</summary>
-      <div class="details-body">
-        <p>Establishing a single universal release of information that covers multiple programs is where legal agreement most often breaks down entirely. Two related questions tend to stall alongside it: whether self-attestation is acceptable for housing program clients, and how existing consents carry over into a new system.</p>
-      </div>
-    </details>
-
-    <details>
-      <summary>Keeping agencies' records separate protects privacy, but it has a real, accepted cost</summary>
-      <div class="details-body">
-        <p>In one city implementation, client records are deliberately not merged across agencies in the network in order to preserve separation between agencies. The signed statement of work records the consequence: the program cannot produce an unduplicated count of clients served across the whole network, because multiple agencies may be reporting the same person. This trade-off was accepted in writing.</p>
-      </div>
-    </details>
-
-    <details>
-      <summary>Most states share only limited data with Medicaid, and none in one study opened surveillance data directly</summary>
-      <div class="details-body">
-        <p>NASTAD's 2018 review of ten states' legal and regulatory environments found that many states share only aggregate data with Medicaid rather than client-level data, and that no state in the study allowed outside access to the HIV surveillance database directly. Instead, matching is done internally and limited results are returned.</p>
-        <p class="source-line">Source: NASTAD, <em>HIV Data Privacy and Confidentiality: Legal and Ethical Considerations for Health Department Data Sharing</em>, 2018.</p>
-      </div>
-    </details>
-
-    <details>
-      <summary>Even after a law allows sharing, an agency's own old policies can still block it</summary>
-      <div class="details-body">
-        <p>A New York City case study found that the same state and local laws that authorize collecting public health data can also prevent a health department from sharing and using that data across its own disease programs. Changes in state law opened more room to share, but agency policies still had to be rewritten, because the old policies limited integration even after the law allowed it. The practical lesson: check your own agency policies, not just the statute.</p>
-        <p class="source-line">Source: <em>Legal and Policy Barriers to Sharing Data Between Public Health Programs in New York City: A Case Study</em>, American Journal of Public Health.</p>
-      </div>
-    </details>
-
-    <details>
-      <summary>Trust, not legality, is often the real blocker</summary>
-      <div class="details-body">
-        <p>A study of six HIV-focused health information exchanges found that acceptance depended on legal review for each institution, trust in the system's security, trust in the staff and agencies involved, and whether a precedent for electronic data sharing already existed. Staff spent considerable time overcoming resistance and mistrust even where the sharing was lawful and secure.</p>
-      </div>
-    </details>
-
-    <details>
-      <summary>Multi-partner efforts hit practical problems, not just legal ones</summary>
-      <div class="details-body">
-        <p>A published account of a multi-organization HIV data sharing effort in Washington, DC named its obstacles directly: inconsistent data formats, missing records when clients move between jurisdictions, care received outside the jurisdiction, incomplete lab reporting, cost, and privacy and ethical concerns.</p>
-      </div>
-    </details>
-
-    <details>
-      <summary>Partners that are consistently hard</summary>
-      <div class="details-body">
-        <p>Health departments report difficulty obtaining lab data for people enrolled in clinical trial research, and for people receiving care at Department of Veterans Affairs facilities, where relationships with leadership or the privacy officer at individual medical centers are generally needed.</p>
-        <p>Community based organizations present a different problem: they do not carry the same public health authority as a health department. Some health departments work with them on linkage only where the person was previously a client of that organization, or gives consent to be linked to that specific provider.</p>
-        <p class="source-line">Source: NASTAD, Data to Care: Data Sharing, Prioritization, and Management, 2019.</p>
-      </div>
-    </details>
-
-    <details>
-      <summary>What the starting point often looks like, before any sharing is in place</summary>
-      <div class="details-body">
-        <p>Before any data sharing is in place, a program may be faxing enrollment forms to a central pharmacy, moving applications by hand delivery, fax, email, and mail, unable to see the status of a submitted application when a client calls to ask, and dealing with persistent duplicate client records across the pharmacy and case management systems.</p>
-      </div>
-    </details>
-
-    <details>
-      <summary>Write the agreement even when you do not need one</summary>
-      <div class="details-body">
-        <p>Although many programs share data internally without an agreement, NASTAD's guidance is that a formal agreement or policy is best practice, for consistency and for continuity when staff turn over. A formal document describing data flow prevents having to rebuild buy-in with new leadership.</p>
-        <p>NASTAD's phrasing is worth adopting: responsibilities for data flow should be <strong>job-specific, not person-specific</strong>.</p>
-      </div>
-    </details>
-
-    <details>
-      <summary>What determines difficulty</summary>
-      <div class="details-body">
-        <p>Effective data sharing requires collaboration between the health department's prevention, care, and surveillance programs, and how hard that is depends on organization.</p>
-        <ul>
-          <li>Same division under the same director: likely fewer barriers.</li>
-          <li>Organizationally siloed, or little history of working together: additional approval and documentation.</li>
-          <li>Local programs at city or county level may struggle to access state-held data without a formal agreement.</li>
-        </ul>
-        <p><strong>The most practical thing to tell a program leader: before asking what agreement you need, look at your own organizational chart.</strong></p>
-      </div>
-    </details>
-  </section>
-
-  <!-- ============ SECTION 4 ============ -->
-  <section id="benefits" role="tabpanel" aria-labelledby="tab-benefits" hidden>
-    <span class="section-number">Section 4</span>
-    <h2 id="benefits-h">What It Makes Possible</h2>
-
-    <p class="summary-text">These are the payoffs, each tied to the evidence below. Some are proven, some are early findings, and each is labeled accordingly.</p>
-
-    <details>
-      <summary>Meeting the payer of last resort requirement: the strongest benefit, because it is a compliance duty, not a convenience</summary>
-      <div class="details-body">
-        <p>Because Ryan White must be the payer of last resort, programs have to confirm that no other coverage applies before paying. Data sharing is how that is done at scale. Documented methods include automated eligibility verification transactions against state Medicaid systems, run both in real time during an eligibility interview and as overnight batches, and periodic checks against a third-party service that returns any other health plan coverage found for enrolled clients, including coverage the client did not disclose.</p>
-      </div>
-    </details>
-
-    <details>
-      <summary>What HRSA's own expert panel reported</summary>
-      <div class="details-body">
-        <p>Recipients who changed their eligibility confirmation timeframe reported: decreased staff time processing applications, decreased burden on clients, quicker turnarounds and approvals, and increased enrollment with fewer clients disenrolled. Longer timeframes mean fewer applications to process, letting staff focus on adherence and engagement in care.</p>
-        <p class="source-line">Source: HRSA HIV/AIDS Bureau, Technical Expert Panel Executive Summary: Streamlining Eligibility for the Ryan White HIV/AIDS Program, August 2023.</p>
-      </div>
-    </details>
-
-    <details>
-      <summary>Cross-jurisdiction accuracy</summary>
-      <div class="details-body">
-        <p>The District of Columbia, Maryland, and Virginia exchange produced an estimated 396 fewer people with HIV counted as living in the District each year across a five-year period, correcting double-counting rather than reflecting a change in the epidemic, and cut duplicate review volume by 74 percent with Maryland and 81 percent with Virginia. See the <button type="button" class="inline-tab-link" data-tab-target="case-studies" data-scroll-target="cs-dc-md-va">full case study</button> for how the exchange was built.</p>
-        <p class="source-line">Source: NASTAD, citing Hamp et al., JMIR Public Health and Surveillance, 2018, and Ocampo et al., same journal, 2016.</p>
-      </div>
-    </details>
-
-    <details>
-      <summary>Coordinated, real-time care across a large provider network</summary>
-      <div class="details-body">
-        <p>Broward County's Ryan White Part A program uses a shared system across its provider network to coordinate care in real time for more than 7,000 clients annually. Program staff monitor compliance against 18 client-level outcomes and 26 associated measures across 10 funded service categories, extract data monthly and quarterly, and review it through standing quality improvement networks made up of the funded provider agencies.</p>
-        <p>One concrete example: a review of screening rates led the medical quality improvement network to compare provider electronic health record data against the shared system to identify discrepancies, then design an improvement project around what they found.</p>
-        <p class="source-line">Source: Broward County's public award submission describing its use of the shared system.</p>
-        <p>See the <button type="button" class="inline-tab-link" data-tab-target="case-studies" data-scroll-target="cs-broward">full case study</button> for how the subrecipient agreement enables this.</p>
-      </div>
-    </details>
-
-    <details>
-      <summary>Finding people who have fallen out of care</summary>
-      <div class="details-body">
-        <p>In the Florida Part A pathway, the out-of-care list is produced by matching a program's active client list against state surveillance data, and the linkage outcomes come back to the originating program. See the <button type="button" class="inline-tab-link" data-tab-target="case-studies" data-scroll-target="cs-florida">full case study</button> for the complete process.</p>
-        <p>A federally funded data linkage initiative states that improved data linkage and synchronization allows more accurate and timely review of client care status, which has been documented to produce increased linkage to care, engagement and re-engagement, and ultimately increased viral suppression among people with HIV.</p>
-      </div>
-    </details>
-
-    <details>
-      <summary>Better research and outcome measurement</summary>
-      <div class="details-body">
-        <p>A state health department built a database combining routine HIV surveillance data with Ryan White service records, and through data sharing agreements also brought in lab results from neighboring jurisdictions and prescription and lab data from the state Medicaid office. Published research using that database examined outcomes among more than 13,000 people with HIV and found that clients receiving more types of Ryan White funded services had better retention in care and viral suppression.</p>
-        <p class="source-line">Source: Diepstra et al., <em>Clinical Infectious Diseases</em>, 2017.</p>
-      </div>
-    </details>
-
-    <details>
-      <summary>Scale, stated honestly: this is activity, not an outcome</summary>
-      <div class="details-body">
-        <p>Across all deployments of one shared data system: 544 agencies, 425,518 clients, and more than 170 million clinical records, in 14 states. These numbers describe how much the system is used. They are not a measure of health outcomes.</p>
-      </div>
-    </details>
-  </section>
-
-  <!-- ============ SECTION 5 ============ -->
-  <section id="case-studies" role="tabpanel" aria-labelledby="tab-case-studies" hidden>
-    <span class="section-number">Section 5</span>
-    <h2 id="case-studies-h">Case Studies</h2>
-
-    <p class="summary-text">How states and counties have actually put this into practice: what each arrangement took to build, and, where it has been reported, what it achieved.</p>
-
-    <details id="cs-dc-md-va">
-      <summary>District of Columbia, Maryland, and Virginia</summary>
-      <div class="details-body">
-        <h4>How it was implemented</h4>
-        <p>People with HIV in the Washington metropolitan area live, work, and receive care across all three jurisdictions, which made duplicate counting and fragmented review a persistent problem. In 2017 the three health departments built a cross-jurisdictional surveillance data exchange under a data sharing agreement: they developed the agreement, standardized their statistical code and variables so records could be compared directly, and built a secure file transfer site for quarterly exchange. Staff from all three continue to meet regularly to review results together.</p>
-        <h4>What it achieved</h4>
-        <p>The exchange produced an estimated 396 fewer people with HIV counted as living in the District each year across a five-year period, correcting double-counting rather than reflecting a change in the epidemic, and cut duplicate review volume by 74 percent with Maryland and 81 percent with Virginia. The regular meetings have also helped clean up prevalence data and remove people from not-in-care lists who had simply moved.</p>
-        <p class="source-line">Source: NASTAD, citing Hamp et al., JMIR Public Health and Surveillance, 2018, and Ocampo et al., same journal, 2016.</p>
-      </div>
-    </details>
-
-    <details id="cs-florida">
-      <summary>Florida: the Part A pathway</summary>
-      <div class="details-body">
-        <h4>How it was implemented</h4>
-        <p>Florida runs a complete, documented, two-directional loop between six local Ryan White Part A data systems and the Florida Department of Health.</p>
-        <ol>
-          <li>The Part A program extracts its full active client list. The format of this file is defined in the data sharing agreement between the parties.</li>
-          <li>The file is transferred securely, through an electronic lab reporting portal, which is the preferred route, or a secure file transfer service. Credentials are required for verified user access at every step.</li>
-          <li>The state health department matches the list. The state's HIV section matches it against eHARS, the state HIV surveillance system, to find lab results, and cross-checks against CAREWare, the AIDS Drug Assistance Program, electronic health records, and Medicaid.</li>
-          <li>Updated lists come back. The Part A program receives its list back with care status attached. The content of this return file is also defined in the data sharing agreement.</li>
-          <li>Clients not in care are referred. Clients presumed not to be in care within that Part A county after the match are compiled into an out-of-care list, then uploaded and assigned into the state's linkage module.</li>
-          <li>Linkage outcomes return to the program. A customized export of linkage outcomes goes back to the local Part A system, containing only that program's own clients.</li>
-        </ol>
-        <ul class="callout-list">
-          <li>The data sharing agreement defines the <strong>format</strong> of the files exchanged, not just permission to exchange them. That is a practical detail most explanations leave out.</li>
-          <li>The final export is <strong>scoped to each program's own clients</strong>. Sharing does not mean everyone sees everything.</li>
-        </ul>
-        <p>Access to the state linkage module is a defined, per-person process, not an organization-wide grant: complete the state's security and confidentiality training module and submit the receipt; complete and submit a system access request form; attend the live virtual onboarding training, or watch the recording, and submit proof. Access is granted once all three are complete.</p>
-        <p>Access is also controlled per client, and it can end. A provider at one agency can release specified types of records about one client to another agency, and can set an end date on that release. When a release ends, the receiving agency's access reverts to a historical read-only version of the chart as of the end date, rather than disappearing, so the agency can still account for its own past work. When an agency closes its relationship with a client, the release is typically set to terminate about thirty days later rather than immediately, so the agency can finish its documentation. If a client returns, the agency submits a request that routes to the health department for a decision.</p>
-        <h4><span class="tag">Needs data</span>What it achieved</h4>
-        <p class="example-doc-empty">No outcome numbers have been published for the Florida pathway, such as how many clients were identified as out of care or changes in linkage-to-care rates.</p>
-      </div>
-    </details>
-
-    <details id="cs-north-carolina">
-      <summary>North Carolina</summary>
-      <div class="details-body">
-        <h4>How it was implemented</h4>
-        <p>North Carolina built an integrated data hub combining HIV surveillance data, AIDS Drug Assistance Program (ADAP) and Ryan White data, and Medicaid data. The health department matches internally, then limits what is shared back to each reporting entity, including returning data to a managed care organization for its own enrollees only. In the design, eligibility data is shared across Part A and Part B users, while Part A care data remains accessible only to Part A users.</p>
-        <p>Building the state-to-Part A exchange required more than one agreement: a data sharing agreement written specifically to permit lab results to be shared, a client consent form checked to confirm it actually covered eligibility data, lab results, medication dispenses, and premium payments where applicable, and existing subrecipient agreements reviewed and confirmed consistent with the new arrangement rather than simply left in place.</p>
-        <h4><span class="tag">Preliminary</span>What it achieved</h4>
-        <p>In a federally funded research project conducted by the software's developer, at the North Carolina site, eligibility determination times dropped from more than four weeks to two days for applications not requiring follow-up. Recertification rates at that site are reported as better than the previous year.</p>
-        <p><strong>Required caveat, from the same source:</strong> it is too early to measure the impact on health outcomes. This is an early finding from a study still underway, not a finished result.</p>
-      </div>
-    </details>
-
-    <details id="cs-louisiana">
-      <summary>Louisiana</summary>
-      <div class="details-body">
-        <h4>How it was implemented</h4>
-        <p>Louisiana's surveillance, prevention, and services functions sit under a single director, so data has been shared and electronically linked between them for years without requiring agreements between them. Separately, Medicaid sends a monthly file to match against surveillance data to calculate viral suppression among Medicaid enrollees, and the surveillance unit runs quarterly matches against birth and death registry data.</p>
-        <h4><span class="tag">Needs data</span>What it achieved</h4>
-        <p class="example-doc-empty">No quantitative outcome, such as time saved or accuracy gained, has been published for Louisiana's arrangement.</p>
-        <p class="source-line">Source: Louisiana Integrated HIV Prevention and Care Plan, CY2022 to 2026.</p>
-      </div>
-    </details>
-
-    <details id="cs-broward">
-      <summary>Broward County, Florida</summary>
-      <div class="details-body">
-        <h4>How it was implemented</h4>
-        <p>Broward County's Ryan White Part A program uses a shared system across its provider network to coordinate care in real time for more than 7,000 clients annually. All funded agencies document in that same system rather than separate records. Program staff monitor compliance against 18 client-level outcomes and 26 associated measures across 10 funded service categories, extract data monthly and quarterly, and review it through standing quality improvement networks made up of the funded provider agencies.</p>
-        <h4>What it achieved</h4>
-        <p>One concrete example: a review of screening rates led the medical quality improvement network to compare provider electronic health record data against the shared system to identify discrepancies, then design an improvement project around what they found.</p>
-        <p class="source-line">Source: Broward County's public award submission describing its use of the shared system.</p>
-      </div>
-    </details>
-
-    <details id="cs-miami-dade">
-      <summary>Miami-Dade County, Florida</summary>
-      <div class="details-body">
-        <h4>How it was implemented</h4>
-        <p>Miami-Dade County uses a single combined consent form so partners across Ryan White Part A, the Minority AIDS Initiative, Ending the HIV Epidemic, Part B, and the AIDS Drug Assistance Program can share access to the same client data with one signature, instead of collecting a separate consent for each program.</p>
-        <h4><span class="tag">Needs data</span>What it achieved</h4>
-        <p class="example-doc-empty">No outcome data, such as time saved per client or program participation rates, has been published for Miami-Dade County's combined consent form.</p>
-      </div>
-    </details>
-
-    <details id="cs-illinois">
-      <summary>Illinois</summary>
-      <div class="details-body">
-        <h4>How it was implemented</h4>
-        <p>Illinois runs a two-way automated exchange with its pharmacy benefit manager, built into its vendor contract: enrollment, terminations, and benefit changes go out to the pharmacy benefit manager, and dispense authorization requests and full medication dispense history come back.</p>
-        <h4><span class="tag">Needs data</span>What it achieved</h4>
-        <p class="example-doc-empty">No outcome data, such as time saved or coverage caught, has been published for this exchange.</p>
-      </div>
-    </details>
-
-    <details id="cs-washington">
-      <summary>Washington</summary>
-      <div class="details-body">
-        <h4>How it was implemented</h4>
-        <p>Washington's pharmacy benefit manager integration, built into its vendor contract, links eligibility directly to point-of-sale medication pickup.</p>
-        <h4><span class="tag">Needs data</span>What it achieved</h4>
-        <p class="example-doc-empty">No outcome data, such as reduction in pharmacy denials, has been published for this integration.</p>
-      </div>
-    </details>
-
-    <details id="cs-wisconsin">
-      <summary>Wisconsin</summary>
-      <div class="details-body">
-        <h4>How it was implemented</h4>
-        <p>Wisconsin relies on broader legal authority to share data in order to protect an individual's health, prevent transmission, or diagnose and care for the patient, without reference to specific partner agencies in a data sharing agreement. It shows that states take different legal routes to reach the same place.</p>
-        <h4><span class="tag">Needs data</span>What it achieved</h4>
-        <p class="example-doc-empty">No outcome data tied to this legal approach has been published.</p>
-      </div>
-    </details>
-  </section>
-
-  </main>
-
-  <footer>
-    <div class="container">
-      <p class="resources-link"><a href="resources.html">Resources: sources and further reading</a></p>
-    </div>
-  </footer>
-
-<script src="script.js"></script>
 </body>
 </html>
