@@ -11,32 +11,68 @@
 <header class="site-header">
   <div class="container">
     <h1>Joint eligibility playbook</h1>
-    <p>A best-practices resource for Ryan White HIV/AIDS Program leaders, built one approved topic at a time.</p>
   </div>
 </header>
 
-<nav class="site-nav" aria-label="Playbook topics">
-  <ul class="nav-list container">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="joint-eligibility.html" aria-current="page">Joint Eligibility <span class="nav-tag">Hold</span></a></li>
-    <li><a href="data-sharing.html">Data Sharing</a></li>
-    <li><a href="electronic-sources.html">Electronic Sources <span class="nav-tag">Hold</span></a></li>
-    <li><a href="resources.html">Resources <span class="nav-tag">Hold</span></a></li>
-    <li><a href="about.html">About <span class="nav-tag">Hold</span></a></li>
-  </ul>
+<nav class="site-nav" role="navigation" aria-label="Playbook topics">
+  <div class="container nav-row">
+    <a href="index.html" class="nav-back">← Back to menu</a>
+    <ul class="nav-menu">
+      <li><a href="joint-eligibility.html" class="nav-current">Joint Eligibility</a></li>
+      <li><a href="data-sharing.html">Data Sharing</a></li>
+      <li><a href="electronic-sources.html">Use of Electronic Sources of Data</a></li>
+    </ul>
+  </div>
 </nav>
 
 <main class="container">
   <div class="page-head">
-    <span class="status-badge status-hold">Hold — scaffold only</span>
     <h2>Joint Eligibility</h2>
-    <p class="summary-text">This topic is on hold. This page is a shell: the navigation entry exists, and its case studies section is reserved, but no content is built yet.</p>
   </div>
 
-  <h3>Case studies</h3>
-  <div class="empty-state">
-    <span class="empty-state-tag tag-hold">Hold</span>
-    <p class="empty-state-note">Reserved for this topic's case studies once it is built.</p>
+  <!-- Tab bar -->
+  <div role="tablist" aria-label="Joint Eligibility sections" class="tabs">
+    <button role="tab" aria-selected="true" aria-controls="panel-how-it-works" id="tab-how-it-works" class="tab">
+      How it works
+    </button>
+    <button role="tab" aria-selected="false" aria-controls="panel-benefits-by-party" id="tab-benefits-by-party" class="tab" tabindex="-1">
+      Benefits by party
+    </button>
+    <button role="tab" aria-selected="false" aria-controls="panel-barriers" id="tab-barriers" class="tab" tabindex="-1">
+      Barriers
+    </button>
+    <button role="tab" aria-selected="false" aria-controls="panel-overcoming-barriers" id="tab-overcoming-barriers" class="tab" tabindex="-1">
+      How states overcome barriers
+    </button>
+    <button role="tab" aria-selected="false" aria-controls="panel-case-studies" id="tab-case-studies" class="tab" tabindex="-1">
+      Case studies
+    </button>
+  </div>
+
+  <!-- Tab panels -->
+  <div role="tabpanel" id="panel-how-it-works" aria-labelledby="tab-how-it-works" class="tab-panel">
+    <h3>How it works</h3>
+    <p>Placeholder: what joint eligibility is, scope, and how it works.</p>
+  </div>
+
+  <div role="tabpanel" id="panel-benefits-by-party" aria-labelledby="tab-benefits-by-party" class="tab-panel" hidden>
+    <h3>Benefits by party</h3>
+    <p>Placeholder: how each party benefits (health department, Ryan White program, client).</p>
+  </div>
+
+  <div role="tabpanel" id="panel-barriers" aria-labelledby="tab-barriers" class="tab-panel" hidden>
+    <h3>Barriers</h3>
+    <p>Placeholder: the obstacles to implementing.</p>
+  </div>
+
+  <div role="tabpanel" id="panel-overcoming-barriers" aria-labelledby="tab-overcoming-barriers" class="tab-panel" hidden>
+    <h3>How states overcome barriers</h3>
+    <p>Placeholder: resolutions, each linking to a case study.</p>
+  </div>
+
+  <div role="tabpanel" id="panel-case-studies" aria-labelledby="tab-case-studies" class="tab-panel" hidden>
+    <h3>Case studies</h3>
+    <p>Placeholder: full writeups, the single home for every case study. Every mention elsewhere on this page links here instead of repeating the text.</p>
   </div>
 </main>
 
@@ -46,5 +82,6 @@
   </div>
 </footer>
 
+<script src="tabs.js"></script>
 </body>
 </html>
