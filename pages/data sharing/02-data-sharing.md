@@ -18,43 +18,94 @@ contracts, data sharing with other agencies, and use agreements.
 
 ## 2.0 Intro — DRAFT, NEEDS REVIEW
 
+*(v2, after supervisor review — replaces the v1 intro.)*
+
 Data sharing means the organizations involved in one person's HIV care can
 work from the same client record, instead of each agency keeping its own
-separate copy. For a client, that can mean one application, or one
-recertification, instead of several.
+separate copy. But for this audience, the bigger picture is broader: data
+sharing is the whole assortment of legal documents and agreements that let
+a program share data with the right parties in the first place — client
+consents (also called releases of information), vendor contracts,
+subrecipient agreements, use agreements, and data sharing agreements between
+agencies. These documents have to work together, shaped by the scope a
+program has actually negotiated with each partner.
+
+When a program moves toward a more integrated approach — the kind of system
+change this playbook is written for — it often means revisiting those
+relationships and renegotiating the agreements that support them. Done
+well, that revisiting is what reduces the burden on clients.
 
 The Ryan White HIV/AIDS Program (RWHAP) must be the payer of last resort:
-RWHAP funds can only cover what other coverage doesn't. Confirming what other
-coverage a client has is a legal requirement, and at the scale most
-jurisdictions operate at, that confirmation depends on data sharing between
-agencies and programs. [source: PCN 21-02]
-
-The Health Resources and Services Administration's HIV/AIDS Bureau (HRSA HAB)
-encourages RWHAP recipients and subrecipients to develop data-sharing
-strategies to reduce administrative burden, in Policy Clarification Notice
-(PCN) 21-02, *Determining Client Eligibility & Payor of Last Resort in the
-RWHAP*. [source: PCN 21-02] HRSA's Part A Program Manual makes the same
-point: data-sharing agreements with other recipients, subrecipients, and
-federal programs reduce burden in eligibility and eligibility-confirmation
-work. [source: RWHAP Part A Program Manual]
+RWHAP funds can only cover what other coverage doesn't. Confirming a
+client's other coverage is a legal requirement. HRSA's HIV/AIDS Bureau
+(HRSA HAB) also stresses, in Policy Clarification Notice (PCN) 21-02, that
+recipients should put data-sharing agreements in place — not just to meet
+that requirement, but to streamline operations and reduce the burden on
+clients at the same time. [source: PCN 21-02]
 
 ---
 
 ## 2.1 Scope — DRAFT, NEEDS REVIEW
 
-Before drafting any agreement, a jurisdiction has to work out its scope:
+*(v2, after supervisor review — replaces the v1 scope list.)*
 
-- Which programs and agencies are included — RWHAP recipients and
-  subrecipients, other public health programs, and outside partners like
-  vendors.
+Before drafting any agreement, a jurisdiction has to work out its scope.
+That generally means naming, specifically:
+
+- Which programs are involved — RWHAP, and often HOPWA and Ending the HIV
+  Epidemic (EHE) initiatives alongside it.
+- Which departments and agencies are involved — the health department
+  itself, other units within it such as HIV surveillance, contracted and
+  non-contracted providers, vendors, and outside agencies such as Medicaid.
 - Which data systems will be used for eligibility determinations and other
   source data.
-- What agreements need to be created or updated to support that scope.
 
-Those agreements take different forms depending on who's involved and what's
-being shared — client consent, subrecipient agreements, use agreements,
-vendor contracts, and data sharing agreements between agencies. The diagram
-below lays out how those pieces connect.
+This maps directly onto the diagram below: parties are the health
+department, funded and unfunded providers, vendors, and other agencies;
+agreements are what connect them.
+
+### What this makes possible (general summary) — DRAFT, NEEDS REVIEW
+
+*New in v2. Lives here, in the How It Works tab, not in Benefits by Party —
+this is a general, not-party-specific overview. Party-specific benefits are
+drafted in the party panels below (2.2). Compare to 2.5 What it makes
+possible, below, a separate list that predates this summary — see the open
+question logged at 2.5 about whether that list is now redundant.*
+
+Two broad kinds of benefit come from getting these agreements right, and
+they're worth naming up front — the panels below go into the benefits
+specific to each party.
+
+**Streamlining operations.** When lab data or other source data feeds
+directly into the system, case managers no longer need to pull that data by
+hand and re-enter it, which removes a source of duplicated work. Automated
+checks for income, Medicaid status, or residency reduce the time case
+managers spend requesting and processing documentation.
+
+**Reducing barriers for clients.** Today, a client typically has to bring in
+pay stubs or tax records, a driver's license, and proof of insurance — not
+just once, but again every time their income or address changes, because the
+program only learns about a change when the client reports it. An automated
+feed changes that: instead of an annual check, eligibility-relevant facts
+like Medicaid enrollment can be checked monthly, or more often, without the
+client having to bring anything in. If a client goes on Medicaid partway
+through the year, the system can reflect that automatically rather than
+waiting for the client to report it.
+
+This is becoming more relevant, not less. A 2025 federal law (P.L. 119-21)
+requires states to redetermine Medicaid eligibility for expansion adults at
+least every six months rather than annually, and to condition continued
+coverage on new work or community-engagement requirements starting January
+1, 2027 (some states earlier). [source: KFF, Tracking Implementation of the
+2025 Reconciliation Law] That is expected to make Medicaid coverage more
+episodic for some clients — on, off, and back on again within a year —
+which makes more frequent, automated eligibility checking more useful than
+an annual snapshot. [source: CMS, State Medicaid Director Letter, March 6,
+2026]
+
+Fewer documentation requests also means clients are less likely to lose
+eligibility purely because they didn't resubmit paperwork in time — which
+supports retention in care.
 
 ---
 
@@ -117,18 +168,47 @@ marker rather than shipping something ambiguous.
 
 ### Party panels — DRAFT, NEEDS REVIEW
 
+*(v2, after supervisor review — replaces the v1 party panels.)*
+
 Draft wording below for all six parties. Not approved. Do not build panel text
 until Kabir approves it.
 
-*(Note: drafted as two headings per party — "What happens here" and "Worth
-knowing" — not the three originally specified. "Who they are" is not drafted
-below; flag to Kabir rather than inventing it.)*
+Structure per party: What happens here / Benefits / Worth knowing. Benefits
+is written from the perspective of "why would this party agree to share
+data" — useful for programs negotiating these agreements, since no partner
+signs on to the work and cost of an agreement without a reason to.
+
+*(Note: five of six parties are still identity-free, consistent with the
+general rule against identifying parties. Client is now a deliberate,
+flagged exception — see below. Funded providers and Unfunded providers have
+no Benefits subsection drafted; not omitted by mistake, just not written
+yet.)*
 
 **Client**
 
+*Who they are (deliberate exception to the identity-free rule above):* the
+person receiving RWHAP-funded HIV care and support services. Added per
+supervisor review to fix a specific bug: the Client node's description had
+gotten mixed up with the consent-form agreement's content in the working
+diagram.
+
 *What happens here*
-The client signs a consent form setting what can be shared, with whom, and
-for how long. No consent, no sharing. [source: PCN 21-02]
+The client signs a consent form (or release of information) setting what
+can be shared, with whom, and for how long. No consent, no sharing.
+[source: PCN 21-02]
+
+*Benefits*
+A broader consent — one that covers the full network of providers and
+agencies involved in a client's care, rather than one relationship at a
+time — reduces how much documentation a client has to provide, and to how
+many separate people. It makes it easier to access services, since any
+authorized provider can confirm eligibility without the client re-proving
+it. It supports better-coordinated care, since providers across the network
+can see what care a client has and hasn't received. And, underlying all of
+it: the health department can't pay for a client's care until eligibility
+is confirmed, and confirming eligibility depends on access to the right
+information — so client consent is what makes the payment side of the whole
+system work.
 
 *Worth knowing*
 Consent can be time-limited. When it ends, the agency keeps what it already
@@ -140,6 +220,22 @@ has but stops receiving updates.
 Usually the hub. Receives data from providers, vendors, and other agencies.
 Often responsible for confirming a client's other coverage to meet the
 payer-of-last-resort requirement. [source: PCN 21-02]
+
+*Benefits*
+Getting data from a partner like Medicaid lets the program run faster,
+cheaper eligibility checks than manual verification, and can help confirm a
+client's state residency, since Medicaid eligibility itself generally
+requires state residency. It can also surface other care-related data that
+supports smoother transitions of care between providers.
+
+<!-- OPEN FLAG (needs research, not drafted): what's the benefit to the
+health department's own surveillance unit specifically, if it's asked to
+share more with other internal programs? Not yet answered per supervisor
+review -- flagged for follow-up rather than guessed at. -->
+**Still needs research:** what's the benefit to the health department's own
+surveillance unit specifically, if it's asked to share more with other
+internal programs? Not yet answered — flagged for follow-up rather than
+guessed at.
 
 *Worth knowing*
 Programs under one director can share internally without a separate
@@ -173,6 +269,12 @@ Runs through a contract with business associate provisions under HIPAA,
 since the vendor handles protected health information on the program's
 behalf. [source: HHS Sample Business Associate Agreement Provisions]
 
+*No Benefits section, by design:* a vendor relationship is a standard
+contract signed as a condition of doing business, not a mutually-negotiated
+data-sharing relationship like the other parties. Per supervisor review,
+framing it as a "benefit" the vendor weighs would misrepresent that
+relationship.
+
 *Worth knowing*
 The business associate provisions live inside the vendor contract, not a
 separate document. [source: 02-data-sharing.md, 2.2, APPROVED diagram rule]
@@ -184,11 +286,28 @@ Runs through its own data sharing agreement, scoped to what each side needs
 and is entitled to receive back. Most often Medicaid (coverage verification)
 or another jurisdiction's health department (surveillance matching).
 
+*Benefits*
+<!-- OPEN FLAG (needs research, not drafted): the benefit TO Medicaid of
+sharing data back to a RWHAP program, and the benefit to another
+jurisdiction's health department of surveillance matching, are both
+unknown -- need research or a direct partner conversation, per supervisor
+review. Two separate open items, not one. -->
+- *Medicaid:* what a program gets from Medicaid data is described under
+  Health department above. What Medicaid itself gets from sharing back —
+  the case that would actually be made in a negotiation — isn't yet known.
+  This needs research, or a direct conversation with a Medicaid partner,
+  before it can be drafted. Not guessed at here.
+- *Other health departments (surveillance matching):* not yet researched
+  either. Flagged for the same reason.
+
 *Worth knowing*
 Hardest category to standardize. Each partner has its own legal authority
 and comfort level, so agreements get negotiated one partner at a time.
 
 ### Agreement panels — DRAFT, NEEDS REVIEW
+
+*(v2, after supervisor review. Client consent form is substantially
+expanded; the other four are unchanged from v1.)*
 
 Draft wording below for all five. Not approved. Two templates are real public
 links and become APPROVED links once their panels are approved.
@@ -196,10 +315,25 @@ links and become APPROVED links once their panels are approved.
 **Client consent form**
 
 *What it is* — The document authorizing what client data can be shared, with
-whom, and for how long.
+whom, and for how long. It goes by different names depending on the
+program — a consent form, a release of information, or sometimes not a
+standalone document at all, but a section built into a broader program
+authorization form.
 *Who signs it* — The client, or their authorized representative.
-*What it needs to cover* — Which records are covered, which parties can
-receive them, and whether the authorization has an end date.
+*What it needs to cover*
+- Who it authorizes sharing with — the agencies involved, vendors
+  supporting the program, contracted and non-contracted providers
+  (including subrecipients), and other authorized users.
+- What the data can be used for. Common authorized uses include:
+  establishing eligibility; managing enrollment; providing care; managing
+  program operations; and compliance and audit-related purposes — for
+  example, reporting to funders on services provided and how funding was
+  used, and the program's own monitoring and auditing of its subrecipients.
+- Scope, and how it can grow. When a program moves toward a more integrated
+  system, consent often needs to be broadened to match — for example, from
+  a single Ryan White program's clients to all Ryan White programs across a
+  state. That's a scope decision to make deliberately, not a side effect of
+  the technical change.
 *Template* — Yet to source. (Kabir providing.)
 
 **Subrecipient agreement**
@@ -364,12 +498,22 @@ statute the way some other states do.
 
 ## 2.4 Barriers and how to address them — DRAFT, NEEDS REVIEW
 
-Spine: HRSA HAB Technical Expert Panel (TEP), *Streamlining Eligibility for
-the Ryan White HIV/AIDS Program* (August 2023).
+*(v2, after supervisor review — adds the "About this source" note below and
+substantially expands "Privacy concerns shape what gets shared and how."
+Other barriers are unchanged from v1.)*
 
 *(Note: "Joint eligibility is not joint certification" has been removed from
 this list. It belongs on the Joint Eligibility page instead; Kabir will add it
 there. Do not add it anywhere in this topic.)*
+
+### About this source
+
+In 2023, HRSA's HIV/AIDS Bureau convened a Technical Expert Panel (TEP) to
+study how RWHAP recipients were implementing PCN 21-02 and where they were
+running into trouble streamlining eligibility. The barriers below, unless
+noted otherwise, come directly from that panel's executive summary — a
+primary HRSA source, not a vendor's account of the problem.
+[source: HRSA TEP Executive Summary]
 
 **Establishing and maintaining data sharing agreements is hard**
 TEP participants identified access to and effective use of data, particularly
@@ -387,9 +531,33 @@ Medicaid, and none allow Medicaid direct access to the HIV surveillance
 database. [source: NASTAD, HIV Data Privacy and Confidentiality]
 
 **Privacy concerns shape what gets shared and how**
-TEP participants flagged privacy as a factor that has to be weighed carefully
-in every data-sharing decision, alongside the practical work of identifying
-gatekeepers and negotiating agreements. [source: HRSA TEP Executive Summary]
+Data can generally only be shared for a given client if that client has
+consented to it — and consent doesn't automatically extend across every
+system that holds a client's data.
+
+State HIV surveillance systems, for example, hold records for everyone
+diagnosed with HIV in the state, not just RWHAP clients — but not everyone
+in that database has consented to share their information outside the
+surveillance system. Before a state can share surveillance data with a Ryan
+White program, it has to filter the match down to only the clients who've
+actually consented to that sharing. The same logic applies to Medicaid
+data: many RWHAP clients also appear in Medicaid's records, but a program
+can only receive the data for clients who've consented, not the whole
+matched set.
+
+<!-- OPEN FLAG (unsourced figure, do not present as settled): the review
+call offered an approximation that Ryan White clients make up roughly half
+of a given state's HIV surveillance database. That number was said
+verbally, not cited, and needs a real source before it's usable. -->
+**Flagged, not yet sourced:** one figure from the review call needs a real
+source before it's usable here — the approximation that Ryan White clients
+make up roughly half of a given state's HIV surveillance database. That
+number was offered verbally as an example, not from a citation, and needs to
+be confirmed or sourced before it appears on the site.
+
+[source: HRSA TEP Executive Summary, for the general privacy-as-barrier
+framing; the consent-matching mechanism is not yet independently sourced
+beyond the review call]
 
 **Reconciling consent models across programs is slow**
 Programs vary in how they collect client consent to share data, and getting
