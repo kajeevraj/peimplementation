@@ -14,6 +14,11 @@ const { requireAuth, isAuthed } = require("../auth");
 
 const router = express.Router();
 
+// Testing knob: while set, unapproved blocks show to logged-out visitors
+// too (comments still don't). Flip SHOW_DRAFTS_PUBLICLY off in the
+// environment once real draft/approved review is wanted.
+const SHOW_DRAFTS_PUBLICLY = process.env.SHOW_DRAFTS_PUBLICLY === "true";
+
 // GET /api/blocks?page=data-sharing            -> all blocks for a page
 // GET /api/blocks?page=data-sharing&section=barriers -> one section
 router.get("/", (req, res) => {
@@ -36,7 +41,9 @@ router.get("/", (req, res) => {
   if (!isAuthed(req)) {
     // Comments are an editing tool, not content: they never appear off this
     // list, approved or not.
-    rows = rows.filter((b) => b.status === "approved" && b.block_type !== "comment");
+    rows = rows.filter(
+      (b) => b.block_type !== "comment" && (SHOW_DRAFTS_PUBLICLY || b.status === "approved")
+    );
   }
 
   res.json(rows);

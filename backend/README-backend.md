@@ -16,7 +16,11 @@ it needs somewhere to actually run, not just static file hosting.
 - **A logged-out visitor only ever sees approved blocks.** Draft blocks
   and comments (see below) only render in edit mode, after logging in.
   This is enforced in the API itself (`routes/blocks.js` filters by
-  session), not just hidden client-side.
+  session), not just hidden client-side. Set `SHOW_DRAFTS_PUBLICLY=true`
+  in the environment to temporarily show drafts to everyone too (e.g.
+  while testing, before there's any real draft/approved distinction to
+  protect) — comments stay editor-only either way. Unset it (or set it
+  to `false`) once that distinction matters again.
 - **Comments** are a separate block type for editorial asides ("this
   figure still needs a source," "these two sections overlap") that are
   never public, regardless of status. Add one anywhere with "+ Add
