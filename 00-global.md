@@ -1,7 +1,16 @@
-# 00 — GLOBAL RULES
+# 00: GLOBAL RULES
 
 These bind every topic and override anything in a topic file. Read this before
 building any page. See README.md for the approval-tag system.
+
+**Publishing rule note:** DRAFT, NEEDS REVIEW content now publishes on the
+live site, marked with the site's existing `.status-tag.draft` /
+`.preview-banner` / `.flag-note` styling. Every rule in this file, the
+never-publish list, the NIH study disclosure rule, and source discipline,
+applies to DRAFT content exactly as it applies to APPROVED content. A draft
+marker is not an exemption from these rules; it only means the prose hasn't
+been reviewed yet. If a drafted sentence would violate a rule below, it
+should not have been drafted in the first place.
 
 ---
 
@@ -42,7 +51,15 @@ independent evidence is stronger.
   pitch.
 - **Spell out every acronym on first use.**
 - **Name jurisdictions only in APPROVED case studies**, describing published or
-  documented practice, never implying a commercial relationship.
+  documented practice, never implying a commercial relationship. This
+  excludes Groupware's own internal proposal, SOW, and sales materials as a
+  case-study source, even when they describe a real jurisdiction's practice:
+  using them would itself be the commercial relationship this rule prohibits.
+- **No em dashes**, anywhere on the site or in anything written for this
+  project. Use a period, comma, colon, or "and"/"but" instead.
+- **No "not X, Y" contrastive phrasing** (e.g. "a standard contract, not a
+  negotiated relationship"). State the point directly instead of setting up
+  a negation to knock down.
 
 ## Source discipline
 
