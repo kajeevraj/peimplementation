@@ -33,19 +33,20 @@ the CMS replaced them.
 ## File structure
 
 ```
-index.html, data-sharing.html,
-joint-eligibility.html,
-electronic-sources.html          Topic pages (root copies; kept in sync
-                                  with backend/public/ manually for now)
-style.css, tabs.js                Shared site styling and tab behavior
-diagram.js, diagram.css           The Data Sharing agreements diagram
-backend/                          CMS backend (Express + SQLite)
+backend/                          CMS backend (Express + SQLite) — this is
+                                  the whole app; Render's Root Directory
+                                  points here, so nothing outside it ships
   server.js, db.js, auth.js       Core app
   routes/                         API routes
   seed.js                        Parses a content file into blocks;
                                   used by both migrate.js and server.js
   migrate.js                     Manual, always-overwrite import/reseed
   content/                       Hand-editable source per page (see above)
-  public/                        Static files actually served by the app
+  public/                        Static pages, styling, and tab/diagram
+                                  behavior actually served by the app
+                                  (index.html, data-sharing.html,
+                                  joint-eligibility.html,
+                                  electronic-sources.html, style.css,
+                                  tabs.js, diagram.js, diagram.css)
 source/                          Grounding material, gitignored, not shipped
 ```
