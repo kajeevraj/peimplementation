@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Data Sharing: Joint Eligibility Playbook</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="diagram.css">
 </head>
 <body>
 
@@ -79,85 +80,126 @@
     <p>This is becoming more relevant. A 2025 federal law (P.L. 119-21) requires states to redetermine Medicaid eligibility for expansion adults at least every six months rather than annually, and to condition continued coverage on new work or community-engagement requirements starting January 1, 2027 (some states earlier). <span class="source-note">[source: KFF, Tracking Implementation of the 2025 Reconciliation Law]</span> That is expected to make Medicaid coverage more episodic for some clients, on, off, and back on again within a year, which makes more frequent, automated eligibility checking more useful than an annual snapshot. <span class="source-note">[source: CMS, State Medicaid Director Letter, March 6, 2026]</span></p>
     <p>Fewer documentation requests also means clients are less likely to lose eligibility purely because they didn't resubmit paperwork in time. This supports retention in care.</p>
 
-    <h4>The agreements</h4>
-    <p class="flag-note">The interactive diagram (structure and legend are APPROVED in the source file) has not been rebuilt since the site's navigation was restructured. What follows is the panel text only, presented in list form.</p>
+    <h4>The agreements <span class="status-tag draft">Draft, needs review</span></h4>
+    <p class="source-note">Diagram structure and legend are APPROVED in the source file (02-data-sharing.md, 2.2). Panel text for each element is drafted content, unchanged from the previous list-form version, now shown on selection instead of all at once.</p>
+    <p class="diagram-intro">Select a box or pill below to see who is involved and what each agreement covers. Boxes are parties; pills on the connecting lines are agreements.</p>
 
-    <h5>Who's involved <span class="status-tag draft">Draft, needs review</span></h5>
-    <p class="source-note">v2, after supervisor review. Replaces the v1 party panels. Structure per party: What happens here / Benefits / Worth knowing. Five of six parties stay identity-free; Client is a deliberate, flagged exception (see below). Funded providers and Unfunded providers have no Benefits subsection drafted yet.</p>
+    <div class="diagram-legend">
+      <span class="legend-item"><span class="legend-swatch party"></span> Party</span>
+      <span class="legend-item"><span class="legend-swatch agreement"></span> Agreement</span>
+      <span class="legend-item"><span class="legend-swatch approved"></span> Has an approved case study</span>
+      <span class="legend-item"><span class="legend-swatch draft-cs"></span> Has a drafted, not yet approved case study</span>
+    </div>
 
-    <p><strong>Health department</strong><br>
-    <em>What happens here:</em> Usually the hub. Receives data from providers, vendors, and other agencies. Often responsible for confirming a client's other coverage to meet the payer-of-last-resort requirement. <span class="source-note">[source: PCN 21-02]</span><br>
-    <em>Benefits:</em> Getting data from a partner like Medicaid lets the program run faster, cheaper eligibility checks than manual verification, and can help confirm a client's state residency, since Medicaid eligibility itself generally requires state residency. It can also surface other care-related data that supports smoother transitions of care between providers.</p>
-    <p class="flag-note"><strong>Still needs research:</strong> what's the benefit to the health department's own surveillance unit specifically, if it's asked to share more with other internal programs? Not yet answered. Flagged for follow-up rather than guessed at.</p>
-    <p><em>Worth knowing:</em> Programs under one director can share internally without a separate agreement. Sharing outside the department, like with Medicaid, still needs one.</p>
+    <div class="diagram-svg-wrap" id="diagram-wrap-desktop" data-panel="diagram-panel" data-pair="diagram-wrap-mobile">
+      <svg class="diagram-svg diagram-desktop" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg" role="group" aria-label="Data sharing parties and agreements">
+    <g class="connectors">
+      <line x1="450" y1="40" x2="450" y2="58" class="connector"/><line x1="450" y1="86" x2="450" y2="104" class="connector"/><line x1="450" y1="138" x2="450" y2="156" class="connector"/><line x1="120" y1="156" x2="780" y2="156" class="connector"/><line x1="120" y1="156" x2="120" y2="176" class="connector"/><line x1="120" y1="204" x2="120" y2="222" class="connector"/><line x1="340" y1="156" x2="340" y2="176" class="connector"/><line x1="340" y1="204" x2="340" y2="222" class="connector"/><line x1="560" y1="156" x2="560" y2="176" class="connector"/><line x1="560" y1="204" x2="560" y2="222" class="connector"/><line x1="780" y1="156" x2="780" y2="176" class="connector"/><line x1="780" y1="204" x2="780" y2="222" class="connector"/>
+    </g>
+    <g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="client">
+      <title>Client</title>
+      <rect x="380" y="6" width="140" height="34" rx="6" class="node-shape"/>
+      <text x="450.0" y="27.0" text-anchor="middle" class="node-label"><tspan x="450.0" dy="0">Client</tspan></text>
+    </g><g class="node node-agreement" tabindex="0" role="button" aria-pressed="false" data-key="consent">
+      <title>Client consent form</title>
+      <rect x="340" y="58" width="220" height="28" rx="14" class="node-shape"/>
+      <text x="450.0" y="76.0" text-anchor="middle" class="node-label"><tspan x="450.0" dy="0">Client consent form</tspan></text>
+    </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="health-department">
+      <title>Health department</title>
+      <rect x="350" y="104" width="200" height="34" rx="6" class="node-shape"/>
+      <text x="450.0" y="125.0" text-anchor="middle" class="node-label"><tspan x="450.0" dy="0">Health department</tspan></text>
+    </g><g class="node node-agreement" tabindex="0" role="button" aria-pressed="false" data-key="subrecipient">
+      <title>Subrecipient agreement</title>
+      <rect x="40" y="176" width="160" height="28" rx="14" class="node-shape"/>
+      <text x="120.0" y="187.5" text-anchor="middle" class="node-label"><tspan x="120.0" dy="0">Subrecipient</tspan><tspan x="120.0" dy="13">agreement</tspan></text>
+    </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="funded-providers">
+      <title>Funded providers</title>
+      <rect x="40" y="222" width="160" height="34" rx="6" class="node-shape"/>
+      <text x="120.0" y="236.5" text-anchor="middle" class="node-label"><tspan x="120.0" dy="0">Funded</tspan><tspan x="120.0" dy="13">providers</tspan></text>
+    </g><g class="node node-agreement" tabindex="0" role="button" aria-pressed="false" data-key="use-agreement">
+      <title>Use agreement</title>
+      <rect x="260" y="176" width="160" height="28" rx="14" class="node-shape"/>
+      <text x="340.0" y="194.0" text-anchor="middle" class="node-label"><tspan x="340.0" dy="0">Use agreement</tspan></text>
+    </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="unfunded-providers">
+      <title>Unfunded providers</title>
+      <rect x="260" y="222" width="160" height="34" rx="6" class="node-shape"/>
+      <text x="340.0" y="236.5" text-anchor="middle" class="node-label"><tspan x="340.0" dy="0">Unfunded</tspan><tspan x="340.0" dy="13">providers</tspan></text>
+    </g><g class="node node-agreement" tabindex="0" role="button" aria-pressed="false" data-key="vendor-contract">
+      <title>Contract, including BAA</title>
+      <rect x="480" y="176" width="160" height="28" rx="14" class="node-shape"/>
+      <text x="560.0" y="187.5" text-anchor="middle" class="node-label"><tspan x="560.0" dy="0">Contract,</tspan><tspan x="560.0" dy="13">including BAA</tspan></text>
+    </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="vendors">
+      <title>Vendors</title>
+      <rect x="480" y="222" width="160" height="34" rx="6" class="node-shape"/>
+      <text x="560.0" y="243.0" text-anchor="middle" class="node-label"><tspan x="560.0" dy="0">Vendors</tspan></text>
+    </g><g class="node node-agreement" tabindex="0" role="button" aria-pressed="false" data-key="data-sharing">
+      <title>Data sharing agreement</title>
+      <rect x="700" y="176" width="160" height="28" rx="14" class="node-shape"/>
+      <text x="780.0" y="187.5" text-anchor="middle" class="node-label"><tspan x="780.0" dy="0">Data sharing</tspan><tspan x="780.0" dy="13">agreement</tspan></text>
+    </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="other-agencies">
+      <title>Other agencies</title>
+      <rect x="700" y="222" width="160" height="34" rx="6" class="node-shape"/>
+      <text x="780.0" y="236.5" text-anchor="middle" class="node-label"><tspan x="780.0" dy="0">Other</tspan><tspan x="780.0" dy="13">agencies</tspan></text>
+    </g>
+  </svg>
+    </div>
+    <div class="diagram-svg-wrap" id="diagram-wrap-mobile" data-panel="diagram-panel" data-pair="diagram-wrap-desktop">
+      <svg class="diagram-svg diagram-mobile" viewBox="0 0 300 584" xmlns="http://www.w3.org/2000/svg" role="group" aria-label="Data sharing parties and agreements">
+    <g class="connectors">
+      <line x1="150" y1="44" x2="150" y2="66" class="connector"/><line x1="150" y1="94" x2="150" y2="116" class="connector"/><line x1="150" y1="150" x2="150" y2="172" class="connector"/><line x1="150" y1="200" x2="150" y2="222" class="connector"/><line x1="150" y1="256" x2="150" y2="278" class="connector"/><line x1="150" y1="306" x2="150" y2="328" class="connector"/><line x1="150" y1="362" x2="150" y2="384" class="connector"/><line x1="150" y1="412" x2="150" y2="434" class="connector"/><line x1="150" y1="468" x2="150" y2="490" class="connector"/><line x1="150" y1="518" x2="150" y2="540" class="connector"/>
+    </g>
+    <g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="client">
+      <title>Client</title>
+      <rect x="20" y="10" width="260" height="34" rx="6" class="node-shape"/>
+      <text x="150.0" y="31.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Client</tspan></text>
+    </g><g class="node node-agreement" tabindex="0" role="button" aria-pressed="false" data-key="consent">
+      <title>Client consent form</title>
+      <rect x="20" y="66" width="260" height="28" rx="14" class="node-shape"/>
+      <text x="150.0" y="84.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Client consent form</tspan></text>
+    </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="health-department">
+      <title>Health department</title>
+      <rect x="20" y="116" width="260" height="34" rx="6" class="node-shape"/>
+      <text x="150.0" y="137.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Health department</tspan></text>
+    </g><g class="node node-agreement" tabindex="0" role="button" aria-pressed="false" data-key="subrecipient">
+      <title>Subrecipient agreement</title>
+      <rect x="20" y="172" width="260" height="28" rx="14" class="node-shape"/>
+      <text x="150.0" y="190.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Subrecipient agreement</tspan></text>
+    </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="funded-providers">
+      <title>Funded providers</title>
+      <rect x="20" y="222" width="260" height="34" rx="6" class="node-shape"/>
+      <text x="150.0" y="243.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Funded providers</tspan></text>
+    </g><g class="node node-agreement" tabindex="0" role="button" aria-pressed="false" data-key="use-agreement">
+      <title>Use agreement</title>
+      <rect x="20" y="278" width="260" height="28" rx="14" class="node-shape"/>
+      <text x="150.0" y="296.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Use agreement</tspan></text>
+    </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="unfunded-providers">
+      <title>Unfunded providers</title>
+      <rect x="20" y="328" width="260" height="34" rx="6" class="node-shape"/>
+      <text x="150.0" y="349.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Unfunded providers</tspan></text>
+    </g><g class="node node-agreement" tabindex="0" role="button" aria-pressed="false" data-key="vendor-contract">
+      <title>Contract, including BAA</title>
+      <rect x="20" y="384" width="260" height="28" rx="14" class="node-shape"/>
+      <text x="150.0" y="402.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Contract, including BAA</tspan></text>
+    </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="vendors">
+      <title>Vendors</title>
+      <rect x="20" y="434" width="260" height="34" rx="6" class="node-shape"/>
+      <text x="150.0" y="455.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Vendors</tspan></text>
+    </g><g class="node node-agreement" tabindex="0" role="button" aria-pressed="false" data-key="data-sharing">
+      <title>Data sharing agreement</title>
+      <rect x="20" y="490" width="260" height="28" rx="14" class="node-shape"/>
+      <text x="150.0" y="508.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Data sharing agreement</tspan></text>
+    </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="other-agencies">
+      <title>Other agencies</title>
+      <rect x="20" y="540" width="260" height="34" rx="6" class="node-shape"/>
+      <text x="150.0" y="561.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Other agencies</tspan></text>
+    </g>
+  </svg>
+    </div>
 
-    <p><strong>Client</strong><br>
-    <em>Who they are:</em> the person receiving RWHAP-funded HIV care and support services.<br>
-    <em>What happens here:</em> The client signs a consent form (or release of information) setting what can be shared, with whom, and for how long. No consent, no sharing. <span class="source-note">[source: PCN 21-02]</span><br>
-    <em>Benefits:</em> A broader consent, covering the full network of providers and agencies involved in a client's care rather than one relationship at a time, reduces how much documentation a client has to provide, and to how many separate people. It makes it easier to access services, since any authorized provider can confirm eligibility without the client re-proving it. It supports better-coordinated care, since providers across the network can see what care a client has and hasn't received. Underlying all of it: the health department can't pay for a client's care until eligibility is confirmed, and confirming eligibility depends on access to the right information. Client consent is what makes the payment side of the whole system work.<br>
-    <em>Worth knowing:</em> Consent can be time-limited. When it ends, the agency keeps what it already has but stops receiving updates.</p>
-
-    <p><strong>Funded providers</strong><br>
-    <em>What happens here:</em> Document services in the shared system under a subrecipient agreement that sets what data they collect, how it's used, and how it's reported back. <span class="source-note">[source: RWHAP Part A Program Manual]</span><br>
-    <em>Worth knowing:</em> The funding relationship gives data-sharing terms leverage: they can be written directly into the funding agreement.</p>
-
-    <p><strong>Unfunded providers</strong><br>
-    <em>What happens here:</em> No funding relationship, so sharing has to be negotiated on its own terms, usually through a use agreement.<br>
-    <em>Worth knowing:</em> No funding lever. The case for sharing rests on client benefit alone.</p>
-
-    <p><strong>Vendors</strong><br>
-    <em>What happens here:</em> Runs through a contract with business associate provisions under HIPAA, since the vendor handles protected health information on the program's behalf. <span class="source-note">[source: HHS Sample Business Associate Agreement Provisions]</span><br>
-    <em>No Benefits section, by design:</em> a vendor relationship is a standard contract signed as a condition of doing business, separate from the mutually negotiated relationships the other parties have. Framing it as a "benefit" the vendor weighs would misrepresent that relationship.<br>
-    <em>Worth knowing:</em> The business associate provisions live inside the vendor contract itself.</p>
-
-    <p><strong>Other agencies</strong><br>
-    <em>What happens here:</em> Runs through its own data sharing agreement, scoped to what each side needs and is entitled to receive back. Most often Medicaid (coverage verification) or another jurisdiction's health department (surveillance matching).</p>
-    <p class="flag-note"><strong>Benefits, still needs research (two separate open items):</strong></p>
-    <ul>
-      <li><em>Medicaid:</em> what a program gets from Medicaid data is described under Health department above. The case for what Medicaid itself gets from sharing back, the argument that would actually be made in a negotiation, still needs research or a direct conversation with a Medicaid partner before it can be drafted.</li>
-      <li><em>Other health departments (surveillance matching):</em> not yet researched either. Flagged for the same reason.</li>
-    </ul>
-    <p><em>Worth knowing:</em> Hardest category to standardize. Each partner has its own legal authority and comfort level, so agreements get negotiated one partner at a time.</p>
-
-    <h5>The agreements themselves <span class="status-tag draft">Draft, needs review</span></h5>
-    <p class="source-note">v2, after supervisor review. Client consent form is substantially expanded; the other four are unchanged from v1.</p>
-
-    <p><strong>Client consent form</strong><br>
-    <em>What it is:</em> The document authorizing what client data can be shared, with whom, and for how long. It goes by different names depending on the program: a consent form, a release of information, or a section built into a broader program authorization form.<br>
-    <em>Who signs it:</em> The client, or their authorized representative.<br>
-    <em>What it needs to cover:</em></p>
-    <ul>
-      <li>Who it authorizes sharing with: the agencies involved, vendors supporting the program, contracted and non-contracted providers (including subrecipients), and other authorized users.</li>
-      <li>What the data can be used for. Common authorized uses include: establishing eligibility; managing enrollment; providing care; managing program operations; and compliance and audit-related purposes, for example reporting to funders on services provided and how funding was used, and the program's own monitoring and auditing of its subrecipients.</li>
-      <li>Scope, and how it can grow. When a program moves toward a more integrated system, consent often needs to be broadened to match, for example from a single Ryan White program's clients to all Ryan White programs across a state. That's a deliberate scope decision to make, separate from the technical work of integration.</li>
-    </ul>
-    <p><em>Template:</em> Yet to source.</p>
-
-    <p><strong>Subrecipient agreement</strong><br>
-    <em>What it is:</em> The agreement between a RWHAP recipient and a funded provider, setting the terms under which the provider documents and reports client data. <span class="source-note">[source: RWHAP Part A Program Manual]</span><br>
-    <em>Who signs it:</em> The RWHAP recipient (grantee) and the funded subrecipient agency.<br>
-    <em>What it needs to cover:</em> What data the subrecipient collects, how it's used, and how it's reported back to the recipient.<br>
-    <em>Template:</em> Yet to source.</p>
-
-    <p><strong>Use agreement</strong><br>
-    <em>What it is:</em> The agreement covering data sharing with an unfunded provider, where no funding relationship exists to set the terms.<br>
-    <em>Who signs it:</em> The health department (or recipient) and the unfunded provider.<br>
-    <em>What it needs to cover:</em> Scope of data shared, permitted uses, and duration.<br>
-    <em>Template:</em> Yet to source.</p>
-
-    <p><strong>Contract, including BAA</strong><br>
-    <em>What it is:</em> The contract governing a vendor relationship, with business associate provisions built in under HIPAA. <span class="source-note">[source: HHS Sample Business Associate Agreement Provisions]</span><br>
-    <em>Who signs it:</em> The covered entity (health department or recipient) and the vendor.<br>
-    <em>What it needs to cover:</em> Permitted uses of protected health information, required safeguards, breach reporting, and subcontractor terms.<br>
-    <em>Template:</em> HHS sample business associate provisions. Link pending panel approval.</p>
-
-    <p><strong>Data sharing agreement</strong><br>
-    <em>What it is:</em> The agreement covering data exchange between agencies, most often a health department and Medicaid, or a health department and another jurisdiction.<br>
-    <em>Who signs it:</em> The two (or more) agencies exchanging data.<br>
-    <em>What it needs to cover:</em> What's exchanged, the matching or verification purpose, and what each side is entitled to receive back. <span class="source-note">[source: NASTAD DSA Templates and User Guide]</span><br>
-    <em>Template:</em> NASTAD DSA templates and user guide. Link pending panel approval.</p>
+    <div class="diagram-panel" id="diagram-panel" data-active-key=""></div>
 
     <h5>Named specifics <span class="status-tag input">Needs Kabir input</span></h5>
+
     <p>Candidates only. Nothing here is approved language. Still to be decided which specifics appear and where.</p>
     <p><strong>Vendor types</strong> (for the "Contract, including BAA" element): pharmacy benefit managers, insurance benefit managers / premium and cost-sharing assistance vendors, software vendors. <span class="source-note">[sources: Florida DOH ADAP page; New York State ADAP Pharmacy Manual; Virginia ADAP program materials]</span></p>
     <p><strong>Data-system types</strong> (for the "Data sharing agreement" element and Scope): Medicaid eligibility verification (270/271 transactions), surveillance and lab feeds (eHARS), electronic health records. <span class="source-note">[sources: CMS "About HETS 270/271"; NASTAD, Health Systems Integration]</span></p>
@@ -299,5 +341,6 @@
 </footer>
 
 <script src="tabs.js"></script>
+<script src="diagram.js"></script>
 </body>
 </html>
