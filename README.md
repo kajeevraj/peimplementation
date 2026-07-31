@@ -1,73 +1,40 @@
-# Data Sharing Playbook: build system
+# Joint eligibility playbook
 
-This playbook is written by Kabir. Claude Code builds what is approved or
-drafted. It does not supply content.
+A three-topic playbook (Joint Eligibility, Data Sharing, Use of Electronic
+Sources of Data) for Ryan White HIV/AIDS Program leaders. Data Sharing is
+the active topic; the other two are scaffolds.
+
+## How this site works now
+
+Content lives in a small CMS, not in files. `backend/` is an Express +
+SQLite app: it serves the static pages and an API that stores each page's
+text as editable blocks. See `backend/README-backend.md` for setup,
+deployment, and day-to-day editing.
+
+- **Editing content**: log in on the live site ("Edit this page," bottom
+  right corner) and edit directly in the browser. No git, no build step.
+- **Editing structure or styling**: the usual way, editing the HTML/CSS/JS
+  files in this repo and pushing.
+
+Every block has a status (`draft` or `approved`) and only approved blocks
+show to a logged-out visitor; drafts and editor-only comments only appear
+in edit mode. There's no separate file-based approval workflow anymore;
+that used to live in `pages/*.md` and `00-global.md`, which are gone now
+that the CMS replaced them.
 
 ## File structure
 
-Page footers cite content sources under `pages/`, for example
-`pages/data sharing/02-data-sharing.md`. The content files themselves:
-
 ```
-00-global.md            Rules that bind every topic. Read first, always.
-01-joint-eligibility.md Topic 1. Status: HOLD (scaffold only).
-02-data-sharing.md      Topic 2. Status: ACTIVE.
-03-electronic-sources.md Topic 3. Status: HOLD (scaffold only).
-source/                 Grounding material for Kabir. NOT a content source.
+index.html, data-sharing.html,
+joint-eligibility.html,
+electronic-sources.html          Topic pages (root copies; kept in sync
+                                  with backend/public/ manually for now)
+style.css, tabs.js                Shared site styling and tab behavior
+diagram.js, diagram.css           The Data Sharing agreements diagram
+backend/                          CMS backend (Express + SQLite)
+  server.js, db.js, auth.js       Core app
+  routes/                         API routes
+  migrate.js                      One-time importer, old HTML -> blocks
+  public/                         Static files actually served by the app
+source/                           Grounding material, gitignored, not shipped
 ```
-
-## Reading order for every build
-
-1. `00-global.md`: the guardrails. These override everything.
-2. The topic file(s) you are building.
-3. `source/` only if Kabir points you to it. Never mine it for content.
-
-## The publishing rule
-
-DRAFT, NEEDS REVIEW content publishes on the live site, always visibly marked
-as a draft. It is never indistinguishable from reviewed content.
-
-Every content item in every topic file carries a status tag:
-
-| Tag | Meaning | What you do |
-|---|---|---|
-| APPROVED, VERBATIM | Kabir wrote or signed off on this exact wording | Use the words as written, no draft marker. No rewriting, polishing, or expanding. |
-| APPROVED | Substance approved; wording may be tidied | Build it, no draft marker. Light copy-edit only. Add no facts. |
-| DRAFT, NEEDS REVIEW | Claude-drafted, not approved | Publish it, marked with `.status-tag.draft` (and a `.preview-banner` at the top of the page). Any inline caveat, gap, or unsourced figure stays visible using `.flag-note`, not dropped or resolved. |
-| NEEDS KABIR INPUT | A gap only Kabir can fill | Do not publish. Mark with `.status-tag.input`. |
-| HOLD | Not being built yet | Build the empty container only. |
-| CUT | Removed | Ignore. |
-
-Unmarked defaults to DRAFT, NEEDS REVIEW, and publishes the same way. When in
-doubt about whether something is fit to draft at all, leave it out and tell
-Kabir.
-
-This does not relax 00-global.md. The never-publish list, the NIH study
-disclosure rule, and source discipline all apply to DRAFT content exactly as
-they apply to APPROVED content.
-
-## What each build should do, then stop
-
-1. State each topic's status (ACTIVE or HOLD).
-2. Build APPROVED and APPROVED, VERBATIM items with no draft marker.
-3. Build DRAFT, NEEDS REVIEW items with the visible draft marker.
-4. Render NEEDS KABIR INPUT, HOLD, and CUT items as their labelled empty
-   states, exactly as before. These still don't publish.
-5. List what is waiting on Kabir, grouped by topic file.
-
-## Current state
-
-- `02-data-sharing.md` is ACTIVE. Most items are still DRAFT, because Kabir has
-  not gone through them yet. Drafted sections publish on data-sharing.html
-  with the draft marker; NEEDS KABIR INPUT and HOLD items still render as
-  empty states.
-- `01` and `03` are HOLD. Build their page shells and their own empty case
-  study sections. No content.
-
-## How Kabir approves
-
-Kabir edits the topic files directly: changes tags to APPROVED, rewrites drafts
-into his own words and tags them APPROVED, VERBATIM, and fills NEEDS KABIR INPUT
-gaps. Claude Code never changes a tag. Approving a tag removes the draft
-marker from that content the next time the site is built; it does not change
-what the content says unless Kabir also edits the text.
