@@ -1,12 +1,16 @@
 // routes/blocks.js
-// GET routes are public: the site's visitors need this content to render
-// the page at all. Every write route (POST/PUT/DELETE) has requireAuth
-// attached directly, so the auth rule for each route lives right next to
-// the route itself instead of being decided elsewhere.
+// GET is public and unauthenticated (the site's visitors need this content
+// to render the page), but what it returns depends on whether the caller
+// has a valid session: a logged-out request only ever sees approved,
+// non-comment blocks ("the site normally"); a logged-in editor sees
+// everything, drafts and comments included, so there's something to work
+// on. Every write route (POST/PUT/DELETE) has requireAuth attached
+// directly, so the auth rule for each route lives right next to the route
+// itself instead of being decided elsewhere.
 
 const express = require("express");
 const db = require("../db");
-const { requireAuth } = require("../auth");
+const { requireAuth, isAuthed } = require("../auth");
 
 const router = express.Router();
 
@@ -28,6 +32,13 @@ router.get("/", (req, res) => {
       .prepare("SELECT * FROM blocks WHERE page = ? ORDER BY section, position ASC")
       .all(page);
   }
+
+  if (!isAuthed(req)) {
+    // Comments are an editing tool, not content: they never appear off this
+    // list, approved or not.
+    rows = rows.filter((b) => b.status === "approved" && b.block_type !== "comment");
+  }
+
   res.json(rows);
 });
 

@@ -56,12 +56,14 @@
     });
     if (editMode) {
       slot.appendChild(renderAddBlockControl(section));
+      slot.appendChild(renderAddCommentControl(section));
     }
   }
 
   function renderBlock(block, index, total) {
+    const isComment = block.block_type === "comment";
     const wrap = document.createElement("div");
-    wrap.className = "cms-block";
+    wrap.className = isComment ? "cms-block cms-comment" : "cms-block";
     wrap.dataset.blockId = block.id;
 
     // Some blocks (currently case studies) carry a stable entry_id that
@@ -75,10 +77,19 @@
       wrap.classList.add("case-study-entry");
     }
 
+    if (isComment) {
+      const label = document.createElement("span");
+      label.className = "cms-comment-label";
+      label.textContent = "Comment";
+      wrap.appendChild(label);
+    }
+
     if (block.title) {
       const h = document.createElement("h4");
       h.textContent = block.title;
-      if (block.status !== "approved") {
+      // Comments aren't approved/drafted content, so this tag never applies
+      // to them regardless of whatever status value they happen to carry.
+      if (!isComment && block.status !== "approved") {
         h.appendChild(document.createTextNode(" "));
         const tag = document.createElement("span");
         tag.className = "status-tag draft";
@@ -111,10 +122,16 @@
     upBtn.disabled = index === 0;
     downBtn.disabled = index === total - 1;
 
-    const isApproved = block.status === "approved";
-    const statusBtn = button(isApproved ? "Mark as draft" : "Approve", () => toggleStatus(block));
+    bar.append(upBtn, downBtn, editBtn);
 
-    bar.append(upBtn, downBtn, editBtn, statusBtn, deleteBtn);
+    // Approval doesn't apply to a comment: it can never be public, whatever
+    // its status column says, so there's nothing useful to toggle.
+    if (block.block_type !== "comment") {
+      const isApproved = block.status === "approved";
+      bar.appendChild(button(isApproved ? "Mark as draft" : "Approve", () => toggleStatus(block)));
+    }
+
+    bar.appendChild(deleteBtn);
     return bar;
   }
 
@@ -225,6 +242,38 @@
           if (newWrap) newWrap.scrollIntoView({ behavior: "smooth", block: "center" });
         } catch (err) {
           alert("Couldn't add block: " + err.message);
+        }
+      })
+    );
+    return wrap;
+  }
+
+  // A comment is a block like any other (same section/position system, so
+  // it can be added anywhere and reordered like the rest), except it's
+  // never returned to a logged-out request regardless of status, so it
+  // only ever shows up in edit mode. Replaces the old practice of writing
+  // an editorial aside directly into a block's own public content.
+  function renderAddCommentControl(section) {
+    const wrap = document.createElement("div");
+    wrap.className = "cms-add-block";
+    wrap.appendChild(
+      button("+ Add comment", async () => {
+        try {
+          const created = await api("/blocks", {
+            method: "POST",
+            body: JSON.stringify({
+              page: PAGE,
+              section,
+              block_type: "comment",
+              title: "",
+              content: "<p>New comment. Click Edit to write it.</p>",
+            }),
+          });
+          await loadAndRender();
+          const newWrap = document.querySelector(`.cms-block[data-block-id="${created.id}"]`);
+          if (newWrap) newWrap.scrollIntoView({ behavior: "smooth", block: "center" });
+        } catch (err) {
+          alert("Couldn't add comment: " + err.message);
         }
       })
     );
