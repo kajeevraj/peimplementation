@@ -6,21 +6,29 @@ the active topic; the other two are scaffolds.
 
 ## How this site works now
 
-Content lives in a small CMS, not in files. `backend/` is an Express +
-SQLite app: it serves the static pages and an API that stores each page's
-text as editable blocks. See `backend/README-backend.md` for setup,
-deployment, and day-to-day editing.
+Content lives in a small CMS, not hand-tagged files. `backend/` is an
+Express + SQLite app: it serves the static pages and an API that stores
+each page's text as editable blocks. See `backend/README-backend.md` for
+setup, deployment, and details.
 
-- **Editing content**: log in on the live site ("Edit this page," bottom
-  right corner) and edit directly in the browser. No git, no build step.
-- **Editing structure or styling**: the usual way, editing the HTML/CSS/JS
-  files in this repo and pushing.
+There are two ways to change content, and which one to use depends on
+your host:
 
-Every block has a status (`draft` or `approved`) and only approved blocks
-show to a logged-out visitor; drafts and editor-only comments only appear
-in edit mode. There's no separate file-based approval workflow anymore;
-that used to live in `pages/*.md` and `00-global.md`, which are gone now
-that the CMS replaced them.
+- **Edit live, in the browser**: log in ("Edit this page," bottom right
+  corner), edit/approve/comment directly. Instant, no git. **Only durable
+  if your host has a persistent disk.**
+- **Edit `backend/content/<page>.html` and push**: on a host with no
+  persistent disk (e.g. a free tier), the database resets on every
+  restart, so this file is what actually survives — the server rebuilds
+  its blocks from it on every boot. Mark a heading `data-status="approved"`
+  to publish it immediately; add `<div class="editor-comment">` for an
+  editor-only note. See `backend/README-backend.md` for the exact format.
+
+Every block has a status (`draft` or `approved`); only approved blocks
+show to a logged-out visitor. Drafts and comments only appear in edit
+mode. There's no separate file-tagging approval workflow anymore; that
+used to live in `pages/*.md` and `00-global.md`, which are gone now that
+the CMS replaced them.
 
 ## File structure
 
@@ -34,7 +42,10 @@ diagram.js, diagram.css           The Data Sharing agreements diagram
 backend/                          CMS backend (Express + SQLite)
   server.js, db.js, auth.js       Core app
   routes/                         API routes
-  migrate.js                      One-time importer, old HTML -> blocks
-  public/                         Static files actually served by the app
-source/                           Grounding material, gitignored, not shipped
+  seed.js                        Parses a content file into blocks;
+                                  used by both migrate.js and server.js
+  migrate.js                     Manual, always-overwrite import/reseed
+  content/                       Hand-editable source per page (see above)
+  public/                        Static files actually served by the app
+source/                          Grounding material, gitignored, not shipped
 ```
