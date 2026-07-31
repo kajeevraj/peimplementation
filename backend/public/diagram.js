@@ -15,8 +15,7 @@ var DIAGRAM_DATA = {
     panelHTML:
       '<p><em>Who they are:</em> the person receiving RWHAP-funded HIV care and support services.</p>' +
       '<p><em>What happens here:</em> The client signs a consent form (or release of information) setting what can be shared, with whom, and for how long. No consent, no sharing. <span class="source-note">[source: PCN 21-02]</span></p>' +
-      '<p><em>Benefits:</em> A broader consent, covering the full network of providers and agencies involved in a client\u2019s care rather than one relationship at a time, reduces how much documentation a client has to provide, and to how many separate people. It makes it easier to access services, since any authorized provider can confirm eligibility without the client re-proving it. It supports better-coordinated care, since providers across the network can see what care a client has and hasn\u2019t received. Underlying all of it: the health department can\u2019t pay for a client\u2019s care until eligibility is confirmed, and confirming eligibility depends on access to the right information. Client consent is what makes the payment side of the whole system work.</p>' +
-      '<p><em>Worth knowing:</em> Consent can be time-limited. When it ends, the agency keeps what it already has but stops receiving updates.</p>',
+      '<p><em>Worth knowing:</em> Consent can be time-limited. When it ends, the agency keeps what it already has but stops receiving updates. See the Benefits by party tab for what broader consent gets the client.</p>',
     caseStudies: []
   },
   "health-department": {
@@ -24,9 +23,7 @@ var DIAGRAM_DATA = {
     name: "Health department",
     panelHTML:
       '<p><em>What happens here:</em> Usually the hub. Receives data from providers, vendors, and other agencies. Often responsible for confirming a client\u2019s other coverage to meet the payer-of-last-resort requirement. <span class="source-note">[source: PCN 21-02]</span></p>' +
-      '<p><em>Benefits:</em> Getting data from a partner like Medicaid lets the program run faster, cheaper eligibility checks than manual verification, and can help confirm a client\u2019s state residency, since Medicaid eligibility itself generally requires state residency. It can also surface other care-related data that supports smoother transitions of care between providers.</p>' +
-      '<p class="flag-note"><strong>Still needs research:</strong> what\u2019s the benefit to the health department\u2019s own surveillance unit specifically, if it\u2019s asked to share more with other internal programs? Not yet answered. Flagged for follow-up rather than guessed at.</p>' +
-      '<p><em>Worth knowing:</em> Programs under one director can share internally without a separate agreement. Sharing outside the department, like with Medicaid, still needs one.</p>',
+      '<p><em>Worth knowing:</em> Programs under one director can share internally without a separate agreement. Sharing outside the department, like with Medicaid, still needs one. See the Benefits by party tab for what the health department gains from data sharing.</p>',
     caseStudies: [
       { id: "cs-louisiana", place: "Louisiana", status: "DRAFT, NEEDS REVIEW" }
     ]
@@ -52,8 +49,7 @@ var DIAGRAM_DATA = {
     name: "Vendors",
     panelHTML:
       '<p><em>What happens here:</em> Runs through a contract with business associate provisions under HIPAA, since the vendor handles protected health information on the program\u2019s behalf. <span class="source-note">[source: HHS Sample Business Associate Agreement Provisions]</span></p>' +
-      '<p><em>No Benefits section, by design:</em> a vendor relationship is a standard contract signed as a condition of doing business, separate from the mutually negotiated relationships the other parties have. Framing it as a \u201cbenefit\u201d the vendor weighs would misrepresent that relationship.</p>' +
-      '<p><em>Worth knowing:</em> The business associate provisions live inside the vendor contract itself.</p>',
+      '<p><em>Worth knowing:</em> The business associate provisions live inside the vendor contract itself. There is no Benefits entry for vendors, by design: a vendor relationship is a standard contract signed as a condition of doing business, separate from the mutually negotiated relationships the other parties have.</p>',
     caseStudies: []
   },
   "other-agencies": {
@@ -61,12 +57,7 @@ var DIAGRAM_DATA = {
     name: "Other agencies",
     panelHTML:
       '<p><em>What happens here:</em> Runs through its own data sharing agreement, scoped to what each side needs and is entitled to receive back. Most often Medicaid (coverage verification) or another jurisdiction\u2019s health department (surveillance matching).</p>' +
-      '<p class="flag-note"><strong>Benefits, still needs research (two separate open items):</strong></p>' +
-      '<ul>' +
-      '<li><em>Medicaid:</em> what a program gets from Medicaid data is described under Health department above. The case for what Medicaid itself gets from sharing back, the argument that would actually be made in a negotiation, still needs research or a direct conversation with a Medicaid partner before it can be drafted.</li>' +
-      '<li><em>Other health departments (surveillance matching):</em> not yet researched either. Flagged for the same reason.</li>' +
-      '</ul>' +
-      '<p><em>Worth knowing:</em> Hardest category to standardize. Each partner has its own legal authority and comfort level, so agreements get negotiated one partner at a time.</p>',
+      '<p><em>Worth knowing:</em> Hardest category to standardize. Each partner has its own legal authority and comfort level, so agreements get negotiated one partner at a time. See the Benefits by party tab, where this partner\u2019s benefit is flagged as still needing research.</p>',
     caseStudies: [
       { id: "cs-dc-md-va", place: "District of Columbia, Maryland, and Virginia", status: "DRAFT, NEEDS REVIEW" }
     ]
@@ -99,7 +90,8 @@ var DIAGRAM_DATA = {
       '<p><em>Template:</em> Yet to source.</p>',
     caseStudies: [
       { id: "cs-north-carolina", place: "North Carolina", status: "DRAFT, NEEDS REVIEW" },
-      { id: "cs-broward", place: "Broward County, Florida", status: "DRAFT, NEEDS REVIEW" }
+      { id: "cs-broward", place: "Broward County, Florida", status: "DRAFT, NEEDS REVIEW" },
+      { id: "cs-illinois", place: "Illinois", status: "DRAFT, NEEDS REVIEW" }
     ]
   },
   "use-agreement": {
@@ -121,8 +113,7 @@ var DIAGRAM_DATA = {
       '<p><em>What it needs to cover:</em> Permitted uses of protected health information, required safeguards, breach reporting, and subcontractor terms.</p>' +
       '<p><em>Template:</em> HHS sample business associate provisions. Link pending panel approval.</p>',
     caseStudies: [
-      { id: "cs-washington", place: "Washington", status: "DRAFT, NEEDS REVIEW" },
-      { id: "cs-illinois", place: "Illinois", status: "NEEDS KABIR INPUT" }
+      { id: "cs-washington", place: "Washington", status: "DRAFT, NEEDS REVIEW" }
     ]
   },
   "data-sharing": {
@@ -138,7 +129,9 @@ var DIAGRAM_DATA = {
       { id: "cs-dc-md-va", place: "District of Columbia, Maryland, and Virginia", status: "DRAFT, NEEDS REVIEW" },
       { id: "cs-louisiana", place: "Louisiana", status: "DRAFT, NEEDS REVIEW" },
       { id: "cs-florida-statewide", place: "Florida statewide pathway", status: "DRAFT, NEEDS REVIEW" },
-      { id: "cs-wisconsin", place: "Wisconsin", status: "DRAFT, NEEDS REVIEW" }
+      { id: "cs-wisconsin", place: "Wisconsin", status: "DRAFT, NEEDS REVIEW" },
+      { id: "cs-washington", place: "Washington", status: "DRAFT, NEEDS REVIEW" },
+      { id: "cs-illinois", place: "Illinois", status: "DRAFT, NEEDS REVIEW" }
     ]
   }
 };
