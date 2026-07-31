@@ -1,0 +1,306 @@
+/* Joint eligibility playbook — minimal structural CSS
+   Responsive tab navigation, plain styling, no framework. */
+
+:root {
+  --accent: #09839f;
+  --accent-dark: #0b4962;
+  --text: #404040;
+  --text-light: #666666;
+  --border: #e0e0e0;
+  --bg: #f8f9fa;
+  --bg-card: #ffffff;
+
+  font-size: 17px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.55;
+}
+
+a { color: var(--accent-dark); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* ---------- header ---------- */
+
+header.site-header {
+  background: var(--accent-dark);
+  color: #fff;
+  padding: 2rem 0 1.5rem;
+  margin-bottom: 0;
+}
+
+header.site-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* ---------- nav ---------- */
+
+nav.site-nav {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+.nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.nav-back {
+  font-size: 0.95rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.nav-menu a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.15s;
+}
+
+.nav-menu a:hover {
+  border-bottom-color: var(--accent);
+  text-decoration: none;
+}
+
+.nav-menu a.nav-current {
+  color: var(--accent-dark);
+  border-bottom-color: var(--accent-dark);
+}
+
+/* ---------- page ---------- */
+
+main { padding-bottom: 2rem; }
+
+.page-head { margin-bottom: 2rem; }
+
+.page-head h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  color: var(--accent-dark);
+}
+
+h3 { font-size: 1.15rem; margin: 0 0 0.75rem; color: var(--accent-dark); }
+h4 { font-size: 1.02rem; margin: 1.5rem 0 0.5rem; color: var(--accent-dark); }
+h5 { font-size: 0.95rem; margin: 1rem 0 0.35rem; color: var(--text); }
+
+p { margin: 0 0 0.75rem; }
+
+ul, ol { margin: 0 0 0.75rem; padding-left: 1.3rem; }
+li { margin: 0.25rem 0; }
+
+/* ---------- draft preview ---------- */
+
+.preview-banner {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  background: #fff8e6;
+  border: 1px solid #e0c477;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.preview-banner strong {
+  color: #7a5b0a;
+  white-space: nowrap;
+}
+
+.status-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 0.15rem 0.4rem;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+.status-tag.draft {
+  background: #fff3d6;
+  color: #7a5b0a;
+}
+
+.status-tag.input {
+  background: #eee;
+  color: #555;
+}
+
+.source-note {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  font-style: italic;
+}
+
+.flag-note {
+  font-size: 0.85rem;
+  background: #fdecec;
+  border-left: 3px solid #c0392b;
+  padding: 0.4rem 0.6rem;
+  margin: 0.5rem 0;
+}
+
+/* ---------- tabs ---------- */
+
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.tab {
+  flex: 0 0 auto;
+  padding: 0.75rem 1.25rem;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-light);
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.tab:hover {
+  color: var(--accent);
+  border-bottom-color: #e0e0e0;
+}
+
+.tab[aria-selected="true"] {
+  color: var(--accent-dark);
+  border-bottom-color: var(--accent-dark);
+}
+
+.tab:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
+.tab-panel { margin-bottom: 2rem; }
+
+.tab-panel[hidden] { display: none; }
+
+/* ---------- case study cross-links ---------- */
+
+.case-study-link {
+  font: inherit;
+  font-weight: 600;
+  color: var(--accent-dark);
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.case-study-link:hover {
+  color: var(--accent);
+}
+
+.case-study-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.case-study-entry {
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin: 1rem 0;
+}
+
+.case-study-entry:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.case-study-entry h4 { margin: 0 0 0.4rem; }
+
+.case-study-entry.just-linked {
+  animation: case-study-flash 2s ease-out;
+}
+
+@keyframes case-study-flash {
+  0% { background-color: #fff3d6; border-color: #e0a72e; }
+  100% { background-color: transparent; border-color: var(--border); }
+}
+
+/* ---------- footer ---------- */
+
+footer {
+  padding: 1.5rem 0 2rem;
+  font-size: 0.85rem;
+  color: var(--text-light);
+  border-top: 1px solid var(--border);
+}
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 640px) {
+  :root { font-size: 16px; }
+
+  header.site-header { padding: 1.5rem 0 1rem; }
+  header.site-header h1 { font-size: 1.25rem; }
+
+  .nav-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .tabs {
+    gap: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .tab {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+}

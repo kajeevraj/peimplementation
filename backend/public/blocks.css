@@ -1,0 +1,114 @@
+/* ---------- CMS toolbar and edit mode ---------- */
+
+.cms-toolbar {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.6rem 0.8rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+}
+
+.cms-btn {
+  font: inherit;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: var(--bg-card);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.cms-btn:hover { border-color: var(--accent); }
+.cms-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.cms-btn.cms-danger {
+  color: #a33;
+  border-color: #e0b0b0;
+}
+.cms-btn.cms-danger:hover { border-color: #c0392b; }
+
+.cms-block {
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.cms-controls {
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+  padding-top: 0.4rem;
+  border-top: 1px dashed var(--border);
+}
+
+.cms-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: #fffaf0;
+  border: 1px solid #e0a72e;
+  border-radius: 6px;
+  padding: 0.75rem;
+}
+
+.cms-editor input,
+.cms-editor textarea {
+  font: inherit;
+  font-size: 0.95rem;
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cms-editor textarea {
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+}
+
+.cms-add-block {
+  margin: 1rem 0;
+}
+
+.cms-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.cms-login-box {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.cms-login-box input {
+  font: inherit;
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+}
+
+.cms-login-error {
+  color: #a33;
+  font-size: 0.85rem;
+  margin: 0;
+  min-height: 1.1em;
+}
