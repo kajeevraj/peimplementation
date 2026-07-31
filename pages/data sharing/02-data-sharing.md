@@ -18,14 +18,8 @@ contracts, data sharing with other agencies, and use agreements.
 
 ## 2.0 Intro — DRAFT, NEEDS REVIEW
 
-*(v2, after supervisor review — replaces the v1 intro.)*
-
-Data sharing means the organizations involved in one person's HIV care can
-work from the same client record, instead of each agency keeping its own
-separate copy. But for this audience, the bigger picture is broader: data
-sharing is the whole assortment of legal documents and agreements that let
-a program share data with the right parties in the first place — client
-consents (also called releases of information), vendor contracts,
+Data sharing is the process of sharing data with parties that would make eligibility determination and continuation easier. 
+The key documents involved are client consents (also called releases of information), vendor contracts,
 subrecipient agreements, use agreements, and data sharing agreements between
 agencies. These documents have to work together, shaped by the scope a
 program has actually negotiated with each partner.
@@ -39,8 +33,7 @@ The Ryan White HIV/AIDS Program (RWHAP) must be the payer of last resort:
 RWHAP funds can only cover what other coverage doesn't. Confirming a
 client's other coverage is a legal requirement. HRSA's HIV/AIDS Bureau
 (HRSA HAB) also stresses, in Policy Clarification Notice (PCN) 21-02, that
-recipients should put data-sharing agreements in place — not just to meet
-that requirement, but to streamline operations and reduce the burden on
+recipients should put data-sharing agreements in place to streamline operations and reduce the burden on
 clients at the same time. [source: PCN 21-02]
 
 ---
