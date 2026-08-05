@@ -68,9 +68,9 @@
     </div>
 
     <div class="diagram-svg-wrap" id="diagram-wrap-desktop" data-panel="diagram-panel" data-pair="diagram-wrap-mobile">
-      <svg class="diagram-svg diagram-desktop" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg" role="group" aria-label="Data sharing parties and agreements">
+      <svg class="diagram-svg diagram-desktop" viewBox="0 0 900 306" xmlns="http://www.w3.org/2000/svg" role="group" aria-label="Data sharing parties and agreements">
     <g class="connectors">
-      <line x1="450" y1="40" x2="450" y2="58" class="connector"/><line x1="450" y1="86" x2="450" y2="104" class="connector"/><line x1="450" y1="138" x2="450" y2="156" class="connector"/><line x1="120" y1="156" x2="780" y2="156" class="connector"/><line x1="120" y1="156" x2="120" y2="176" class="connector"/><line x1="120" y1="204" x2="120" y2="222" class="connector"/><line x1="340" y1="156" x2="340" y2="176" class="connector"/><line x1="340" y1="204" x2="340" y2="222" class="connector"/><line x1="560" y1="156" x2="560" y2="176" class="connector"/><line x1="560" y1="204" x2="560" y2="222" class="connector"/><line x1="780" y1="156" x2="780" y2="176" class="connector"/><line x1="780" y1="204" x2="780" y2="222" class="connector"/>
+      <line x1="450" y1="40" x2="450" y2="58" class="connector"/><line x1="450" y1="86" x2="450" y2="96" class="connector"/><line x1="450" y1="162" x2="450" y2="182" class="connector"/><line x1="120" y1="182" x2="780" y2="182" class="connector"/><line x1="120" y1="182" x2="120" y2="202" class="connector"/><line x1="120" y1="230" x2="120" y2="248" class="connector"/><line x1="340" y1="182" x2="340" y2="202" class="connector"/><line x1="340" y1="230" x2="340" y2="248" class="connector"/><line x1="560" y1="182" x2="560" y2="202" class="connector"/><line x1="560" y1="230" x2="560" y2="248" class="connector"/><line x1="780" y1="182" x2="780" y2="202" class="connector"/><line x1="780" y1="230" x2="780" y2="248" class="connector"/>
     </g>
     <g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="client">
       <title>Client</title>
@@ -80,49 +80,61 @@
       <title>Client consent form</title>
       <rect x="340" y="58" width="220" height="28" rx="14" class="node-shape"/>
       <text x="450.0" y="76.0" text-anchor="middle" class="node-label"><tspan x="450.0" dy="0">Client consent form</tspan></text>
-    </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="health-department">
+    </g><g class="node node-group" tabindex="0" role="button" aria-pressed="false" data-key="health-department">
       <title>Health department</title>
-      <rect x="350" y="104" width="200" height="34" rx="6" class="node-shape"/>
-      <text x="450.0" y="125.0" text-anchor="middle" class="node-label"><tspan x="450.0" dy="0">Health department</tspan></text>
+      <rect x="250" y="96" width="400" height="66" rx="8" class="node-shape node-group-shape"/>
+      <text x="450.0" y="112" text-anchor="middle" class="node-label node-group-label">Health department</text>
+    </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="nhss">
+      <title>NHSS</title>
+      <rect x="260" y="128" width="110" height="28" rx="6" class="node-shape"/>
+      <text x="315.0" y="146.0" text-anchor="middle" class="node-label"><tspan x="315.0" dy="0">NHSS</tspan></text>
+    </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="hopwa">
+      <title>HOPWA</title>
+      <rect x="395" y="128" width="110" height="28" rx="6" class="node-shape"/>
+      <text x="450.0" y="146.0" text-anchor="middle" class="node-label"><tspan x="450.0" dy="0">HOPWA</tspan></text>
+    </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="ehe">
+      <title>EHE</title>
+      <rect x="530" y="128" width="110" height="28" rx="6" class="node-shape"/>
+      <text x="585.0" y="146.0" text-anchor="middle" class="node-label"><tspan x="585.0" dy="0">EHE</tspan></text>
     </g><g class="node node-agreement" tabindex="0" role="button" aria-pressed="false" data-key="subrecipient">
       <title>Subrecipient agreement</title>
-      <rect x="40" y="176" width="160" height="28" rx="14" class="node-shape"/>
-      <text x="120.0" y="187.5" text-anchor="middle" class="node-label"><tspan x="120.0" dy="0">Subrecipient</tspan><tspan x="120.0" dy="13">agreement</tspan></text>
+      <rect x="40" y="202" width="160" height="28" rx="14" class="node-shape"/>
+      <text x="120.0" y="213.5" text-anchor="middle" class="node-label"><tspan x="120.0" dy="0">Subrecipient</tspan><tspan x="120.0" dy="13">agreement</tspan></text>
     </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="funded-providers">
       <title>Funded providers</title>
-      <rect x="40" y="222" width="160" height="34" rx="6" class="node-shape"/>
-      <text x="120.0" y="236.5" text-anchor="middle" class="node-label"><tspan x="120.0" dy="0">Funded</tspan><tspan x="120.0" dy="13">providers</tspan></text>
+      <rect x="40" y="248" width="160" height="34" rx="6" class="node-shape"/>
+      <text x="120.0" y="262.5" text-anchor="middle" class="node-label"><tspan x="120.0" dy="0">Funded</tspan><tspan x="120.0" dy="13">providers</tspan></text>
     </g><g class="node node-agreement" tabindex="0" role="button" aria-pressed="false" data-key="use-agreement">
       <title>Use agreement</title>
-      <rect x="260" y="176" width="160" height="28" rx="14" class="node-shape"/>
-      <text x="340.0" y="194.0" text-anchor="middle" class="node-label"><tspan x="340.0" dy="0">Use agreement</tspan></text>
+      <rect x="260" y="202" width="160" height="28" rx="14" class="node-shape"/>
+      <text x="340.0" y="220.0" text-anchor="middle" class="node-label"><tspan x="340.0" dy="0">Use agreement</tspan></text>
     </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="unfunded-providers">
       <title>Unfunded providers</title>
-      <rect x="260" y="222" width="160" height="34" rx="6" class="node-shape"/>
-      <text x="340.0" y="236.5" text-anchor="middle" class="node-label"><tspan x="340.0" dy="0">Unfunded</tspan><tspan x="340.0" dy="13">providers</tspan></text>
+      <rect x="260" y="248" width="160" height="34" rx="6" class="node-shape"/>
+      <text x="340.0" y="262.5" text-anchor="middle" class="node-label"><tspan x="340.0" dy="0">Unfunded</tspan><tspan x="340.0" dy="13">providers</tspan></text>
     </g><g class="node node-agreement" tabindex="0" role="button" aria-pressed="false" data-key="vendor-contract">
       <title>Contract, including BAA</title>
-      <rect x="480" y="176" width="160" height="28" rx="14" class="node-shape"/>
-      <text x="560.0" y="187.5" text-anchor="middle" class="node-label"><tspan x="560.0" dy="0">Contract,</tspan><tspan x="560.0" dy="13">including BAA</tspan></text>
+      <rect x="480" y="202" width="160" height="28" rx="14" class="node-shape"/>
+      <text x="560.0" y="213.5" text-anchor="middle" class="node-label"><tspan x="560.0" dy="0">Contract,</tspan><tspan x="560.0" dy="13">including BAA</tspan></text>
     </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="vendors">
       <title>Vendors</title>
-      <rect x="480" y="222" width="160" height="34" rx="6" class="node-shape"/>
-      <text x="560.0" y="243.0" text-anchor="middle" class="node-label"><tspan x="560.0" dy="0">Vendors</tspan></text>
+      <rect x="480" y="248" width="160" height="34" rx="6" class="node-shape"/>
+      <text x="560.0" y="269.0" text-anchor="middle" class="node-label"><tspan x="560.0" dy="0">Vendors</tspan></text>
     </g><g class="node node-agreement" tabindex="0" role="button" aria-pressed="false" data-key="data-sharing">
       <title>Data sharing agreement</title>
-      <rect x="700" y="176" width="160" height="28" rx="14" class="node-shape"/>
-      <text x="780.0" y="187.5" text-anchor="middle" class="node-label"><tspan x="780.0" dy="0">Data sharing</tspan><tspan x="780.0" dy="13">agreement</tspan></text>
+      <rect x="700" y="202" width="160" height="28" rx="14" class="node-shape"/>
+      <text x="780.0" y="213.5" text-anchor="middle" class="node-label"><tspan x="780.0" dy="0">Data sharing</tspan><tspan x="780.0" dy="13">agreement</tspan></text>
     </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="other-agencies">
       <title>Other agencies</title>
-      <rect x="700" y="222" width="160" height="34" rx="6" class="node-shape"/>
-      <text x="780.0" y="236.5" text-anchor="middle" class="node-label"><tspan x="780.0" dy="0">Other</tspan><tspan x="780.0" dy="13">agencies</tspan></text>
+      <rect x="700" y="248" width="160" height="34" rx="6" class="node-shape"/>
+      <text x="780.0" y="262.5" text-anchor="middle" class="node-label"><tspan x="780.0" dy="0">Other</tspan><tspan x="780.0" dy="13">agencies</tspan></text>
     </g>
   </svg>
     </div>
     <div class="diagram-svg-wrap" id="diagram-wrap-mobile" data-panel="diagram-panel" data-pair="diagram-wrap-desktop">
-      <svg class="diagram-svg diagram-mobile" viewBox="0 0 300 584" xmlns="http://www.w3.org/2000/svg" role="group" aria-label="Data sharing parties and agreements">
+      <svg class="diagram-svg diagram-mobile" viewBox="0 0 300 680" xmlns="http://www.w3.org/2000/svg" role="group" aria-label="Data sharing parties and agreements">
     <g class="connectors">
-      <line x1="150" y1="44" x2="150" y2="66" class="connector"/><line x1="150" y1="94" x2="150" y2="116" class="connector"/><line x1="150" y1="150" x2="150" y2="172" class="connector"/><line x1="150" y1="200" x2="150" y2="222" class="connector"/><line x1="150" y1="256" x2="150" y2="278" class="connector"/><line x1="150" y1="306" x2="150" y2="328" class="connector"/><line x1="150" y1="362" x2="150" y2="384" class="connector"/><line x1="150" y1="412" x2="150" y2="434" class="connector"/><line x1="150" y1="468" x2="150" y2="490" class="connector"/><line x1="150" y1="518" x2="150" y2="540" class="connector"/>
+      <line x1="150" y1="44" x2="150" y2="66" class="connector"/><line x1="150" y1="94" x2="150" y2="116" class="connector"/><line x1="150" y1="246" x2="150" y2="268" class="connector"/><line x1="150" y1="296" x2="150" y2="318" class="connector"/><line x1="150" y1="352" x2="150" y2="374" class="connector"/><line x1="150" y1="402" x2="150" y2="424" class="connector"/><line x1="150" y1="458" x2="150" y2="480" class="connector"/><line x1="150" y1="508" x2="150" y2="530" class="connector"/><line x1="150" y1="564" x2="150" y2="586" class="connector"/><line x1="150" y1="614" x2="150" y2="636" class="connector"/>
     </g>
     <g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="client">
       <title>Client</title>
@@ -132,42 +144,54 @@
       <title>Client consent form</title>
       <rect x="20" y="66" width="260" height="28" rx="14" class="node-shape"/>
       <text x="150.0" y="84.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Client consent form</tspan></text>
-    </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="health-department">
+    </g><g class="node node-group" tabindex="0" role="button" aria-pressed="false" data-key="health-department">
       <title>Health department</title>
-      <rect x="20" y="116" width="260" height="34" rx="6" class="node-shape"/>
-      <text x="150.0" y="137.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Health department</tspan></text>
+      <rect x="20" y="116" width="260" height="130" rx="8" class="node-shape node-group-shape"/>
+      <text x="150.0" y="132" text-anchor="middle" class="node-label node-group-label">Health department</text>
+    </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="nhss">
+      <title>NHSS</title>
+      <rect x="35" y="136" width="230" height="28" rx="6" class="node-shape"/>
+      <text x="150.0" y="154.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">NHSS</tspan></text>
+    </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="hopwa">
+      <title>HOPWA</title>
+      <rect x="35" y="172" width="230" height="28" rx="6" class="node-shape"/>
+      <text x="150.0" y="190.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">HOPWA</tspan></text>
+    </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="ehe">
+      <title>EHE</title>
+      <rect x="35" y="208" width="230" height="28" rx="6" class="node-shape"/>
+      <text x="150.0" y="226.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">EHE</tspan></text>
     </g><g class="node node-agreement" tabindex="0" role="button" aria-pressed="false" data-key="subrecipient">
       <title>Subrecipient agreement</title>
-      <rect x="20" y="172" width="260" height="28" rx="14" class="node-shape"/>
-      <text x="150.0" y="190.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Subrecipient agreement</tspan></text>
+      <rect x="20" y="268" width="260" height="28" rx="14" class="node-shape"/>
+      <text x="150.0" y="286.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Subrecipient agreement</tspan></text>
     </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="funded-providers">
       <title>Funded providers</title>
-      <rect x="20" y="222" width="260" height="34" rx="6" class="node-shape"/>
-      <text x="150.0" y="243.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Funded providers</tspan></text>
+      <rect x="20" y="318" width="260" height="34" rx="6" class="node-shape"/>
+      <text x="150.0" y="339.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Funded providers</tspan></text>
     </g><g class="node node-agreement" tabindex="0" role="button" aria-pressed="false" data-key="use-agreement">
       <title>Use agreement</title>
-      <rect x="20" y="278" width="260" height="28" rx="14" class="node-shape"/>
-      <text x="150.0" y="296.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Use agreement</tspan></text>
+      <rect x="20" y="374" width="260" height="28" rx="14" class="node-shape"/>
+      <text x="150.0" y="392.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Use agreement</tspan></text>
     </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="unfunded-providers">
       <title>Unfunded providers</title>
-      <rect x="20" y="328" width="260" height="34" rx="6" class="node-shape"/>
-      <text x="150.0" y="349.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Unfunded providers</tspan></text>
+      <rect x="20" y="424" width="260" height="34" rx="6" class="node-shape"/>
+      <text x="150.0" y="445.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Unfunded providers</tspan></text>
     </g><g class="node node-agreement" tabindex="0" role="button" aria-pressed="false" data-key="vendor-contract">
       <title>Contract, including BAA</title>
-      <rect x="20" y="384" width="260" height="28" rx="14" class="node-shape"/>
-      <text x="150.0" y="402.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Contract, including BAA</tspan></text>
+      <rect x="20" y="480" width="260" height="28" rx="14" class="node-shape"/>
+      <text x="150.0" y="498.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Contract, including BAA</tspan></text>
     </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="vendors">
       <title>Vendors</title>
-      <rect x="20" y="434" width="260" height="34" rx="6" class="node-shape"/>
-      <text x="150.0" y="455.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Vendors</tspan></text>
+      <rect x="20" y="530" width="260" height="34" rx="6" class="node-shape"/>
+      <text x="150.0" y="551.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Vendors</tspan></text>
     </g><g class="node node-agreement" tabindex="0" role="button" aria-pressed="false" data-key="data-sharing">
       <title>Data sharing agreement</title>
-      <rect x="20" y="490" width="260" height="28" rx="14" class="node-shape"/>
-      <text x="150.0" y="508.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Data sharing agreement</tspan></text>
+      <rect x="20" y="586" width="260" height="28" rx="14" class="node-shape"/>
+      <text x="150.0" y="604.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Data sharing agreement</tspan></text>
     </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="other-agencies">
       <title>Other agencies</title>
-      <rect x="20" y="540" width="260" height="34" rx="6" class="node-shape"/>
-      <text x="150.0" y="561.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Other agencies</tspan></text>
+      <rect x="20" y="636" width="260" height="34" rx="6" class="node-shape"/>
+      <text x="150.0" y="657.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Other agencies</tspan></text>
     </g>
   </svg>
     </div>

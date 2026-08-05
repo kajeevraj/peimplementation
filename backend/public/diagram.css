@@ -17,11 +17,11 @@
   display: block;
   margin: 0 auto;
   width: 100%;
-  max-width: 960px;
+  max-width: 760px;
   height: auto;
 }
 
-.diagram-mobile { display: none; max-width: 420px; }
+.diagram-mobile { display: none; max-width: 320px; }
 
 .connector {
   stroke: var(--border);
@@ -37,8 +37,24 @@
 .node-party .node-shape { fill: var(--node-party-fill); }
 .node-agreement .node-shape { fill: var(--node-agreement-fill); }
 
+.node-group-shape {
+  fill: none;
+  stroke-dasharray: 5 3;
+}
+
+.node-group-label {
+  font-weight: 600;
+  fill: var(--text-light);
+}
+
+.node-group:hover .node-group-shape,
+.node-group:focus-visible .node-group-shape,
+.node-group.selected .node-group-shape {
+  stroke-dasharray: none;
+}
+
 .node-label {
-  font-size: 13px;
+  font-size: 11px;
   fill: var(--text);
   pointer-events: none;
 }
@@ -134,5 +150,4 @@
 @media (max-width: 640px) {
   .diagram-desktop { display: none; }
   .diagram-mobile { display: block; }
-  .diagram-svg { max-width: 420px; }
 }

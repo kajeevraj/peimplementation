@@ -19,14 +19,38 @@ var DIAGRAM_DATA = {
     caseStudies: []
   },
   "health-department": {
-    type: "party",
+    type: "group",
     name: "Health department",
     panelHTML:
-      '<p><em>What happens here:</em> Usually the hub. Receives data from providers, vendors, and other agencies. Often responsible for confirming a client\u2019s other coverage to meet the payer-of-last-resort requirement. <span class="source-note">[source: PCN 21-02]</span></p>' +
+      '<p>The health department is the umbrella the National HIV Surveillance System (NHSS), Housing Opportunities for Persons With AIDS (HOPWA), and Ending the HIV Epidemic (EHE) sit under, alongside Ryan White. It is usually the hub: it receives data from providers, vendors, and other agencies, and is often responsible for confirming a client\u2019s other coverage to meet the payer-of-last-resort requirement. <span class="source-note">[source: PCN 21-02]</span></p>' +
       '<p><em>Worth knowing:</em> Programs under one director can share internally without a separate agreement. Sharing outside the department, like with Medicaid, still needs one. See the Benefits by party tab for what the health department gains from data sharing.</p>',
     caseStudies: [
       { id: "cs-louisiana", place: "Louisiana", status: "DRAFT, NEEDS REVIEW" }
     ]
+  },
+  "nhss": {
+    type: "party",
+    name: "NHSS",
+    panelHTML:
+      '<p>The CDC\u2019s National HIV Surveillance System, which tracks HIV diagnoses and care outcomes nationwide.</p>' +
+      '<p><em>Needs input:</em> what happens here, and how it shares data with Ryan White, is not yet drafted.</p>',
+    caseStudies: []
+  },
+  "hopwa": {
+    type: "party",
+    name: "HOPWA",
+    panelHTML:
+      '<p>Housing Opportunities for Persons With AIDS, a HUD-funded housing assistance program.</p>' +
+      '<p><em>Needs input:</em> what happens here, and how it shares data with Ryan White, is not yet drafted.</p>',
+    caseStudies: []
+  },
+  "ehe": {
+    type: "party",
+    name: "EHE",
+    panelHTML:
+      '<p>Ending the HIV Epidemic, a federal initiative targeting high-burden jurisdictions.</p>' +
+      '<p><em>Needs input:</em> what happens here, and how it shares data with Ryan White, is not yet drafted.</p>',
+    caseStudies: []
   },
   "funded-providers": {
     type: "party",
