@@ -2,9 +2,3 @@
 .Rhistory
 .claude/
 source/
-backend/.env
-backend/node_modules/
-backend/*.db
-backend/*.db-journal
-backend/*.db-wal
-backend/*.db-shm

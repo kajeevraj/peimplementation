@@ -56,17 +56,37 @@
   <div role="tabpanel" id="panel-how-it-works" aria-labelledby="tab-how-it-works" class="tab-panel">
     <h3>How it works</h3>
 
-    <p>Data sharing is the practice of moving information between the parties involved in a client's care. Done well, it improves the quality and quantity of care a client receives and cuts duplicated work for everyone involved: the client, case managers, and every agency in between.</p>
+    <p>Data sharing means the parties involved in a client's care can draw on
+    the same information, instead of each agency holding its own separate
+    copy. Done well, it improves the quality and quantity of care a client
+    receives and cuts duplicated work for everyone involved: the client,
+    case managers, and every agency in between.</p>
 
-    <h4>What makes it possible <span class="status-tag draft">Draft, needs review</span></h4>
-    <p>
-    Sharing data safely and legally requires agreements between every
+    <p>Sharing data safely and legally requires agreements between every
     party involved, from client consent to contracts with outside vendors.
-    The parties involved, and the agreements that connect them, are shown
-    below.
-    </p>
+    Those agreements, and how they connect, are shown in the diagram
+    below.</p>
+
+    <h4>Scope</h4>
+    <p>Before drafting any agreement, a jurisdiction has to work out its
+    scope:</p>
+    <ul>
+    <li><strong>Which programs are involved:</strong> Ryan White, and often
+    Ending the HIV Epidemic (EHE) and Housing Opportunities for Persons With
+    AIDS (HOPWA) alongside it.</li>
+    <li><strong>Which departments and agencies are involved:</strong> the
+    health department itself, other units such as HIV surveillance,
+    contracted and non-contracted providers, vendors, and outside agencies
+    such as Medicaid.</li>
+    <li><strong>Which data systems</strong> will be used for eligibility
+    determinations and other source data.</li>
     </ul>
-    <div class="editor-comment">Diagram structure and legend are APPROVED in the source file (02-data-sharing.md, 2.2). Panel text for each element is drafted content.</div>
+    <p>The diagram below shows how this plays out: the parties involved, and
+    the agreements that connect them.</p>
+
+    <!-- Diagram structure and legend are APPROVED in the source file
+    (02-data-sharing.md, 2.2). Panel text for each element is drafted
+    content. -->
 
     <div class="diagram-legend">
       <span class="legend-item"><span class="legend-swatch party"></span> Party</span>
@@ -76,9 +96,9 @@
     </div>
 
     <div class="diagram-svg-wrap" id="diagram-wrap-desktop" data-panel="diagram-panel" data-pair="diagram-wrap-mobile">
-      <svg class="diagram-svg diagram-desktop" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg" role="group" aria-label="Data sharing parties and agreements">
+      <svg class="diagram-svg diagram-desktop" viewBox="0 0 900 306" xmlns="http://www.w3.org/2000/svg" role="group" aria-label="Data sharing parties and agreements">
     <g class="connectors">
-      <line x1="450" y1="40" x2="450" y2="58" class="connector"/><line x1="450" y1="86" x2="450" y2="104" class="connector"/><line x1="450" y1="138" x2="450" y2="156" class="connector"/><line x1="120" y1="156" x2="780" y2="156" class="connector"/><line x1="120" y1="156" x2="120" y2="176" class="connector"/><line x1="120" y1="204" x2="120" y2="222" class="connector"/><line x1="340" y1="156" x2="340" y2="176" class="connector"/><line x1="340" y1="204" x2="340" y2="222" class="connector"/><line x1="560" y1="156" x2="560" y2="176" class="connector"/><line x1="560" y1="204" x2="560" y2="222" class="connector"/><line x1="780" y1="156" x2="780" y2="176" class="connector"/><line x1="780" y1="204" x2="780" y2="222" class="connector"/>
+      <line x1="450" y1="40" x2="450" y2="58" class="connector"/><line x1="450" y1="86" x2="450" y2="96" class="connector"/><line x1="450" y1="162" x2="450" y2="182" class="connector"/><line x1="120" y1="182" x2="780" y2="182" class="connector"/><line x1="120" y1="182" x2="120" y2="202" class="connector"/><line x1="120" y1="230" x2="120" y2="248" class="connector"/><line x1="340" y1="182" x2="340" y2="202" class="connector"/><line x1="340" y1="230" x2="340" y2="248" class="connector"/><line x1="560" y1="182" x2="560" y2="202" class="connector"/><line x1="560" y1="230" x2="560" y2="248" class="connector"/><line x1="780" y1="182" x2="780" y2="202" class="connector"/><line x1="780" y1="230" x2="780" y2="248" class="connector"/>
     </g>
     <g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="client">
       <title>Client</title>
@@ -88,49 +108,61 @@
       <title>Client consent form</title>
       <rect x="340" y="58" width="220" height="28" rx="14" class="node-shape"/>
       <text x="450.0" y="76.0" text-anchor="middle" class="node-label"><tspan x="450.0" dy="0">Client consent form</tspan></text>
-    </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="health-department">
+    </g><g class="node node-group" tabindex="0" role="button" aria-pressed="false" data-key="health-department">
       <title>Health department</title>
-      <rect x="350" y="104" width="200" height="34" rx="6" class="node-shape"/>
-      <text x="450.0" y="125.0" text-anchor="middle" class="node-label"><tspan x="450.0" dy="0">Health department</tspan></text>
+      <rect x="250" y="96" width="400" height="66" rx="8" class="node-shape node-group-shape"/>
+      <text x="450.0" y="112" text-anchor="middle" class="node-label node-group-label">Health department</text>
+    </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="nhss">
+      <title>NHSS</title>
+      <rect x="260" y="128" width="110" height="28" rx="6" class="node-shape"/>
+      <text x="315.0" y="146.0" text-anchor="middle" class="node-label"><tspan x="315.0" dy="0">NHSS</tspan></text>
+    </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="hopwa">
+      <title>HOPWA</title>
+      <rect x="395" y="128" width="110" height="28" rx="6" class="node-shape"/>
+      <text x="450.0" y="146.0" text-anchor="middle" class="node-label"><tspan x="450.0" dy="0">HOPWA</tspan></text>
+    </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="ehe">
+      <title>EHE</title>
+      <rect x="530" y="128" width="110" height="28" rx="6" class="node-shape"/>
+      <text x="585.0" y="146.0" text-anchor="middle" class="node-label"><tspan x="585.0" dy="0">EHE</tspan></text>
     </g><g class="node node-agreement" tabindex="0" role="button" aria-pressed="false" data-key="subrecipient">
       <title>Subrecipient agreement</title>
-      <rect x="40" y="176" width="160" height="28" rx="14" class="node-shape"/>
-      <text x="120.0" y="187.5" text-anchor="middle" class="node-label"><tspan x="120.0" dy="0">Subrecipient</tspan><tspan x="120.0" dy="13">agreement</tspan></text>
+      <rect x="40" y="202" width="160" height="28" rx="14" class="node-shape"/>
+      <text x="120.0" y="213.5" text-anchor="middle" class="node-label"><tspan x="120.0" dy="0">Subrecipient</tspan><tspan x="120.0" dy="13">agreement</tspan></text>
     </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="funded-providers">
       <title>Funded providers</title>
-      <rect x="40" y="222" width="160" height="34" rx="6" class="node-shape"/>
-      <text x="120.0" y="236.5" text-anchor="middle" class="node-label"><tspan x="120.0" dy="0">Funded</tspan><tspan x="120.0" dy="13">providers</tspan></text>
+      <rect x="40" y="248" width="160" height="34" rx="6" class="node-shape"/>
+      <text x="120.0" y="262.5" text-anchor="middle" class="node-label"><tspan x="120.0" dy="0">Funded</tspan><tspan x="120.0" dy="13">providers</tspan></text>
     </g><g class="node node-agreement" tabindex="0" role="button" aria-pressed="false" data-key="use-agreement">
       <title>Use agreement</title>
-      <rect x="260" y="176" width="160" height="28" rx="14" class="node-shape"/>
-      <text x="340.0" y="194.0" text-anchor="middle" class="node-label"><tspan x="340.0" dy="0">Use agreement</tspan></text>
+      <rect x="260" y="202" width="160" height="28" rx="14" class="node-shape"/>
+      <text x="340.0" y="220.0" text-anchor="middle" class="node-label"><tspan x="340.0" dy="0">Use agreement</tspan></text>
     </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="unfunded-providers">
       <title>Unfunded providers</title>
-      <rect x="260" y="222" width="160" height="34" rx="6" class="node-shape"/>
-      <text x="340.0" y="236.5" text-anchor="middle" class="node-label"><tspan x="340.0" dy="0">Unfunded</tspan><tspan x="340.0" dy="13">providers</tspan></text>
+      <rect x="260" y="248" width="160" height="34" rx="6" class="node-shape"/>
+      <text x="340.0" y="262.5" text-anchor="middle" class="node-label"><tspan x="340.0" dy="0">Unfunded</tspan><tspan x="340.0" dy="13">providers</tspan></text>
     </g><g class="node node-agreement" tabindex="0" role="button" aria-pressed="false" data-key="vendor-contract">
       <title>Contract, including BAA</title>
-      <rect x="480" y="176" width="160" height="28" rx="14" class="node-shape"/>
-      <text x="560.0" y="187.5" text-anchor="middle" class="node-label"><tspan x="560.0" dy="0">Contract,</tspan><tspan x="560.0" dy="13">including BAA</tspan></text>
+      <rect x="480" y="202" width="160" height="28" rx="14" class="node-shape"/>
+      <text x="560.0" y="213.5" text-anchor="middle" class="node-label"><tspan x="560.0" dy="0">Contract,</tspan><tspan x="560.0" dy="13">including BAA</tspan></text>
     </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="vendors">
       <title>Vendors</title>
-      <rect x="480" y="222" width="160" height="34" rx="6" class="node-shape"/>
-      <text x="560.0" y="243.0" text-anchor="middle" class="node-label"><tspan x="560.0" dy="0">Vendors</tspan></text>
+      <rect x="480" y="248" width="160" height="34" rx="6" class="node-shape"/>
+      <text x="560.0" y="269.0" text-anchor="middle" class="node-label"><tspan x="560.0" dy="0">Vendors</tspan></text>
     </g><g class="node node-agreement" tabindex="0" role="button" aria-pressed="false" data-key="data-sharing">
       <title>Data sharing agreement</title>
-      <rect x="700" y="176" width="160" height="28" rx="14" class="node-shape"/>
-      <text x="780.0" y="187.5" text-anchor="middle" class="node-label"><tspan x="780.0" dy="0">Data sharing</tspan><tspan x="780.0" dy="13">agreement</tspan></text>
+      <rect x="700" y="202" width="160" height="28" rx="14" class="node-shape"/>
+      <text x="780.0" y="213.5" text-anchor="middle" class="node-label"><tspan x="780.0" dy="0">Data sharing</tspan><tspan x="780.0" dy="13">agreement</tspan></text>
     </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="other-agencies">
       <title>Other agencies</title>
-      <rect x="700" y="222" width="160" height="34" rx="6" class="node-shape"/>
-      <text x="780.0" y="236.5" text-anchor="middle" class="node-label"><tspan x="780.0" dy="0">Other</tspan><tspan x="780.0" dy="13">agencies</tspan></text>
+      <rect x="700" y="248" width="160" height="34" rx="6" class="node-shape"/>
+      <text x="780.0" y="262.5" text-anchor="middle" class="node-label"><tspan x="780.0" dy="0">Other</tspan><tspan x="780.0" dy="13">agencies</tspan></text>
     </g>
   </svg>
     </div>
     <div class="diagram-svg-wrap" id="diagram-wrap-mobile" data-panel="diagram-panel" data-pair="diagram-wrap-desktop">
-      <svg class="diagram-svg diagram-mobile" viewBox="0 0 300 584" xmlns="http://www.w3.org/2000/svg" role="group" aria-label="Data sharing parties and agreements">
+      <svg class="diagram-svg diagram-mobile" viewBox="0 0 300 680" xmlns="http://www.w3.org/2000/svg" role="group" aria-label="Data sharing parties and agreements">
     <g class="connectors">
-      <line x1="150" y1="44" x2="150" y2="66" class="connector"/><line x1="150" y1="94" x2="150" y2="116" class="connector"/><line x1="150" y1="150" x2="150" y2="172" class="connector"/><line x1="150" y1="200" x2="150" y2="222" class="connector"/><line x1="150" y1="256" x2="150" y2="278" class="connector"/><line x1="150" y1="306" x2="150" y2="328" class="connector"/><line x1="150" y1="362" x2="150" y2="384" class="connector"/><line x1="150" y1="412" x2="150" y2="434" class="connector"/><line x1="150" y1="468" x2="150" y2="490" class="connector"/><line x1="150" y1="518" x2="150" y2="540" class="connector"/>
+      <line x1="150" y1="44" x2="150" y2="66" class="connector"/><line x1="150" y1="94" x2="150" y2="116" class="connector"/><line x1="150" y1="246" x2="150" y2="268" class="connector"/><line x1="150" y1="296" x2="150" y2="318" class="connector"/><line x1="150" y1="352" x2="150" y2="374" class="connector"/><line x1="150" y1="402" x2="150" y2="424" class="connector"/><line x1="150" y1="458" x2="150" y2="480" class="connector"/><line x1="150" y1="508" x2="150" y2="530" class="connector"/><line x1="150" y1="564" x2="150" y2="586" class="connector"/><line x1="150" y1="614" x2="150" y2="636" class="connector"/>
     </g>
     <g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="client">
       <title>Client</title>
@@ -140,85 +172,118 @@
       <title>Client consent form</title>
       <rect x="20" y="66" width="260" height="28" rx="14" class="node-shape"/>
       <text x="150.0" y="84.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Client consent form</tspan></text>
-    </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="health-department">
+    </g><g class="node node-group" tabindex="0" role="button" aria-pressed="false" data-key="health-department">
       <title>Health department</title>
-      <rect x="20" y="116" width="260" height="34" rx="6" class="node-shape"/>
-      <text x="150.0" y="137.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Health department</tspan></text>
+      <rect x="20" y="116" width="260" height="130" rx="8" class="node-shape node-group-shape"/>
+      <text x="150.0" y="132" text-anchor="middle" class="node-label node-group-label">Health department</text>
+    </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="nhss">
+      <title>NHSS</title>
+      <rect x="35" y="136" width="230" height="28" rx="6" class="node-shape"/>
+      <text x="150.0" y="154.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">NHSS</tspan></text>
+    </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="hopwa">
+      <title>HOPWA</title>
+      <rect x="35" y="172" width="230" height="28" rx="6" class="node-shape"/>
+      <text x="150.0" y="190.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">HOPWA</tspan></text>
+    </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="ehe">
+      <title>EHE</title>
+      <rect x="35" y="208" width="230" height="28" rx="6" class="node-shape"/>
+      <text x="150.0" y="226.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">EHE</tspan></text>
     </g><g class="node node-agreement" tabindex="0" role="button" aria-pressed="false" data-key="subrecipient">
       <title>Subrecipient agreement</title>
-      <rect x="20" y="172" width="260" height="28" rx="14" class="node-shape"/>
-      <text x="150.0" y="190.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Subrecipient agreement</tspan></text>
+      <rect x="20" y="268" width="260" height="28" rx="14" class="node-shape"/>
+      <text x="150.0" y="286.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Subrecipient agreement</tspan></text>
     </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="funded-providers">
       <title>Funded providers</title>
-      <rect x="20" y="222" width="260" height="34" rx="6" class="node-shape"/>
-      <text x="150.0" y="243.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Funded providers</tspan></text>
+      <rect x="20" y="318" width="260" height="34" rx="6" class="node-shape"/>
+      <text x="150.0" y="339.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Funded providers</tspan></text>
     </g><g class="node node-agreement" tabindex="0" role="button" aria-pressed="false" data-key="use-agreement">
       <title>Use agreement</title>
-      <rect x="20" y="278" width="260" height="28" rx="14" class="node-shape"/>
-      <text x="150.0" y="296.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Use agreement</tspan></text>
+      <rect x="20" y="374" width="260" height="28" rx="14" class="node-shape"/>
+      <text x="150.0" y="392.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Use agreement</tspan></text>
     </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="unfunded-providers">
       <title>Unfunded providers</title>
-      <rect x="20" y="328" width="260" height="34" rx="6" class="node-shape"/>
-      <text x="150.0" y="349.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Unfunded providers</tspan></text>
+      <rect x="20" y="424" width="260" height="34" rx="6" class="node-shape"/>
+      <text x="150.0" y="445.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Unfunded providers</tspan></text>
     </g><g class="node node-agreement" tabindex="0" role="button" aria-pressed="false" data-key="vendor-contract">
       <title>Contract, including BAA</title>
-      <rect x="20" y="384" width="260" height="28" rx="14" class="node-shape"/>
-      <text x="150.0" y="402.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Contract, including BAA</tspan></text>
+      <rect x="20" y="480" width="260" height="28" rx="14" class="node-shape"/>
+      <text x="150.0" y="498.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Contract, including BAA</tspan></text>
     </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="vendors">
       <title>Vendors</title>
-      <rect x="20" y="434" width="260" height="34" rx="6" class="node-shape"/>
-      <text x="150.0" y="455.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Vendors</tspan></text>
+      <rect x="20" y="530" width="260" height="34" rx="6" class="node-shape"/>
+      <text x="150.0" y="551.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Vendors</tspan></text>
     </g><g class="node node-agreement" tabindex="0" role="button" aria-pressed="false" data-key="data-sharing">
       <title>Data sharing agreement</title>
-      <rect x="20" y="490" width="260" height="28" rx="14" class="node-shape"/>
-      <text x="150.0" y="508.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Data sharing agreement</tspan></text>
+      <rect x="20" y="586" width="260" height="28" rx="14" class="node-shape"/>
+      <text x="150.0" y="604.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Data sharing agreement</tspan></text>
     </g><g class="node node-party" tabindex="0" role="button" aria-pressed="false" data-key="other-agencies">
       <title>Other agencies</title>
-      <rect x="20" y="540" width="260" height="34" rx="6" class="node-shape"/>
-      <text x="150.0" y="561.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Other agencies</tspan></text>
+      <rect x="20" y="636" width="260" height="34" rx="6" class="node-shape"/>
+      <text x="150.0" y="657.0" text-anchor="middle" class="node-label"><tspan x="150.0" dy="0">Other agencies</tspan></text>
     </g>
   </svg>
     </div>
 
     <div class="diagram-panel" id="diagram-panel" data-active-key=""></div>
 
-    <h4>What it supports <span class="status-tag draft">Draft, needs review</span></h4>
+    <h4>What it supports</h4>
     <ul>
-      <li>Eligibility processes</li>
-      <li>Care coordination and management</li>
-      <li>Reporting and compliance</li>
+    <li>Eligibility processes</li>
+    <li>Care coordination and management</li>
+    <li>Reporting and compliance</li>
     </ul>
-    <p>It sets who should have access to what information, and which stakeholders need to be reviewed and evaluated before that access is granted.</p>
+    <p>It sets who should have access to what information, and which
+    stakeholders need to be reviewed and evaluated before that access is
+    granted.</p>
 
-    <h4>The eligibility case <span class="status-tag draft">Draft, needs review</span></h4>
-    <p>Ryan White must be the payer of last resort. Confirming a client's other coverage is a legal requirement. HRSA also stresses putting data-sharing agreements in place to streamline operations and reduce client burden. <span class="source-note">[source: PCN 21-02; RWHAP Part A Program Manual]</span></p>
+    <h4>The eligibility case</h4>
+    <p>Ryan White must be the payer of last resort. Confirming a client's
+    other coverage is a legal requirement, and HRSA's Policy Clarification
+    Notice 21-02 both sets that requirement and encourages data-sharing
+    agreements as the way to meet it without adding unnecessary burden.
+    <span class="source-note">[source: PCN 21-02]</span></p>
 
-    <h4>Scope <span class="status-tag draft">Draft, needs review</span></h4>
-    <p>Before drafting any agreement, a jurisdiction has to work out its scope:</p>
+    <p>A 2023 HRSA Technical Expert Panel studied how recipients were
+    actually implementing that guidance. Programs using data-sharing
+    agreements well saw real gains: less staff time per application, less
+    burden on clients, and faster turnarounds. The panel also found that
+    getting there takes real, deliberate work. Most states share only
+    limited data with Medicaid, and independent legal research across ten
+    states found that no state allows outside access to its HIV surveillance
+    database directly. <span class="source-note">[source: HRSA TEP Executive
+    Summary; NASTAD, HIV Data Privacy and Confidentiality]</span></p>
+
+    <h4>What this makes possible</h4>
+    <p>Getting these agreements right pays off in two concrete ways. It
+    changes how staff spend their time day to day, and it changes how much a
+    client has to do just to stay eligible for care.</p>
     <ul>
-      <li><strong>Which programs are involved:</strong> Ryan White, and often Ending the HIV Epidemic (EHE) and Housing Opportunities for Persons With AIDS (HOPWA) alongside it.</li>
-      <li><strong>Which departments and agencies are involved:</strong> the health department itself, other units such as HIV surveillance, contracted and non-contracted providers, vendors, and outside agencies such as Medicaid.</li>
-      <li><strong>Which data systems</strong> will be used for eligibility determinations and other source data.</li>
+    <li><strong>Streamlining operations.</strong> Automated data feeds cut
+    the manual work of pulling and re-entering information by hand.</li>
+    <li><strong>Reducing barriers for clients.</strong> Automated checks
+    replace repeat documentation with something closer to real time, so
+    clients bring in less paperwork, less often.</li>
     </ul>
-    <p class="source-note">[source: RWHAP Part A Program Manual]</p>
+    <p class="source-note">[source: HRSA TEP Executive Summary; Louisiana
+    Department of Health, Integrated HIV Prevention and Care Plan, 2022 to
+    2026]</p>
 
-    <h4>What this makes possible <span class="status-tag draft">Draft, needs review</span></h4>
-    <ul>
-      <li><strong>Streamlining operations.</strong> Automated data feeds cut the manual work of pulling and re-entering information by hand.</li>
-      <li><strong>Reducing barriers for clients.</strong> Automated checks replace repeat documentation with something closer to real time, so clients bring in less paperwork, less often.</li>
-    </ul>
-    <p class="source-note">[source: HRSA TEP Executive Summary; Louisiana Department of Health, Integrated HIV Prevention and Care Plan, 2022 to 2026]</p>
-    <p> H.R. 1 (Also known as the Big Beautiful Bill Act) is a new federal budget reconciliation law that requires states to redetermine Medicaid eligibility for expansion adults at least every six months instead of annually, and adds new work requirements starting in 2027. That makes Medicaid coverage more episodic for some clients, on and off within a year, which makes automated, frequent checking more valuable than an annual snapshot. <span class="source-note">[source: KFF, Tracking Implementation of the 2025 Reconciliation Law]</span></p>
+    <p>A 2025 federal law requires states to redetermine Medicaid eligibility
+    for expansion adults at least every six months instead of annually, and
+    adds new work requirements starting in 2027. That makes Medicaid
+    coverage more episodic for some clients, on and off within a year, which
+    makes automated, frequent checking more valuable than an annual
+    snapshot. <span class="source-note">[source: KFF, Tracking Implementation
+    of the 2025 Reconciliation Law]</span></p>
+
     <p>Party-specific benefits are covered in the Benefits by party tab.</p>
   </div>
 
   <!-- ============ BENEFITS BY PARTY ============ -->
   <div role="tabpanel" id="panel-benefits-by-party" aria-labelledby="tab-benefits-by-party" class="tab-panel" hidden>
-    <h3>Benefits by party <span class="status-tag draft">Draft, needs review</span></h3>
-    <div class="editor-comment">Single home for every party-specific benefit; grouping by party is an editorial judgment call, not something the sources themselves assert. Ryan White program and Health department are merged into one heading below, since they're the same actor in practice. Vendors has no heading here by design: see the note in the diagram's Vendors panel. Two figures below (the DC/MD/VA percentages) still need sign-off before publishing; see Case studies.</div>
+    <h3>Benefits by party</h3>
 
-    <h4>Health department</h4>
-
+    <h4>Health department <span class="status-tag draft">Draft, needs review</span></h4>
     <p>Meeting the payer-of-last-resort requirement is the starting point: the Ryan White HIV/AIDS Program can only cover what other coverage doesn't, and reliable data sharing is what makes confirming that coverage possible at scale. <span class="source-note">[source: PCN 21-02]</span></p>
 
     <p>From there, the gains are direct. Data from a partner like Medicaid means faster, cheaper eligibility checks than manual verification. It can help confirm a client's state residency, since Medicaid eligibility itself generally requires it. It can surface other care-related data that supports smoother transitions of care.</p>
@@ -233,29 +298,35 @@
     </ul>
     <p><strong>Still needs research:</strong> the benefit to the health department's own surveillance unit, specifically, if it's asked to share more internally. Not yet answered.</p>
 
-    <h4>Client</h4>
-
+    <h4>Client <span class="status-tag draft">Draft, needs review</span></h4>
     <p>A broader consent, covering the full network of providers and agencies rather than one relationship at a time, cuts how much documentation a client has to provide, and to how many people. It makes services easier to access, since any authorized provider can confirm eligibility without the client re-proving it. It supports better-coordinated care, since providers can see what care a client has or hasn't received.</p>
 
     <p>Underlying all of it: the health department can't pay for a client's care until eligibility is confirmed, and confirming eligibility depends on this access. Client consent is what makes the payment side of the system work.</p>
 
     <p>TEP participants also pointed to Medicaid and motor vehicle records as sources some jurisdictions have used to verify income and residency for clients who might otherwise be treated as lost to follow-up, meaning fewer clients fall out of care over documentation alone. <span class="source-note">[source: HRSA TEP Executive Summary]</span></p>
 
-    <h4>Other agencies</h4>
-
+    <h4>Other agencies <span class="status-tag draft">Draft, needs review</span></h4>
     <p>This is the hardest category to standardize, and the least finished: each partner has its own legal authority and comfort level, so agreements get negotiated one partner at a time. Two open items:</p>
     <ul>
       <li><strong>Medicaid.</strong> What the program gets from Medicaid data is covered under Health department above. What Medicaid itself gets from sharing back, the case that would actually be made in a negotiation, still needs research or a direct conversation with a Medicaid partner.</li>
       <li><strong>Other health departments (surveillance matching).</strong> Same gap. Still needs research.</li>
     </ul>
     <p>This matters for negotiation: no partner agrees to the cost and effort of a data-sharing agreement without a reason of their own, and right now that reason isn't drafted for either partner type.</p>
+
+    <!-- Single home for every party-specific benefit; grouping by party is
+    an editorial judgment call, not something the sources themselves assert.
+    Ryan White program and Health department are merged into one heading
+    above, since they're the same actor in practice. Vendors has no heading
+    here by design: see the note in the diagram's Vendors panel. Two figures
+    above (the DC/MD/VA percentages) still need sign-off before publishing;
+    see Case studies. -->
   </div>
 
   <!-- ============ BARRIERS ============ -->
   <div role="tabpanel" id="panel-barriers" aria-labelledby="tab-barriers" class="tab-panel" hidden>
-    <h3>Barriers <span class="status-tag draft">Draft, needs review</span></h3>
+    <h3>Barriers</h3>
 
-    <h4>About this source</h4>
+    <h4>About this source <span class="status-tag draft">Draft, needs review</span></h4>
     <p>In 2023, HRSA's HIV/AIDS Bureau convened a Technical Expert Panel (TEP) to study how RWHAP recipients were implementing PCN 21-02 and where they were running into trouble streamlining eligibility. The barriers below, unless noted otherwise, come directly from that panel's executive summary, a primary HRSA source. <span class="source-note">[source: HRSA TEP Executive Summary]</span></p>
 
     <p><strong>Establishing and maintaining data sharing agreements is hard.</strong> TEP participants identified access to and effective use of data, particularly through establishing and maintaining data-sharing agreements, as an ongoing challenge. <span class="source-note">[source: HRSA TEP Executive Summary]</span></p>
@@ -266,7 +337,6 @@
 
     <p><strong>Privacy concerns shape what gets shared and how.</strong> Data can generally only be shared for a given client if that client has consented to it. Consent doesn't automatically extend across every system that holds a client's data.</p>
     <p>State HIV surveillance systems, for example, hold records for everyone diagnosed with HIV in the state. RWHAP clients are one part of that group, and only some of them have consented to share their information outside the surveillance system. Before a state can share surveillance data with a Ryan White program, it has to filter the match down to only the clients who've actually consented to that sharing. The same logic applies to Medicaid data: many RWHAP clients also appear in Medicaid's records, but a program can only receive the data for clients who've consented. The rest of the matched set stays out of reach.</p>
-    <div class="editor-comment">Flagged, not yet sourced: one figure from the review call needs a real source before it is usable here: the approximation that Ryan White clients make up roughly half of a given state HIV surveillance database. That number was offered as a verbal example during the call and still needs a citation before it appears on the site.</div>
     <p class="source-note">[source: HRSA TEP Executive Summary, for the general privacy-as-barrier framing; the consent-matching mechanism is not yet independently sourced beyond the review call]</p>
 
     <p><strong>Reconciling consent models across programs is slow.</strong> Programs vary in how they collect client consent to share data, and getting legal review to align differing consent language across partner programs takes time. A blanket consent model is easier to manage than a point-to-point model that requires reconsent every time a new agreement is signed, but switching models, or reconciling two programs that use different models, requires legal review up front. <span class="source-note">[source: RAND, Sharing and Integrating HIV Client Data Across Provider Organizations]</span></p>
@@ -275,16 +345,32 @@
 
     <p><strong>The law, and an agency's own policies, can be the obstacle.</strong> Laws governing disclosure of health information were often written at different times for different diseases, and don't necessarily reflect how a health department needs to operate today. In New York City, separate historical laws on HIV and STDs meant that sharing surveillance data between two programs inside the same health department counted as an impermissible disclosure. <span class="source-note">[source: "Legal and Policy Barriers to Sharing Data Between Public Health Programs in New York City," PMC]</span></p>
 
-    <div class="editor-comment">Two candidates from the original list are cut, pending sourcing: the specific cost of privacy segregation, and named hard partner categories (clinical trials, Veterans Affairs, community-based organizations). A note on joint eligibility versus joint certification was removed from this list; it belongs on the Joint Eligibility page instead.</div>
+    <!-- Flagged, not yet sourced: one figure from the review call needs a
+    real source before it is usable here: the approximation that Ryan White
+    clients make up roughly half of a given state HIV surveillance database.
+    That number was offered as a verbal example during the call and still
+    needs a citation before it appears on the site. -->
+
+    <!-- Two candidates from the original list are cut, pending sourcing:
+    the specific cost of privacy segregation, and named hard partner
+    categories (clinical trials, Veterans Affairs, community-based
+    organizations). A note on joint eligibility versus joint certification
+    was removed from this list; it belongs on the Joint Eligibility page
+    instead. -->
   </div>
 
   <!-- ============ HOW STATES OVERCOME BARRIERS ============ -->
   <div role="tabpanel" id="panel-overcoming-barriers" aria-labelledby="tab-overcoming-barriers" class="tab-panel" hidden>
     <h3>How states overcome barriers</h3>
-    <div class="editor-comment">No content has been drafted specifically framed as resolutions. The case studies linked below each illustrate a barrier being worked around in practice; linked as the closest available match rather than duplicating their text.</div>
+
     <p>See <button type="button" class="case-study-link" data-case-study="cs-louisiana">Louisiana</button>: sharing within one office avoids needing an agreement at all.</p>
     <p>See <button type="button" class="case-study-link" data-case-study="cs-north-carolina">North Carolina</button>: an integrated hub that still scopes what each partner receives back.</p>
     <p>See <button type="button" class="case-study-link" data-case-study="cs-dc-md-va">District of Columbia, Maryland, and Virginia</button>: three separate health departments reaching a shared agreement despite no funding relationship between them.</p>
+
+    <!-- No content has been drafted specifically framed as resolutions.
+    The case studies linked above each illustrate a barrier being worked
+    around in practice; linked as the closest available match rather than
+    duplicating their text. -->
   </div>
 
   <!-- ============ CASE STUDIES ============ -->
@@ -299,14 +385,19 @@
       <p class="source-note">[source: NASTAD, HIV Data Privacy and Confidentiality]</p>
     </div>
 
- <div class="case-study-entry" id="cs-illinois" tabindex="-1">
+    <div class="case-study-entry" id="cs-illinois" tabindex="-1">
       <h4>Illinois <span class="status-tag draft">Draft, needs review</span></h4>
       <p class="source-note">Attached to: Data sharing agreement; Subrecipient agreement</p>
       <p>Before PCN 21-02, Illinois required a full eligibility reapplication every six months. The state already used a shared data system across RWHAP Parts A, B, and B ADAP, but the paperwork wasn't unified: separate forms per Part, repeated data entry, and multiple signatures. One missing form could stall an entire application for weeks while the client came back in person to sign it.</p>
       <p>After PCN 21-02, Illinois consolidated the paperwork into a single program agreement form, extended eligibility confirmation from six months to twelve, and added self-attestation at the twelve-month mark for clients with no changes to report. It also aligned each client's eligibility cycle with their birth month, so renewal dates were easier for clients to remember. Some renewal periods were temporarily stretched or shortened, from nine to eighteen months, to make that alignment work.</p>
       <p>The rollout leaned on partners: webinars run with AIDS Foundation Chicago and the Midwest AIDS Training and Education Center (a RWHAP Part F recipient), offered live and recorded to reach more staff, plus separate sessions for community-based organizations and for clients themselves.</p>
       <p>A program administrator reported the change cut staff workload roughly in half, and most applications now process within 24 hours.</p>
-      <div class="editor-comment">Illinois entry: efficiency figures (workload cut roughly in half; most applications processed within 24 hours) come from an independent published source, but are specific efficiency claims and need the same sign-off as any other figure before use on the site. Same platform-naming note as Washington above: the source names a specific vendor product, referred to generically here.</div>
+      <!-- Illinois entry: efficiency figures (workload cut roughly in half;
+      most applications processed within 24 hours) come from an independent
+      published source, but are specific efficiency claims and need the same
+      sign-off as any other figure before use on the site. Same
+      platform-naming note as Washington below: the source names a specific
+      vendor product, referred to generically here. -->
       <p>Illinois has a data sharing agreement with eight regional consortia, each led by an agency such as AIDS Foundation Chicago. RWHAP Part A agencies in a region can request read-only access; some get full access if they're jointly funded through both Part A and Part B. Next up: piloting cross-Part streamlining, and exploring a data sharing agreement with the state's Department of Revenue to automate income verification.</p>
       <p class="source-note">[source: HRSA LEAP, "Streamlining Ryan White HIV/AIDS Program Part B ADAP Eligibility: Moving to 12-month Self Attestation in Illinois," July 2026]</p>
     </div>
@@ -315,7 +406,8 @@
       <h4>District of Columbia, Maryland, and Virginia <span class="status-tag draft">Draft, needs review</span></h4>
       <p class="source-note">Attached to: Data sharing agreement; Other agencies party</p>
       <p>The three jurisdictions' health departments signed HIV surveillance data sharing agreements in 2014 and began regular electronic data exchange in 2017, using a privacy-preserving matching tool external to the health departments. Electronic exchange of surveillance and lab data cut the manual duplicate-review caseload by roughly three-quarters between DC and Maryland and four-fifths between DC and Virginia, and helped DC identify people who had migrated out of the District. That out-migration, rather than a data error, had been inflating its count of people living with HIV.</p>
-      <div class="editor-comment">District of Columbia, Maryland, and Virginia entry: figures (74.3%, 81.7%) still need sign-off before use on the site.</div>
+      <!-- District of Columbia, Maryland, and Virginia entry: figures
+      (74.3%, 81.7%) still need sign-off before use on the site. -->
       <p class="source-note">[sources: JMIR Public Health &amp; Surveillance, 2018; NASTAD, Cross-Jurisdictional Data Sharing]</p>
     </div>
 
@@ -341,7 +433,11 @@
       <p>The state's own account of the process emphasizes relationship-building as much as the technical work. Seattle-King County Public Health, the RWHAP Part A recipient, also receives Ending the HIV Epidemic (EHE) funding with its own eligibility criteria and didn't initially join the health department's planning. Once they did, the two teams worked out how to document HIV status in the same shared system for both RWHAP and EHE-funded services.</p>
       <p>The transition took two and a half years. Training was a weak point at first: the vendor's own curriculum wasn't detailed enough, and training a small group of superusers to train everyone else didn't work well. Washington's health department ended up building its own training materials and videos instead.</p>
       <p>The result is one client eligibility profile shared across every relevant agency. Washington's own framing is that Parts A and B are a reasonable place to start. Parts C and D, and EHE agencies, still need to be brought in.</p>
-      <div class="editor-comment">This source names the specific platform Washington adopted, which is a vendor's own commercial product.</div>
+      <!-- This source names the specific platform Washington adopted,
+      which is a vendor's own commercial product. This entry deliberately
+      refers to it generically rather than by name, to avoid implying a
+      commercial relationship. That naming decision is still open; revisit
+      if the platform should be named. -->
       <p class="source-note">[source: HRSA LEAP, "Case Study: Building Relationships to Help Synchronize RWHAP Eligibility Requirements in Washington State," March 2026]</p>
     </div>
 
@@ -362,14 +458,12 @@
       <p class="source-note">Attached to: Data sharing agreement</p>
       <p></p>
     </div>
-
-   
   </div>
 </main>
 
 <footer>
   <div class="container">
-    <p>Kabir Ali Jeevraj, Groupware, 2026</p>
+    <p>Hand-edited static content. Edit this file directly and push to update.</p>
   </div>
 </footer>
 
